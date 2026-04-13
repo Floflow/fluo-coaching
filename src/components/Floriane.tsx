@@ -13,19 +13,14 @@ export default function Floriane() {
       <div className="container">
         <div className="floriane-grid">
 
-          {/* Photo placeholder */}
+          {/* Photo */}
           <div className="floriane-photo-wrap">
             <div className="floriane-photo fade-in">
-              <div className="floriane-photo-placeholder">
-                <svg className="floriane-photo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <circle cx="24" cy="18" r="10" stroke="#1E3830" strokeWidth="1.5"/>
-                  <path d="M6 42c0-9.941 8.059-18 18-18s18 8.059 18 18" stroke="#1E3830" strokeWidth="1.5"/>
-                </svg>
-                <p className="floriane-photo-label">
-                  Photo de Floriane<br />
-                  <span style={{ fontSize: '11px', color: 'var(--text-light)' }}>à ajouter dans public/images/</span>
-                </p>
-              </div>
+              <img
+                src="/images/floriane.jpg"
+                alt="Floriane Perrin — Coach certifiée ICF"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
 
               {/* Badge certification */}
               <div className="floriane-badge">
