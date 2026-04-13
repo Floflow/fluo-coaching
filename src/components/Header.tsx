@@ -6,7 +6,6 @@
 // ─────────────────────────────────────────
 
 import { useState } from 'react'
-import Link from 'next/link'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -33,7 +32,7 @@ export default function Header() {
         }}>
 
           {/* Logo */}
-          <Link href="/" aria-label="Fluo Coaching — accueil" style={{ flexShrink: 0 }}>
+          <a href="/" aria-label="Fluo Coaching — accueil" style={{ flexShrink: 0 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
 
               {/* SVG FLUO */}
@@ -71,7 +70,7 @@ export default function Header() {
               </div>
 
             </div>
-          </Link>
+          </a>
 
           {/* Nav desktop — masquée < 900px */}
           <nav aria-label="Navigation principale" style={{
@@ -79,26 +78,26 @@ export default function Header() {
             alignItems: 'center',
             gap: '2rem',
           }} className="header-nav">
-            <Link href="/" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
+            <a href="/" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
               Accueil
-            </Link>
-            <Link href="/bilan-de-competences" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
+            </a>
+            <a href="/bilan-de-competences" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
               Bilan de compétences
-            </Link>
-            <Link href="/#contact" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
+            </a>
+            <a href="/#contact" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
               Contact
-            </Link>
+            </a>
           </nav>
 
           {/* CTA + Burger */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <Link
+            <a
               href="/#contact"
               className="btn-primary"
               data-track="cta-header"
             >
               Séance découverte <span className="btn-arrow">→</span>
-            </Link>
+            </a>
 
             {/* Burger mobile */}
             <button
@@ -120,18 +119,18 @@ export default function Header() {
       {menuOpen && (
         <div className="mobile-menu open">
           <nav>
-            <Link href="/" onClick={closeMenu}>Accueil</Link>
-            <Link href="/bilan-de-competences" onClick={closeMenu}>Bilan de compétences</Link>
-            <Link href="/#contact" onClick={closeMenu}>Contact</Link>
+            <a href="/" onClick={closeMenu}>Accueil</a>
+            <a href="/bilan-de-competences" onClick={closeMenu}>Bilan de compétences</a>
+            <a href="/#contact" onClick={closeMenu}>Contact</a>
           </nav>
-          <Link
+          <a
             href="/#contact"
             className="btn-primary"
             onClick={closeMenu}
             style={{ marginTop: '1rem', justifyContent: 'center' }}
           >
             Séance découverte →
-          </Link>
+          </a>
         </div>
       )}
 
