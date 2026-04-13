@@ -85,20 +85,20 @@ export default function Header() {
             <Link href="/bilan-de-competences" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
               Bilan de compétences
             </Link>
-            <a href="/#contact" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
+            <Link href="/#contact" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* CTA + Burger */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <a
+            <Link
               href="/#contact"
               className="btn-primary"
               data-track="cta-header"
             >
               Séance découverte <span className="btn-arrow">→</span>
-            </a>
+            </Link>
 
             {/* Burger mobile */}
             <button
@@ -122,16 +122,16 @@ export default function Header() {
           <nav>
             <Link href="/" onClick={closeMenu}>Accueil</Link>
             <Link href="/bilan-de-competences" onClick={closeMenu}>Bilan de compétences</Link>
-            <a href="/#contact" onClick={closeMenu}>Contact</a>
+            <Link href="/#contact" onClick={closeMenu}>Contact</Link>
           </nav>
-          <a
+          <Link
             href="/#contact"
             className="btn-primary"
             onClick={closeMenu}
             style={{ marginTop: '1rem', justifyContent: 'center' }}
           >
             Séance découverte →
-          </a>
+          </Link>
         </div>
       )}
 
