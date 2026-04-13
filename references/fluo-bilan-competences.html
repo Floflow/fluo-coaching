@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilan de compétences — Fluo Coaching</title>
+  <meta name="description" content="Un accompagnement structuré pour comprendre pourquoi tu n'avances plus — et décider sereinement de la suite. Éligible CPF. 1 800 € TTC." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =============================================
+       VARIABLES — Charte Fluo Coaching
+    ============================================= */
+    :root {
+      --bg:           #F8F5EF;
+      --bg-alt:       #EDEAE0;
+      --bg-dark:      #1E3830;
+      --text:         #1E3830;
+      --text-mid:     #4A7060;
+      --text-light:   #8AAE9E;
+      --border:       #C8D9D2;
+      --fluo:         #F5F033;
+      --fluo-soft:    rgba(245, 240, 51, 0.35);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, sans-serif;
+      --radius-sm:    4px;
+      --radius-md:    10px;
+      --radius-lg:    20px;
+      --max-w:        1100px;
+    }
+
+    /* =============================================
+       BASE
+    ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* =============================================
+       LAYOUT
+    ============================================= */
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+    }
+    .section { padding: 6rem 0; }
+    .section-alt { background: var(--bg-alt); }
+    .section-dark {
+      background: var(--bg-dark);
+      color: #fff;
+    }
+
+    /* =============================================
+       TYPOGRAPHIE UTILITAIRES
+    ============================================= */
+    .label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-light);
+    }
+    .label-dark {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--text);
+      margin-top: 0.5rem;
+      isolation: isolate;
+    }
+    .section-title-dark {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: #fff;
+      margin-top: 0.5rem;
+    }
+
+    /* Highlight — pseudo-élément derrière le texte */
+    .hl {
+      position: relative;
+      color: var(--text);
+      font-style: normal;
+      padding: 0 5px;
+      white-space: nowrap;
+      display: inline;
+    }
+    .hl::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 4px;
+      bottom: -4px;
+      background: var(--fluo);
+      border-radius: 3px;
+      z-index: -1;
+    }
+    /* Sur fond sombre (CTA vert) : même effet mais sans z-index négatif */
+    .cta-inner .hl {
+      color: var(--text);
+      background: var(--fluo);
+      padding: 2px 5px 3px;
+      border-radius: 3px;
+      position: static;
+    }
+    .cta-inner .hl::before { display: none; }
+    .hl-soft {
+      background: var(--fluo-soft);
+      padding: 0 4px 1px;
+      border-radius: 2px;
+    }
+
+    /* =============================================
+       BADGES
+    ============================================= */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 100px;
+    }
+    .badge-fluo {
+      background: var(--fluo);
+      color: var(--text);
+    }
+    .badge-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-mid);
+    }
+    .badge-outline-light {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.25);
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* =============================================
+       BOUTONS
+    ============================================= */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--fluo);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 0.7rem 1.5rem;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      transition: transform 0.18s, box-shadow 0.18s;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px rgba(245, 240, 51, 0.4);
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      padding: 13px 27px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+    .btn-secondary:hover {
+      border-color: var(--text-mid);
+      background: rgba(255,255,255,0.5);
+    }
+    .btn-ghost-light {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: rgba(255,255,255,0.7);
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      padding: 13px 27px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255,255,255,0.2);
+      cursor: pointer;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .btn-ghost-light:hover {
+      color: #fff;
+      border-color: rgba(255,255,255,0.5);
+    }
+
+    /* =============================================
+       ANIMATIONS
+    ============================================= */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.65s ease forwards;
+    }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+    .delay-5 { animation-delay: 0.5s; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* =============================================
+       1. INTRO PAGE BILAN
+    ============================================= */
+    .page-intro {
+      padding: 4rem 0 4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-intro-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .page-intro-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 4vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--text);
+      margin: 1rem 0 1.25rem;
+      isolation: isolate;
+    }
+    .page-intro-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.8;
+      max-width: 460px;
+      margin-bottom: 1rem;
+    }
+    .page-intro-list {
+      list-style: none;
+      margin: 0 0 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .page-intro-list li {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--text-mid);
+      padding-left: 1.1rem;
+      position: relative;
+      line-height: 1.5;
+    }
+    .page-intro-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--text-light);
+      font-size: 12px;
+    }
+    .page-intro-note {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.7;
+      max-width: 460px;
+      margin-bottom: 2rem;
+    }
+    .page-intro-note strong {
+      font-weight: 500;
+      color: var(--text-mid);
+    }
+    .page-intro-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-intro-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--fluo);
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-bottom: 1.75rem;
+    }
+    .info-cell {
+      background: var(--bg);
+      padding: 1.25rem 1rem;
+    }
+    .info-cell-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.4rem;
+    }
+    .info-cell-value {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+    }
+    .info-cell-sub {
+      font-size: 11px;
+      font-weight: 300;
+      color: var(--text-light);
+      margin-top: 0.25rem;
+    }
+    .financing-note {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 1rem 1.25rem;
+      background: rgba(245, 240, 51, 0.12);
+      border: 1px solid rgba(245, 240, 51, 0.4);
+      border-radius: var(--radius-md);
+    }
+    .financing-note-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--fluo);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .financing-note p {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .financing-note strong {
+      font-weight: 500;
+    }
+
+    /* =============================================
+       2. POUR QUI
+    ============================================= */
+    .profiles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+    .profile-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.75rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .profile-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(30,56,48,0.08);
+    }
+    .profile-num {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--fluo);
+      line-height: 1;
+      margin-bottom: 1rem;
+      -webkit-text-stroke: 1px var(--border);
+      /* on simule le numéro avec fond */
+    }
+    .profile-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+    .profile-items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .profile-items li {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--text-mid);
+      padding-left: 1rem;
+      position: relative;
+    }
+    .profile-items li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--text-light);
+      font-size: 12px;
+    }
+
+    /* =============================================
+       3. LES 3 PHASES (méthode officielle)
+    ============================================= */
+    .phases-intro {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .phases-intro p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.8;
+      margin-top: 1rem;
+    }
+    .phases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .phase-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .phase-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(26,26,23,0.08);
+    }
+    .phase-num {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 700;
+      color: #F9F002;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .phase-eyebrow {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+    .phase-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+    .phase-desc {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.75;
+    }
+    .phase-items {
+      list-style: none;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .phase-items li {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--text-mid);
+      padding-left: 1rem;
+      position: relative;
+      line-height: 1.5;
+    }
+    .phase-items li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--text-light);
+      font-size: 12px;
+    }
+
+    /* =============================================
+       4. CE QUE TU REPARS AVEC
+    ============================================= */
+    .livrables-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin-top: 3.5rem;
+    }
+    .livrables-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .livrable-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .livrable-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--fluo);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .livrable-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+    .livrable-text h4 {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+    .livrable-text p {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+    .livrable-visual {
+      background: var(--bg-dark);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .livrable-visual::before {
+      content: '';
+      position: absolute;
+      bottom: -40px; right: -40px;
+      width: 200px; height: 200px;
+      background: var(--fluo-soft);
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+    .livrable-quote {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-style: italic;
+      font-weight: 400;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .livrable-quote::before {
+      content: '"';
+      font-size: 4rem;
+      color: var(--fluo);
+      opacity: 0.4;
+      position: absolute;
+      top: -1.5rem;
+      left: -0.5rem;
+      font-style: normal;
+      line-height: 1;
+    }
+    .livrable-quote p {
+      position: relative;
+    }
+    .livrable-author {
+      font-size: 13px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* =============================================
+       5. MODALITÉS (bande dark)
+    ============================================= */
+    .modalites-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.08);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-top: 3.5rem;
+    }
+    .modalite-cell {
+      background: rgba(255,255,255,0.04);
+      padding: 2rem 1.5rem;
+      transition: background 0.2s ease;
+    }
+    .modalite-cell:hover {
+      background: rgba(255,255,255,0.07);
+    }
+    .modalite-icon {
+      width: 36px;
+      height: 36px;
+      margin-bottom: 1rem;
+      opacity: 0.6;
+    }
+    .modalite-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 0.5rem;
+    }
+    .modalite-value {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 0.35rem;
+    }
+    .modalite-detail {
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.5;
+    }
+
+    /* =============================================
+       6. PLATEFORME / MÉTHODE
+    ============================================= */
+    .methode-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 680px;
+    }
+    .methode-text .section-title {
+      margin-bottom: 1.5rem;
+    }
+    .methode-text p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .methode-features {
+      list-style: none;
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .methode-features li {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .methode-features li::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 3px;
+      background: var(--fluo);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .methode-visual {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+    }
+    .methode-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .timeline-step {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 1rem;
+    }
+    .timeline-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .timeline-dot {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .timeline-dot.active {
+      background: var(--fluo);
+      border-color: var(--fluo);
+    }
+    .timeline-dot span {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-mid);
+    }
+    .timeline-dot.active span {
+      color: var(--text);
+    }
+    .timeline-line {
+      width: 1.5px;
+      flex: 1;
+      min-height: 1.5rem;
+      background: var(--border);
+      margin: 4px 0;
+    }
+    .timeline-content {
+      padding-bottom: 1.75rem;
+    }
+    .timeline-content h4 {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 4px;
+      margin-top: 10px;
+    }
+    .timeline-content p {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    /* =============================================
+       7. TÉMOIGNAGE
+    ============================================= */
+    .temoignage-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 4rem 0;
+    }
+    .temoignage-quote {
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem, 3vw, 1.8rem);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .temoignage-quote::before,
+    .temoignage-quote::after {
+      content: '"';
+      font-size: 4rem;
+      color: var(--fluo);
+      font-style: normal;
+      line-height: 0;
+      vertical-align: -1.5rem;
+    }
+    .temoignage-quote::after { content: '"'; }
+    .temoignage-author {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .temoignage-role {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--text-mid);
+      margin-top: 3px;
+    }
+
+    /* =============================================
+       SECTION FLORIANE — grille + carte sticky
+    ============================================= */
+    .floriane-trust-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 5rem;
+      align-items: start;
+    }
+    .floriane-trust-card-wrap {
+      position: sticky;
+      top: 160px;
+    }
+    .floriane-trust-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .floriane-trust-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--fluo);
+    }
+    @media (max-width: 900px) {
+      .floriane-trust-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .floriane-trust-card-wrap {
+        position: static;
+      }
+    }
+
+    /* =============================================
+       8. CTA FINAL
+    ============================================= */
+    .cta-section {
+      padding: 5rem 0;
+    }
+    .cta-inner {
+      background: var(--bg-dark);
+      border-radius: 24px;
+      padding: 5rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-inner::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: 500px; height: 300px;
+      background: var(--fluo-soft);
+      border-radius: 50%;
+      filter: blur(100px);
+      pointer-events: none;
+    }
+    .cta-inner * { position: relative; }
+    .cta-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      isolation: isolate;
+    }
+    .cta-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.6);
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cta-note {
+      margin-top: 1.5rem;
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* =============================================
+       RESPONSIVE
+    ============================================= */
+    @media (max-width: 900px) {
+      .page-intro-inner,
+      .livrables-grid,
+      .methode-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .profiles-grid,
+      .phases-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .modalites-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .phases-grid::before { display: none; }
+      .page-intro { padding: 3rem 0; }
+      .section { padding: 4rem 0; }
+      .cta-inner { padding: 3rem 1.5rem; }
+      .header-nav { display: none; }
+    }
+    @media (max-width: 600px) {
+      .info-grid,
+      .modalites-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .container { padding: 0 1.25rem; }
+      .page-intro-title { font-size: 2rem; }
+    }
+
+    /* =============================================
+       HEADER
+    ============================================= */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .header-logo { flex-shrink: 0; }
+    .logo-lockup { display: flex; align-items: center; gap: 0; }
+    .logo-sep {
+      width: 1px;
+      height: 36px;
+      background: var(--border);
+      margin: 0 1.1rem;
+      flex-shrink: 0;
+    }
+    .logo-tagline { display: flex; flex-direction: column; gap: 4px; }
+    .logo-tagline-top {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text);
+      white-space: nowrap;
+      line-height: 1.3;
+    }
+    .logo-tagline-sub {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--text-mid);
+      white-space: nowrap;
+      line-height: 1.3;
+    }
+    @media (max-width: 1100px) {
+      .logo-sep     { display: none; }
+      .logo-tagline { display: none; }
+    }
+    .header-nav { display: flex; align-items: center; gap: 2rem; }
+    .header-nav a {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text);
+      transition: color 0.2s;
+    }
+    .header-nav a:hover { color: #000; }
+    .header-nav a.active { font-weight: 500; }
+    .btn-arrow { transition: transform 0.18s; }
+    .btn-primary:hover .btn-arrow { transform: translateX(3px); }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-shrink: 0;
+    }
+    .burger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 36px;
+      height: 36px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .burger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+      transform-origin: center;
+    }
+    .burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .burger.open span:nth-child(2) { opacity: 0; }
+    .burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      padding: 1.25rem 2.5rem 1.5rem;
+      border-top: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu nav {
+      display: flex;
+      flex-direction: column;
+    }
+    .mobile-menu nav a {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--text);
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+    .mobile-menu nav a:last-child { border-bottom: none; }
+    .mobile-menu nav a:hover { color: var(--text-mid); }
+    @media (max-width: 900px) {
+      .header-nav { display: none; }
+      .burger { display: flex; }
+      .header-right .btn-primary { display: none; }
+    }
+    @media (min-width: 901px) {
+      .mobile-menu { display: none !important; }
+    }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    .footer {
+      background: var(--bg-dark);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 3rem 0;
+    }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .footer-links { display: flex; gap: 2rem; }
+    .footer-links a {
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.3);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.6); }
+    .footer-copy {
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =============================================
+       HEADER
+  ============================================= -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+
+        <a href="/" class="header-logo" aria-label="Fluo Coaching — accueil">
+          <div class="logo-lockup">
+            <svg class="logo-svg" width="190" height="44" viewBox="0 0 240 88" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <clipPath id="hUTop"><rect x="100" y="0"  width="72" height="56"/></clipPath>
+                <clipPath id="hUBot"><rect x="100" y="56" width="72" height="36"/></clipPath>
+              </defs>
+              <text x="4"   y="82" font-family="Georgia,serif" font-size="82" font-weight="700" fill="#1E3830">F</text>
+              <text x="54"  y="82" font-family="Georgia,serif" font-size="82" font-weight="700" fill="#1E3830">L</text>
+              <ellipse cx="175" cy="46" rx="38" ry="38" fill="#FFFF33"/>
+              <text x="152" y="82" font-family="Georgia,serif" font-size="82" font-weight="700" fill="#1E3830"
+                    transform="skewX(-15) translate(16,0)">O</text>
+              <text x="100" y="62" font-family="Georgia,serif" font-size="82" font-weight="700" fill="#1E3830"
+                    clip-path="url(#hUTop)">U</text>
+              <text x="100" y="62" font-family="Georgia,serif" font-size="82" font-weight="700" fill="#1E3830"
+                    clip-path="url(#hUBot)">U</text>
+            </svg>
+            <div class="logo-sep" aria-hidden="true"></div>
+            <div class="logo-tagline">
+              <span class="logo-tagline-top">Coaching &amp; Bilan de Compétences</span>
+              <span class="logo-tagline-sub">Mettre en lumière ce qui compte</span>
+            </div>
+          </div>
+        </a>
+
+        <nav class="header-nav" aria-label="Navigation principale">
+          <a href="/">Accueil</a>
+          <a href="/bilan" class="active">Bilan de compétences</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+
+        <div class="header-right">
+          <a href="/#contact" class="btn-primary">
+            Séance découverte <span class="btn-arrow">→</span>
+          </a>
+          <!-- Burger mobile -->
+          <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" onclick="toggleMenu(this)">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Menu mobile déroulant -->
+    <div class="mobile-menu" id="mobile-menu">
+      <nav>
+        <a href="/" onclick="closeMenu()">Accueil</a>
+        <a href="/bilan" onclick="closeMenu()">Bilan de compétences</a>
+        <a href="/#contact" onclick="closeMenu()">Contact</a>
+      </nav>
+      <a href="/#contact" class="btn-primary" style="margin-top: 1rem; justify-content: center;" onclick="closeMenu()">
+        Séance découverte →
+      </a>
+    </div>
+
+  </header>
+
+  <!-- =============================================
+       INTRO PAGE BILAN
+  ============================================= -->
+  <section class="page-intro">
+    <div class="container">
+
+      <div class="page-intro-inner">
+        <div class="page-intro-text">
+          <p class="label fade-in">Accompagnement individuel · Éligible CPF</p>
+          <h1 class="page-intro-title fade-in delay-1">
+            Bilan de compétences
+          </h1>
+          <p class="page-intro-sub fade-in delay-2">
+            Un accompagnement structuré pour comprendre où tu en es, explorer les possibles et décider sereinement de la suite — avec un plan d'action que tu auras construit toi-même.
+          </p>
+
+          <p class="page-intro-sub fade-in delay-2" style="margin-top: -0.75rem;">
+            À l'issue du bilan, tu seras capable de mettre en lumière :
+          </p>
+
+          <ul class="page-intro-list fade-in delay-3">
+            <li style="font-size: 1rem; font-weight: 300; color: var(--text-mid); line-height: 1.8;">Tes besoins liés au travail et les leviers de ta motivation</li>
+            <li style="font-size: 1rem; font-weight: 300; color: var(--text-mid); line-height: 1.8;">Tes préférences innées, forces et axes de développement</li>
+            <li style="font-size: 1rem; font-weight: 300; color: var(--text-mid); line-height: 1.8;">Les étapes concrètes de ton plan d'action</li>
+          </ul>
+
+          <div class="hero-bilan-ctas fade-in delay-4">
+            <a href="#contact" class="btn-primary">Séance découverte gratuite →</a>
+          </div>
+        </div>
+
+        <!-- Timeline parcours — côté droit de l'intro -->
+        <div class="page-intro-card fade-in delay-2">
+          <p style="font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light); margin-bottom: 1.5rem;">Le parcours pas à pas</p>
+
+          <div class="methode-timeline">
+
+            <div class="timeline-step">
+              <div class="timeline-left">
+                <div class="timeline-dot"><span>1</span></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <h4>Entretien découverte gratuit</h4>
+                <p>On se rencontre, j'explique la démarche et on évalue ensemble si le bilan te correspond.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-left">
+                <div class="timeline-dot active"><span>2</span></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <h4>Phase préliminaire</h4>
+                <p>Analyse de ta demande, définition du cadre et du format adapté.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-left">
+                <div class="timeline-dot active"><span>3</span></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <h4>Phase d'investigation</h4>
+                <p>Exploration de tes compétences, motivations et valeurs. Construction de ton projet.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-left">
+                <div class="timeline-dot active"><span>4</span></div>
+              </div>
+              <div class="timeline-content">
+                <h4>Phase de conclusion</h4>
+                <p>Synthèse, plan d'action, document final. Tu repars avec de la clarté et une direction.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       LES 3 PHASES — méthode officielle
+  ============================================= -->
+  <section class="section section-alt" id="phases">
+    <div class="container">
+
+      <div class="phases-intro">
+        <p class="label">La méthode</p>
+        <h2 class="section-title">
+          Un accompagnement structuré<br>
+          en <span class="hl">3 phases</span>
+        </h2>
+        <p style="font-size: 1rem; font-weight: 300; color: var(--text-mid); line-height: 1.8; margin-top: 1rem;">Chaque phase a un objectif précis. Tu avances à ton rythme, avec un suivi individualisé à chaque étape.</p>
+      </div>
+
+      <div class="phases-grid">
+
+        <!-- Phase 1 -->
+        <div class="phase-card fade-in delay-1">
+          <p class="phase-num">01</p>
+          <p class="phase-eyebrow">Phase préliminaire</p>
+          <h3 class="phase-title">Analyser la demande</h3>
+          <p class="phase-desc">On commence par clarifier ta situation, ta demande et tes besoins. C'est la base de tout accompagnement sur mesure.</p>
+          <ul class="phase-items">
+            <li>Échange sur tes attentes et ton contexte</li>
+            <li>Définition du format adapté à ta situation</li>
+            <li>Présentation de la charte déontologique</li>
+          </ul>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="phase-card fade-in delay-2">
+          <p class="phase-num">02</p>
+          <p class="phase-eyebrow">Phase d'investigation</p>
+          <h3 class="phase-title">Construire ton projet</h3>
+          <p class="phase-desc">Le cœur du bilan. On explore tes compétences, tes motivations, tes valeurs — pour faire émerger un projet professionnel cohérent.</p>
+          <ul class="phase-items">
+            <li>Identification de tes compétences et aptitudes</li>
+            <li>Exploration de tes motivations et valeurs</li>
+            <li>Construction et vérification du projet</li>
+            <li>Élaboration d'alternatives si besoin</li>
+          </ul>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="phase-card fade-in delay-3">
+          <p class="phase-num">03</p>
+          <p class="phase-eyebrow">Phase de conclusion</p>
+          <h3 class="phase-title">Décider de la suite</h3>
+          <p class="phase-desc">On fait la synthèse de tout le travail réalisé. Tu repars avec un plan d'action concret que tu as construit toi-même.</p>
+          <ul class="phase-items">
+            <li>Synthèse des compétences et du projet</li>
+            <li>Plan d'action pour la mise en œuvre</li>
+            <li>Document de synthèse — ta seule propriété</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       CE QUE TU REPARS AVEC
+  ============================================= -->
+  <section class="section" id="livrables">
+    <div class="container">
+
+      <p class="label fade-in">À la fin du bilan</p>
+      <h2 class="section-title fade-in delay-1" style="margin-bottom: 3rem;">
+        Tu repars avec des décisions<br>
+        qui <span class="hl">te ressemblent</span>
+      </h2>
+
+      <div style="margin-top: 3.5rem;">
+
+        <ul class="livrables-list">
+
+            <li class="livrable-item fade-in delay-1">
+              <div class="livrable-icon">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <path d="M13.5 2h-11A1.5 1.5 0 001 3.5v9A1.5 1.5 0 002.5 14h11a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0013.5 2zM4 5.5h8v1.5H4V5.5zm0 3h6V10H4V8.5z" fill="#1E3830"/>
+                </svg>
+              </div>
+              <div class="livrable-text">
+                <h4>Un document de synthèse complet</h4>
+                <p>Analyse de tes compétences, définition de ton projet, conditions de réalisation. Il t'appartient entièrement — confidentiel.</p>
+              </div>
+            </li>
+
+            <li class="livrable-item fade-in delay-2">
+              <div class="livrable-icon">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <path d="M8 1a7 7 0 100 14A7 7 0 008 1zm.75 4.75V8.5H11v1.5H7.25V5.75h1.5z" fill="#1E3830"/>
+                </svg>
+              </div>
+              <div class="livrable-text">
+                <h4>Un plan d'action concret</h4>
+                <p>Que tu as construit toi-même, grâce au questionnement. Pas un plan générique — le tien, ancré dans ta réalité.</p>
+              </div>
+            </li>
+
+            <li class="livrable-item fade-in delay-3">
+              <div class="livrable-icon">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zm3.03 4.97L7.5 10l-2.03-2.03 1.06-1.06L7.5 7.88l2.47-2.47 1.06 1.06z" fill="#1E3830"/>
+                </svg>
+              </div>
+              <div class="livrable-text">
+                <h4>La clarté pour décider sereinement</h4>
+                <p>Pas de saut dans le vide. Un choix conscient, appuyé sur une vraie connaissance de toi-même.</p>
+              </div>
+            </li>
+
+            <li class="livrable-item fade-in delay-4">
+              <div class="livrable-icon">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <path d="M2 3.5A1.5 1.5 0 013.5 2h9A1.5 1.5 0 0114 3.5v2A1.5 1.5 0 0112.5 7h-9A1.5 1.5 0 012 5.5v-2zm0 7A1.5 1.5 0 013.5 9h9a1.5 1.5 0 011.5 1.5v2a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 12.5v-2z" fill="#1E3830"/>
+                </svg>
+              </div>
+              <div class="livrable-text">
+                <h4>Accès à la plateforme pendant 1 an</h4>
+                <p>Questionnaires, tests, outils et ressources disponibles tout au long de l'accompagnement et après.</p>
+              </div>
+            </li>
+
+            <li class="livrable-item fade-in delay-5">
+              <div class="livrable-icon">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <path d="M5 1a1 1 0 00-1 1v1H3a2 2 0 00-2 2v9a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2h-1V2a1 1 0 10-2 0v1H6V2a1 1 0 00-1-1zM3 7h10v7H3V7zm2 2v2h2V9H5zm4 0v2h2V9H9z" fill="#1E3830"/>
+                </svg>
+              </div>
+              <div class="livrable-text">
+                <h4>Un rendez-vous de suivi à 6 mois</h4>
+                <p>On se retrouve 6 mois après la fin du bilan pour faire le point — voir où tu en es, ce qui a avancé, ce qui reste à ajuster.</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       CONFIANCE / FLORIANE + MÉTHODE
+  ============================================= -->
+  <!-- =============================================
+       CONFIANCE / FLORIANE + MÉTHODE
+  ============================================= -->
+  <section class="section section-alt" id="floriane">
+    <div class="container">
+      <div class="floriane-trust-grid">
+
+        <!-- Texte gauche -->
+        <div class="floriane-trust-text">
+          <p class="label fade-in">Pourquoi me faire confiance</p>
+          <h2 class="section-title fade-in delay-1">
+            Une méthode<br>
+            éprouvée. Un<br>
+            regard <span class="hl">neuf.</span>
+          </h2>
+
+          <p class="fade-in delay-2" style="font-size: 1rem; font-weight: 300; color: var(--text-mid); line-height: 1.8; margin-top: 1.5rem;">
+            Il n'est pas nécessaire de tout changer pour trouver ce qui te correspond. Il n'existe pas de modèle universel de réussite — seulement le tien. Mon rôle est de t'apporter un cadre, du recul et de la lucidité pour que tu puisses décider sereinement de la suite.
+          </p>
+
+          <p class="fade-in delay-3" style="font-size: 1rem; font-weight: 300; color: var(--text-mid); line-height: 1.8; margin-top: 1rem;">
+            Aider les gens qui m'entourent à mettre en lumière ce qui compte vraiment pour eux, c'est quelque chose qui m'a toujours animée. Alors quand l'occasion s'est présentée d'en faire mon métier, ça s'est imposé comme une évidence — et chaque accompagnement le confirme un peu plus.
+          </p>
+
+          <p class="fade-in delay-4" style="font-size: 1rem; font-weight: 300; color: var(--text-mid); line-height: 1.8; margin-top: 1rem;">
+            Parce que dans un quotidien souvent guidé par la performance et l'urgence, s'arrêter pour réfléchir à ce qui compte vraiment pour soi, ça n'arrive pas tout seul. C'est précisément pour ça que j'ai voulu créer un espace où l'on peut faire exactement ça : prendre le temps, clarifier, et faire émerger des pistes concrètes et motivantes — à son rythme, sans jugement. C'est ce qui donne tout son sens à mon travail, et ce que j'ai hâte de faire avec toi.
+          </p>
+
+          <p class="fade-in delay-4" style="font-size: 1rem; font-weight: 300; color: var(--text-mid); line-height: 1.8; margin-top: 1rem;">
+            Je travaille en partenariat avec <strong style="font-weight: 500; color: var(--text);">e-coaching associates</strong>, organisme de formation certifié Qualiopi, reconnu CPF. La méthode est rigoureuse, le cadre éthique, les résultats t'appartiennent entièrement.
+          </p>
+
+          <div style="margin-top: 2rem;" class="fade-in delay-5">
+            <a href="#contact" class="btn-primary">Prendre rendez-vous →</a>
+          </div>
+        </div>
+
+        <!-- Carte sticky droite -->
+        <div class="floriane-trust-card-wrap">
+          <div class="floriane-trust-card">
+
+            <div class="info-grid">
+              <div class="info-cell">
+                <p class="info-cell-label">Durée</p>
+                <p class="info-cell-value">Jusqu'à 24h</p>
+                <p class="info-cell-sub">Variable selon tes besoins</p>
+              </div>
+              <div class="info-cell">
+                <p class="info-cell-label">Format</p>
+                <p class="info-cell-value">Individuel</p>
+                <p class="info-cell-sub">En ligne ou présentiel</p>
+              </div>
+              <div class="info-cell">
+                <p class="info-cell-label">Tarif</p>
+                <p class="info-cell-value">1 800 € TTC</p>
+                <p class="info-cell-sub">Particuliers</p>
+              </div>
+              <div class="info-cell">
+                <p class="info-cell-label">Accès plateforme</p>
+                <p class="info-cell-value">1 an complet</p>
+                <p class="info-cell-sub">Outils &amp; questionnaires</p>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem; border-radius: var(--radius-sm);">
+              Séance découverte gratuite →
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- =============================================
+       CTA FINAL
+  ============================================= -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 class="cta-title">
+          Prête à <span class="hl">comprendre</span><br>
+          avant de décider ?
+        </h2>
+        <p class="cta-sub">
+          Un choix professionnel doit toujours être un choix conscient — pas un saut dans le vide. Commençons par un échange simple, sans engagement.
+        </p>
+        <div class="cta-buttons">
+          <a href="#rdv" class="btn-primary">Réserver un appel découverte →</a>
+          <a href="#" class="btn-ghost-light">Télécharger le programme</a>
+        </div>
+        <p class="cta-note">Réponse sous 48h · Aucun engagement · Éligible CPF</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <svg width="110" height="32" viewBox="0 0 240 88" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="fUTop"><rect x="100" y="0"  width="72" height="56"/></clipPath>
+            <clipPath id="fUBot"><rect x="100" y="56" width="72" height="36"/></clipPath>
+          </defs>
+          <text x="4"   y="82" font-family="Georgia,serif" font-size="82" font-weight="700" fill="rgba(255,255,255,0.75)">F</text>
+          <text x="54"  y="82" font-family="Georgia,serif" font-size="82" font-weight="700" fill="rgba(255,255,255,0.75)">L</text>
+          <text x="152" y="82" font-family="Georgia,serif" font-size="82" font-weight="700" fill="#FFFF33" transform="skewX(-15) translate(16,0)">O</text>
+          <text x="100" y="62" font-family="Georgia,serif" font-size="82" font-weight="700" fill="rgba(255,255,255,0.75)" clip-path="url(#fUTop)">U</text>
+          <text x="100" y="62" font-family="Georgia,serif" font-size="82" font-weight="700" fill="rgba(255,255,255,0.75)" clip-path="url(#fUBot)">U</text>
+        </svg>
+
+        <div class="footer-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="/#contact">Contact</a>
+        </div>
+
+        <p class="footer-copy">© 2026 Fluo Coaching · Floriane M.</p>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Script d'animation au scroll -->
+  <script>
+    // Intersection Observer pour les animations au scroll
+    const observerOptions = {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Pause les animations jusqu'à ce qu'elles soient visibles
+    document.querySelectorAll('.fade-in').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
+  <script>
+    function toggleMenu(btn) {
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', btn.classList.contains('open'));
+      document.getElementById('mobile-menu').classList.toggle('open');
+    }
+    function closeMenu() {
+      document.querySelector('.burger')?.classList.remove('open');
+      document.getElementById('mobile-menu')?.classList.remove('open');
+    }
+  </script>
+
+</body>
+</html>
