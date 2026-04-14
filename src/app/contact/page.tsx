@@ -24,7 +24,7 @@ export default function Contact() {
           <div className="container">
             <p className="label fade-in">On fait le point ?</p>
             <h1 className="page-intro-title fade-in fade-in-delay-1" style={{ marginTop: '0.75rem', marginBottom: '0.75rem' }}>
-              Parlons de toi
+              Parlons de <span className="hl">toi</span>
             </h1>
             <p style={{
               fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)',
