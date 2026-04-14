@@ -1168,6 +1168,52 @@ a {
   color: rgba(255,255,255,0.35);
 }
 
+/* =============================================
+   PAGE CONTACT
+============================================= */
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.contact-page-sep {
+  background: var(--border);
+  align-self: stretch;
+}
+
+.contact-page-bloc {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs version fond clair */
+.form-input-light {
+  background: var(--bg-alt);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.form-input-light:focus {
+  border-color: var(--text-mid);
+  background: #fff;
+}
+
+.form-input-light::placeholder { color: var(--text-light); }
+
+.form-check-label-light {
+  color: var(--text-mid);
+}
+
+@media (max-width: 900px) {
+  .contact-page-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .contact-page-sep { display: none; }
+}
+
 /* ── Responsive bilan ── */
 @media (max-width: 900px) {
   .page-intro { padding: 2rem 0; }

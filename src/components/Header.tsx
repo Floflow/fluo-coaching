@@ -84,7 +84,7 @@ export default function Header() {
             <a href="/bilan-de-competences" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
               Bilan de compétences
             </a>
-            <a href="/#contact" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
+            <a href="/contact" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
               Contact
             </a>
           </nav>
@@ -117,7 +117,7 @@ export default function Header() {
           <nav>
             <a href="/" onClick={closeMenu}>Accueil</a>
             <a href="/bilan-de-competences" onClick={closeMenu}>Bilan de compétences</a>
-            <a href="/#contact" onClick={closeMenu}>Contact</a>
+            <a href="/contact" onClick={closeMenu}>Contact</a>
           </nav>
           <CalendlyButton
             className="btn-primary"
