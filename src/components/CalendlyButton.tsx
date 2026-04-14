@@ -12,8 +12,9 @@ type Props = {
 export default function CalendlyButton({ children, className, style, dataTrack }: Props) {
   function openCalendly(e: React.MouseEvent) {
     e.preventDefault()
-    if (typeof window !== 'undefined' && (window as any).Calendly) {
-      ;(window as any).Calendly.initPopupWidget({ url: CALENDLY_URL })
+    const w = window as Window & { Calendly?: { initPopupWidget: (opts: { url: string }) => void } }
+    if (typeof window !== 'undefined' && w.Calendly) {
+      w.Calendly.initPopupWidget({ url: CALENDLY_URL })
     }
   }
 
