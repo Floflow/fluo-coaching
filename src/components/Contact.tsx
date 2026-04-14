@@ -3,6 +3,10 @@
 // Référence visuelle : fluo-accueil.html — section "CONTACT" (ligne 1593)
 // ─────────────────────────────────────────
 
+'use client'
+
+import CalendlyButton from './CalendlyButton'
+
 export default function Contact() {
   return (
     <section
@@ -24,13 +28,9 @@ export default function Contact() {
             <p className="contact-desc fade-in">
               30 minutes pour se présenter, comprendre ta situation et répondre à toutes tes questions.
             </p>
-            <a
-              href="#contact"
-              className="btn-fluo-dark fade-in fade-in-delay-1"
-              data-track="cta-booking"
-            >
+            <CalendlyButton className="btn-fluo-dark fade-in fade-in-delay-1" dataTrack="cta-booking">
               Choisir un créneau <span className="btn-arrow">→</span>
-            </a>
+            </CalendlyButton>
           </div>
 
           {/* Formulaire droite */}
