@@ -5,7 +5,7 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import CalendlyButton from '@/components/CalendlyButton'
+import CalendlyInline from '@/components/CalendlyInline'
 
 export const metadata: Metadata = {
   title: 'Contact — Fluo Coaching',
@@ -30,7 +30,7 @@ export default function Contact() {
               fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)',
               lineHeight: 1.8, maxWidth: '520px',
             }} className="fade-in fade-in-delay-2">
-              Choisis ce qui te convient le mieux — un appel ou un message écrit.
+              Choisis ce qui te convient le mieux — réserver un créneau ou m&rsquo;envoyer un message.
               Dans les deux cas, je te réponds personnellement.
             </p>
           </div>
@@ -41,39 +41,10 @@ export default function Contact() {
           <div className="container">
             <div className="contact-page-grid">
 
-              {/* Bloc gauche — Calendly */}
-              <div className="contact-page-bloc fade-in">
-                <p className="label" style={{ marginBottom: '1rem' }}>Séance découverte gratuite</p>
-                <h2 style={{
-                  fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 2.5vw, 2rem)',
-                  fontWeight: 700, lineHeight: 1.2, color: 'var(--text)', marginBottom: '1.25rem',
-                }}>
-                  30 minutes,<br />sans engagement
-                </h2>
-                <p style={{ fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8, marginBottom: '0.75rem' }}>
-                  On se rencontre, je t&rsquo;explique la démarche et on évalue ensemble si le bilan ou le coaching te correspond.
-                </p>
-                <ul style={{ listStyle: 'none', marginBottom: '2rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                  {[
-                    'Échange sur ta situation actuelle',
-                    'Présentation de l\'accompagnement',
-                    'Réponses à toutes tes questions',
-                  ].map((item) => (
-                    <li key={item} style={{
-                      fontSize: '0.95rem', fontWeight: 300, color: 'var(--text-mid)',
-                      paddingLeft: '1.1rem', position: 'relative', lineHeight: 1.6,
-                    }}>
-                      <span style={{ position: 'absolute', left: 0, color: 'var(--text-light)', fontSize: '12px' }}>—</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <CalendlyButton className="btn-primary" dataTrack="cta-contact-calendly">
-                  Choisir un créneau <span className="btn-arrow">→</span>
-                </CalendlyButton>
-                <p style={{ marginTop: '0.75rem', fontSize: '12px', fontWeight: 300, color: 'var(--text-light)' }}>
-                  Réponse sous 48h · Éligible CPF
-                </p>
+              {/* Bloc gauche — Calendly inline */}
+              <div className="fade-in">
+                <p className="label" style={{ marginBottom: '1.25rem' }}>Séance découverte gratuite</p>
+                <CalendlyInline />
               </div>
 
               {/* Séparateur vertical */}
