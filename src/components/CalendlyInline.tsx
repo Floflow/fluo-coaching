@@ -1,7 +1,7 @@
 'use client'
 
 const CALENDLY_URL =
-  'https://calendly.com/floperrindb/30min?background_color=F8F5EF&text_color=1E3830&primary_color=CCCC00'
+  'https://calendly.com/floperrindb/30min?background_color=F8F5EF&text_color=1E3830&primary_color=CCCC00&hide_gdpr_banner=1'
 
 export default function CalendlyInline() {
   return (
