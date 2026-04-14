@@ -1,6 +1,6 @@
 'use client'
 
-const CALENDLY_URL = 'https://calendly.com/floperrindb'
+const CALENDLY_URL = 'https://calendly.com/floperrindb?locale=fr'
 
 type Props = {
   children: React.ReactNode
