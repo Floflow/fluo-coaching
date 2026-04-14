@@ -6,6 +6,7 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Contact from '@/components/Contact'
 import CalendlyButton from '@/components/CalendlyButton'
 
 export const metadata: Metadata = {
@@ -307,6 +308,7 @@ export default function BilanDeCompetences() {
         </section>
 
 
+        <Contact />
       </main>
       <Footer />
     </>
