@@ -51,6 +51,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img {
@@ -350,6 +351,13 @@ a {
 
 @media (max-width: 900px) {
   .header-nav { display: none; }
+}
+
+/* =============================================
+   HEADER CTA — masqué sur mobile (présent dans le menu mobile)
+============================================= */
+@media (max-width: 900px) {
+  .header-cta { display: none !important; }
 }
 
 /* =============================================

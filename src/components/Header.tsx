@@ -93,7 +93,7 @@ export default function Header() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
             <a
               href="/#contact"
-              className="btn-primary"
+              className="btn-primary header-cta"
               data-track="cta-header"
             >
               Séance découverte <span className="btn-arrow">→</span>
