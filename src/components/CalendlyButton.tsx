@@ -1,6 +1,6 @@
 'use client'
 
-const CALENDLY_URL = 'https://calendly.com/floperrindb'
+const CALENDLY_URL = 'https://calendly.com/floperrindb?background_color=F8F5EF&text_color=1E3830&primary_color=CCCC00'
 
 type Props = {
   children: React.ReactNode
