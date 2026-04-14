@@ -6,6 +6,7 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import CalendlyButton from '@/components/CalendlyButton'
 
 export const metadata: Metadata = {
   title: 'Bilan de compétences — Fluo Coaching',
@@ -146,9 +147,9 @@ export default function BilanDeCompetences() {
                   <li>Les étapes concrètes de ton plan d&rsquo;action</li>
                 </ul>
                 <div className="fade-in fade-in-delay-4">
-                  <a href="#contact" className="btn-primary" data-track="cta-bilan-intro">
+                  <CalendlyButton className="btn-primary" dataTrack="cta-bilan-intro">
                     Séance découverte gratuite <span className="btn-arrow">→</span>
-                  </a>
+                  </CalendlyButton>
                 </div>
               </div>
 
@@ -288,14 +289,13 @@ export default function BilanDeCompetences() {
                       </div>
                     ))}
                   </div>
-                  <a
-                    href="#contact"
+                  <CalendlyButton
                     className="btn-primary"
                     style={{ width: '100%', justifyContent: 'center', marginTop: '1.5rem' }}
-                    data-track="cta-bilan-floriane"
+                    dataTrack="cta-bilan-floriane"
                   >
                     Séance découverte gratuite <span className="btn-arrow">→</span>
-                  </a>
+                  </CalendlyButton>
                 </div>
               </div>
 
@@ -318,9 +318,9 @@ export default function BilanDeCompetences() {
                 pas un saut dans le vide. Commençons par un échange simple, sans engagement.
               </p>
               <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href="#contact" className="btn-primary" data-track="cta-bilan-final">
+                <CalendlyButton className="btn-primary" dataTrack="cta-bilan-final">
                   Réserver un appel découverte <span className="btn-arrow">→</span>
-                </a>
+                </CalendlyButton>
                 <a href="#" className="btn-ghost-light">
                   Télécharger le programme
                 </a>

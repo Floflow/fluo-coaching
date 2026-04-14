@@ -6,6 +6,7 @@
 // ─────────────────────────────────────────
 
 import { useState } from 'react'
+import CalendlyButton from './CalendlyButton'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -90,13 +91,9 @@ export default function Header() {
 
           {/* CTA + Burger */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <a
-              href="/#contact"
-              className="btn-primary header-cta"
-              data-track="cta-header"
-            >
+            <CalendlyButton className="btn-primary header-cta" dataTrack="cta-header">
               Séance découverte <span className="btn-arrow">→</span>
-            </a>
+            </CalendlyButton>
 
             {/* Burger mobile */}
             <button
@@ -122,14 +119,12 @@ export default function Header() {
             <a href="/bilan-de-competences" onClick={closeMenu}>Bilan de compétences</a>
             <a href="/#contact" onClick={closeMenu}>Contact</a>
           </nav>
-          <a
-            href="/#contact"
+          <CalendlyButton
             className="btn-primary"
-            onClick={closeMenu}
             style={{ marginTop: '1rem', justifyContent: 'center' }}
           >
             Séance découverte →
-          </a>
+          </CalendlyButton>
         </div>
       )}
 

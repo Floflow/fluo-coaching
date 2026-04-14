@@ -4,6 +4,7 @@
 // ─────────────────────────────────────────
 
 import HeroCanvas from './HeroCanvas'
+import CalendlyButton from './CalendlyButton'
 
 export default function Hero() {
   return (
@@ -79,13 +80,9 @@ export default function Hero() {
             gap: '1rem',
             flexWrap: 'wrap',
           }}>
-            <a
-              href="#contact"
-              className="btn-primary"
-              data-track="cta-hero"
-            >
+            <CalendlyButton className="btn-primary" dataTrack="cta-hero">
               Séance découverte gratuite <span className="btn-arrow">→</span>
-            </a>
+            </CalendlyButton>
             <a href="#bilan" className="btn-secondary">
               Découvrir le bilan
             </a>
