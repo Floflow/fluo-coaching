@@ -51,6 +51,7 @@ export default function RootLayout({
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
       </head>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: 'if(window.location.hash)history.replaceState(null,"",window.location.pathname+window.location.search)' }} />
         <FloatCanvas />
         <ScrollObserver />
         {children}
