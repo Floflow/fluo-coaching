@@ -303,32 +303,6 @@ export default function BilanDeCompetences() {
           </div>
         </section>
 
-        {/* ══════════════════════════════════════
-            5. CTA FINAL
-        ══════════════════════════════════════ */}
-        <section className="cta-section" id="contact" data-section="cta-bilan">
-          <div className="container">
-            <div className="cta-inner fade-in">
-              <h2 className="cta-title">
-                Prête à <span className="hl-dark">comprendre</span><br />
-                avant de décider ?
-              </h2>
-              <p className="cta-sub">
-                Un choix professionnel doit toujours être un choix conscient —
-                pas un saut dans le vide. Commençons par un échange simple, sans engagement.
-              </p>
-              <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <CalendlyButton className="btn-primary" dataTrack="cta-bilan-final">
-                  Réserver un appel découverte <span className="btn-arrow">→</span>
-                </CalendlyButton>
-                <a href="#" className="btn-ghost-light">
-                  Télécharger le programme
-                </a>
-              </div>
-              <p className="cta-note">Réponse sous 48h · Aucun engagement · Éligible CPF</p>
-            </div>
-          </div>
-        </section>
 
       </main>
       <Footer />
