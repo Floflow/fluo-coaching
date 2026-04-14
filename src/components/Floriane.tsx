@@ -22,11 +22,6 @@ export default function Floriane() {
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
 
-              {/* Badge certification */}
-              <div className="floriane-badge">
-                <p className="floriane-badge-label">Certification</p>
-                <p className="floriane-badge-text">Coach certifiée ICF</p>
-              </div>
             </div>
           </div>
 

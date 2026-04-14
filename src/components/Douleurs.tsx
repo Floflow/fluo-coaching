@@ -8,7 +8,6 @@ const profils = [
     num: '01',
     titre: 'Tu as tout "bien fait" — mais tu ne t\'y retrouves plus',
     items: [
-      'Bon parcours, compétences reconnues',
       'Tu ressens un décalage, un manque de sens',
       'Tu te dis "je devrais être reconnaissant·e… mais quelque chose cloche"',
     ],

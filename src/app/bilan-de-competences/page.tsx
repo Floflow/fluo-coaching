@@ -10,7 +10,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Bilan de compétences — Fluo Coaching',
   description:
-    "Un accompagnement structuré pour comprendre pourquoi tu n'avances plus — et décider sereinement de la suite. Éligible CPF. 1 800 € TTC.",
+    "Un accompagnement structuré pour comprendre pourquoi tu n'avances plus — et décider sereinement de la suite. Éligible CPF. 1 600 € TTC.",
 }
 
 // ─── Données ───────────────────────────────
@@ -107,7 +107,7 @@ const livrables = [
 const infosBilan = [
   { label: 'Durée',            valeur: "Jusqu'à 24h",  sub: 'Variable selon tes besoins' },
   { label: 'Format',           valeur: 'Individuel',    sub: 'En ligne ou présentiel' },
-  { label: 'Tarif',            valeur: '1 800 € TTC',  sub: 'Particuliers' },
+  { label: 'Tarif',            valeur: '1 600 € TTC',  sub: 'Particuliers' },
   { label: 'Accès plateforme', valeur: '1 an complet', sub: 'Outils & questionnaires' },
 ]
 

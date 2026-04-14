@@ -17,7 +17,7 @@ const infosBilan = [
   },
   {
     label: 'Tarif',
-    valeur: '1 800 € TTC',
+    valeur: '1 600 € TTC',
     detail: 'Éligible CPF',
   },
 ]
