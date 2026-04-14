@@ -107,10 +107,10 @@ const livrables = [
 ]
 
 const infosBilan = [
-  { label: 'Durée',            valeur: "Jusqu'à 24h",  sub: 'Variable selon tes besoins' },
-  { label: 'Format',           valeur: 'Individuel',    sub: 'En ligne ou présentiel' },
-  { label: 'Tarif',            valeur: '1 600 € TTC',  sub: 'Particuliers' },
-  { label: 'Accès plateforme', valeur: '1 an complet', sub: 'Outils & questionnaires' },
+  { label: 'Durée',            valeur: '13h ensemble', valeur2: '+ 11h de travail personnel', sub: 'Variable selon les besoins' },
+  { label: 'Format',           valeur: 'À distance',   valeur2: '',                           sub: 'Accompagnement individuel, à ton rythme' },
+  { label: 'Tarif',            valeur: '1 600 € TTC',  valeur2: '',                           sub: 'Éligible CPF avec e-Coaching Associates' },
+  { label: 'Accès plateforme', valeur: '',              valeur2: '',                           sub: 'Questionnaires, tests, outils et ressources' },
 ]
 
 // ─── Page ──────────────────────────────────
@@ -288,7 +288,8 @@ export default function BilanDeCompetences() {
                     {infosBilan.map((cell) => (
                       <div key={cell.label} className="info-cell">
                         <p className="info-cell-label">{cell.label}</p>
-                        <p className="info-cell-value">{cell.valeur}</p>
+                        {cell.valeur && <p className="info-cell-value">{cell.valeur}</p>}
+                        {cell.valeur2 && <p className="info-cell-sub" style={{ marginTop: '2px', color: 'var(--text-mid)' }}>{cell.valeur2}</p>}
                         <p className="info-cell-sub">{cell.sub}</p>
                       </div>
                     ))}
