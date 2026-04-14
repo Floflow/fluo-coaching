@@ -20,7 +20,7 @@ export default function Contact() {
       <main>
 
         {/* ── Intro ── */}
-        <section style={{ padding: '4rem 0 3rem' }}>
+        <section style={{ padding: '3rem 0 2rem' }}>
           <div className="container">
             <p className="label fade-in">On fait le point ?</p>
             <h1 className="page-intro-title fade-in fade-in-delay-1" style={{ marginTop: '0.75rem', marginBottom: '0.75rem' }}>
@@ -37,7 +37,7 @@ export default function Contact() {
         </section>
 
         {/* ── Deux colonnes ── */}
-        <section className="section">
+        <section className="section section-alt">
           <div className="container">
             <div className="contact-page-grid">
 
