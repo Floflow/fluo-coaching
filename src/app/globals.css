@@ -629,6 +629,7 @@ a {
   }
   .floriane-photo-wrap { position: static; }
   .floriane-photo { max-width: 100%; aspect-ratio: 4/3; }
+  .floriane-photo img { object-position: top; }
 }
 
 /* =============================================
@@ -1169,6 +1170,7 @@ a {
 
 /* ── Responsive bilan ── */
 @media (max-width: 900px) {
+  .page-intro { padding: 2rem 0; }
   .page-intro-inner,
   .floriane-trust-grid {
     grid-template-columns: 1fr !important;
