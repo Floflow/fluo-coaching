@@ -17,9 +17,10 @@ export default function Hero() {
         background: 'var(--bg)',
       }}
     >
-      {/* Canvas fond — carrés en chaos */}
+      {/* Canvas fond — carrés en chaos (masqué sur mobile) */}
       <div
         aria-hidden="true"
+        className="hero-canvas-wrap"
         style={{
           position: 'absolute',
           inset: 0,

@@ -424,6 +424,15 @@ a {
 }
 
 /* =============================================
+   HERO — responsive mobile
+============================================= */
+@media (max-width: 900px) {
+  .hero { padding: 2.5rem 0 3rem !important; }
+  .hero-canvas-wrap { display: none; }
+  #float-canvas { display: none; }
+}
+
+/* =============================================
    RESPONSIVE — grids sections
 ============================================= */
 @media (max-width: 900px) {
