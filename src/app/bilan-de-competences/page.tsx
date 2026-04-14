@@ -274,7 +274,7 @@ export default function BilanDeCompetences() {
                     Aider les gens qui m&rsquo;entourent à mettre en lumière ce qui compte vraiment pour eux, c&rsquo;est quelque chose qui m&rsquo;a toujours animée. Alors quand l&rsquo;occasion s&rsquo;est présentée d&rsquo;en faire mon métier, ça s&rsquo;est imposé comme une évidence — et chaque accompagnement le confirme un peu plus.
                   </p>
                   <p style={{ fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8 }}>
-                    Je travaille en partenariat avec e-coaching associates, organisme de formation certifié Qualiopi. J&rsquo;ai été formée à leur méthode par des coachs eux-mêmes consultants en bilan de compétences, avec une expérience solide du terrain. La méthode est rigoureuse et a fait ses preuves.
+                    Je travaille en partenariat avec e-Coaching Associates, organisme de formation certifié Qualiopi. J&rsquo;ai été formée à leur méthode par des coachs eux-mêmes consultants en bilan de compétences, avec une expérience solide du terrain. La méthode est rigoureuse et a fait ses preuves.
                   </p>
                   <p style={{ fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8 }}>
                     Il n&rsquo;est pas forcément nécessaire de tout changer pour trouver ce qui te correspond. Il n&rsquo;existe pas de modèle universel de réussite — seulement le tien. Mon rôle est de t&rsquo;apporter un cadre, du recul et de la lucidité pour que tu puisses décider sereinement de la suite.
