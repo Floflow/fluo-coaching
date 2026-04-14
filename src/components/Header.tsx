@@ -74,7 +74,6 @@ export default function Header() {
 
           {/* Nav desktop — masquée < 900px */}
           <nav aria-label="Navigation principale" style={{
-            display: 'flex',
             alignItems: 'center',
             gap: '2rem',
           }} className="header-nav">
