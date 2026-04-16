@@ -1202,6 +1202,10 @@ a {
 
 .form-input-light::placeholder { color: var(--text-light); }
 
+.form-label-light {
+  color: var(--text-mid);
+}
+
 .form-check-label-light {
   color: var(--text-mid);
 }

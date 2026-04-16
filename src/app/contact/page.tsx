@@ -28,7 +28,7 @@ export default function Contact() {
             </h1>
             <p style={{
               fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)',
-              lineHeight: 1.8, maxWidth: '520px',
+              lineHeight: 1.8, maxWidth: '520px', marginBottom: '2.5rem',
             }} className="fade-in fade-in-delay-2">
               Choisis ce qui te convient le mieux — réserver un créneau ou m&rsquo;envoyer un message.
               Dans les deux cas, je te réponds personnellement.
@@ -66,20 +66,20 @@ export default function Contact() {
                 <form className="form" name="contact" method="POST" action="#">
                   <div className="form-row">
                     <div className="form-group">
-                      <label className="form-label" htmlFor="firstname">Prénom *</label>
+                      <label className="form-label form-label-light" htmlFor="firstname">Prénom *</label>
                       <input className="form-input form-input-light" type="text" id="firstname" name="firstname" placeholder="Marie" required autoComplete="given-name" />
                     </div>
                     <div className="form-group">
-                      <label className="form-label" htmlFor="lastname">Nom *</label>
+                      <label className="form-label form-label-light" htmlFor="lastname">Nom *</label>
                       <input className="form-input form-input-light" type="text" id="lastname" name="lastname" placeholder="Dupont" required autoComplete="family-name" />
                     </div>
                   </div>
                   <div className="form-group">
-                    <label className="form-label" htmlFor="email">Email *</label>
+                    <label className="form-label form-label-light" htmlFor="email">Email *</label>
                     <input className="form-input form-input-light" type="email" id="email" name="email" placeholder="marie@exemple.fr" required autoComplete="email" />
                   </div>
                   <div className="form-group">
-                    <label className="form-label" htmlFor="message">Ta situation en quelques mots</label>
+                    <label className="form-label form-label-light" htmlFor="message">Ta situation en quelques mots</label>
                     <textarea className="form-input form-input-light form-textarea" id="message" name="message" placeholder="Je ne sais plus vraiment où j'en suis dans ma carrière…" />
                   </div>
                   <div className="form-check">

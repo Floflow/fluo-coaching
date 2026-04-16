@@ -139,7 +139,7 @@ export default function BilanDeCompetences() {
                   et décider sereinement de la suite — avec un plan d&rsquo;action que tu auras
                   construit toi-même.
                 </p>
-                <p className="page-intro-sub fade-in fade-in-delay-2" style={{ marginTop: '-0.75rem', marginBottom: 0 }}>
+                <p className="page-intro-sub fade-in fade-in-delay-2" style={{ marginBottom: 0 }}>
                   À l&rsquo;issue du bilan, tu seras capable de mettre en lumière :
                 </p>
                 <ul className="page-intro-list fade-in fade-in-delay-3">
