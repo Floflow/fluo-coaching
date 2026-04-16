@@ -109,7 +109,7 @@ const livrables = [
 const infosBilan = [
   { label: 'Durée',            valeur: '13h ensemble', valeur2: '+ 11h de travail personnel', sub: 'Variable selon les besoins' },
   { label: 'Format',           valeur: 'À distance',   valeur2: '',                           sub: 'Accompagnement individuel, à ton rythme' },
-  { label: 'Tarif',            valeur: '1 600 € TTC',  valeur2: '',                           sub: 'Éligible CPF avec e-Coaching Associates' },
+  { label: 'Tarif',            valeur: '1 600 € TTC',  valeur2: '',                           sub: 'Éligible CPF via mon partenariat avec e-Coaching Associates' },
   { label: 'Accès plateforme', valeur: '',              valeur2: '',                           sub: 'Questionnaires, tests, outils et ressources' },
 ]
 

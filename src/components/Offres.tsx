@@ -18,7 +18,7 @@ const infosBilan = [
   {
     label: 'Tarif',
     valeur: '1 600 € TTC',
-    detail: 'Éligible CPF',
+    detail: 'Éligible CPF via mon partenariat avec e-Coaching Associates',
   },
 ]
 
