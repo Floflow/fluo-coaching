@@ -837,6 +837,11 @@ a {
   isolation: isolate;
 }
 
+.page-intro-text {
+  position: sticky;
+  top: 100px;
+}
+
 .page-intro-sub {
   font-size: 1rem;
   font-weight: 300;
@@ -1227,6 +1232,7 @@ a {
     gap: 2.5rem !important;
   }
   .floriane-trust-card-wrap { position: static; }
+  .page-intro-text { position: static; }
   .phases-grid { grid-template-columns: 1fr !important; }
   .cta-inner { padding: 3rem 1.5rem; }
 }
