@@ -83,7 +83,7 @@ export default function Hero() {
             <CalendlyButton className="btn-primary" dataTrack="cta-hero">
               Séance découverte gratuite <span className="btn-arrow">→</span>
             </CalendlyButton>
-            <a href="#bilan" className="btn-secondary">
+            <a href="/bilan-de-competences" className="btn-secondary">
               Découvrir le bilan
             </a>
           </div>
