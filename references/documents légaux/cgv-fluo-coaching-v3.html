@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions Générales de Vente — Fluo Coaching</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       TOKENS — Charte Fluo Coaching v1.2
+    ============================================================ */
+    :root {
+      --bg:          #F8F5EF;
+      --bg-alt:      #EDEAE0;
+      --bg-dark:     #1E3830;
+      --text:        #1E3830;
+      --text-mid:    #4A7060;
+      --text-light:  #8AAE9E;
+      --border:      #C8D9D2;
+      --fluo:        #FFFF33;
+      --fluo-dark:   #E6E600;
+      --font-display:'Playfair Display', Georgia, serif;
+      --font-body:   'DM Sans', system-ui, sans-serif;
+      --r-sm: 4px;
+      --r-md: 10px;
+      --content-w: 760px;
+      --site-w:    1200px;
+    }
+
+    /* ============================================================
+       RESET
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    img, svg { display: block; }
+
+    /* ============================================================
+       NAVBAR
+    ============================================================ */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .navbar-inner {
+      max-width: var(--site-w);
+      margin: 0 auto;
+      padding: 0 2.5rem;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .nav-logo-wordmark {
+      font-family: var(--font-display);
+      font-size: 2.1rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      display: flex;
+      align-items: baseline;
+    }
+    .nav-logo-o {
+      color: var(--text);
+      position: relative;
+      display: inline-block;
+    }
+    .nav-logo-o::before {
+      content: '';
+      position: absolute;
+      inset: 0 -2px;
+      background: var(--fluo);
+      border-radius: 2px;
+      z-index: -1;
+      transform: skewX(-8deg);
+    }
+    .nav-divider {
+      width: 1px;
+      height: 34px;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+    .nav-tagline { flex-shrink: 0; }
+    .nav-tagline-title {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.3;
+    }
+    .nav-tagline-sub {
+      font-size: 11.5px;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.3;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      list-style: none;
+      margin-left: auto;
+    }
+    .nav-links a {
+      display: block;
+      padding: 0.45rem 0.9rem;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text);
+      text-decoration: none;
+      border-radius: var(--r-sm);
+      transition: background 0.15s;
+    }
+    .nav-links a:hover { background: var(--bg-alt); }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.6rem 1.3rem;
+      background: var(--fluo);
+      color: var(--text) !important;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: var(--r-sm);
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .nav-cta:hover { background: var(--fluo-dark); transform: translateY(-1px); }
+    .nav-cta-arrow { transition: transform 0.15s; }
+    .nav-cta:hover .nav-cta-arrow { transform: translateX(3px); }
+    @media (max-width: 768px) {
+      .nav-links, .nav-divider, .nav-tagline { display: none; }
+      .nav-cta { margin-left: auto; }
+    }
+
+    /* ============================================================
+       HERO SOBRE — fond crème, pas de vert
+    ============================================================ */
+    .legal-hero {
+      padding: 4rem 2.5rem 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .legal-hero-inner {
+      max-width: var(--content-w);
+      margin: 0 auto;
+    }
+    .legal-eyebrow {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.9rem;
+    }
+    .legal-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    
+    .legal-hero-meta {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.65;
+    }
+
+    /* ============================================================
+       WRAPPER CONTENU
+    ============================================================ */
+    .legal-body {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 0 2rem 7rem;
+    }
+
+    /* ============================================================
+       INTRO
+    ============================================================ */
+    .legal-intro {
+      margin: 3rem 0 2.75rem;
+      padding: 1.6rem 2rem;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--text-light);
+      border-radius: 0 var(--r-md) var(--r-md) 0;
+      font-size: 0.92rem;
+      color: var(--text-mid);
+      line-height: 1.8;
+    }
+    .legal-intro strong { color: var(--text); font-weight: 500; }
+
+    /* ============================================================
+       TABLE DES MATIÈRES
+    ============================================================ */
+    .legal-toc {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 1.75rem 2rem;
+      margin-bottom: 3.5rem;
+    }
+    .legal-toc-heading {
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 1.1rem;
+    }
+    .legal-toc ol {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 2.5rem;
+      counter-reset: toc;
+    }
+    @media (max-width: 520px) { .legal-toc ol { grid-template-columns: 1fr; } }
+    .legal-toc li {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      counter-increment: toc;
+    }
+    .legal-toc li::before {
+      content: counter(toc, decimal-leading-zero);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+      flex-shrink: 0;
+    }
+    .legal-toc a {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: var(--text-mid);
+      text-decoration: none;
+      transition: color 0.15s;
+      line-height: 1.4;
+    }
+    .legal-toc a:hover {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ============================================================
+       SECTIONS
+    ============================================================ */
+    .legal-section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 90px;
+    }
+    .legal-section:last-of-type { border-bottom: none; }
+
+    /* Titre de section — numéro + titre, sans "Art." */
+    .legal-section h2 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+    }
+    .sec-num {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      color: var(--text);
+      background: var(--fluo);
+      padding: 3px 9px 2px;
+      border-radius: var(--r-sm);
+      flex-shrink: 0;
+      line-height: 1.6;
+    }
+
+    /* Sous-titre */
+    .legal-section h3 {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin: 2rem 0 0.8rem;
+    }
+
+    /* Paragraphes */
+    .legal-section p {
+      font-size: 0.925rem;
+      color: var(--text-mid);
+      line-height: 1.85;
+      margin-bottom: 0.8rem;
+    }
+    .legal-section p:last-child { margin-bottom: 0; }
+    .legal-section p strong { color: var(--text); font-weight: 500; }
+
+    /* Listes */
+    .legal-section ul {
+      margin: 0.6rem 0 1rem;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .legal-section ul li {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.915rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+    .legal-section ul li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--fluo-dark);
+      flex-shrink: 0;
+      margin-top: 0.65em;
+    }
+    .legal-section ul li strong { color: var(--text); font-weight: 500; }
+
+    /* Placeholders */
+    .ph {
+      color: var(--text-light);
+      font-style: italic;
+      background: rgba(255,255,51,0.25);
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+
+    /* ============================================================
+       TABLEAUX
+    ============================================================ */
+    .table-scroll {
+      overflow-x: auto;
+      margin: 1.1rem 0 0.6rem;
+      border-radius: var(--r-md);
+      border: 1px solid var(--border);
+    }
+    table.legal-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+    .legal-table thead tr { background: var(--bg-dark); }
+    .legal-table thead th {
+      padding: 0.9rem 1.2rem;
+      text-align: left;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      white-space: nowrap;
+      border-right: 1px solid rgba(255,255,255,0.07);
+    }
+    .legal-table thead th:last-child { border-right: none; }
+    .legal-table tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.12s;
+    }
+    .legal-table tbody tr:last-child { border-bottom: none; }
+    .legal-table tbody tr:hover { background: var(--bg-alt); }
+    .legal-table tbody td {
+      padding: 0.9rem 1.2rem;
+      color: var(--text-mid);
+      vertical-align: top;
+      line-height: 1.65;
+      border-right: 1px solid var(--border);
+    }
+    .legal-table tbody td:last-child { border-right: none; }
+    .legal-table tbody td strong { color: var(--text); font-weight: 500; }
+
+    /* ============================================================
+       NOTES
+    ============================================================ */
+    .legal-note {
+      margin: 1.1rem 0 0.4rem;
+      padding: 1.1rem 1.4rem;
+      background: var(--bg-alt);
+      border-left: 3px solid var(--fluo);
+      border-radius: 0 var(--r-sm) var(--r-sm) 0;
+      font-size: 0.875rem;
+      color: var(--text-mid);
+      line-height: 1.75;
+    }
+    .legal-note strong { color: var(--text); font-weight: 500; }
+    .legal-note a { color: var(--text-mid); text-underline-offset: 3px; }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .legal-footer {
+      background: var(--bg-dark);
+      padding: 2.75rem 2.5rem;
+    }
+    .legal-footer-inner {
+      max-width: var(--site-w);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 0;
+      list-style: none;
+    }
+    .footer-links li:not(:last-child)::after {
+      content: '·';
+      color: rgba(255,255,255,0.15);
+      margin: 0 0.75rem;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.38);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.8); }
+    .footer-links a[aria-current="page"] { color: var(--fluo); font-weight: 500; }
+    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.22); }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 640px) {
+      .legal-hero  { padding: 2.5rem 1.5rem 2rem; }
+      .legal-body  { padding: 0 1.5rem 5rem; }
+      .legal-intro { padding: 1.25rem; }
+      .legal-toc   { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="/" class="nav-logo" aria-label="Fluo Coaching — Accueil">
+        <span class="nav-logo-wordmark" aria-hidden="true">
+          <span>FL</span><span>U</span><span class="nav-logo-o">O</span>
+        </span>
+      </a>
+      <div class="nav-divider" aria-hidden="true"></div>
+      <div class="nav-tagline">
+        <div class="nav-tagline-title">Coaching &amp; Bilan de Compétences</div>
+        <div class="nav-tagline-sub">Mettre en lumière ce qui compte</div>
+      </div>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/bilan-de-competences">Bilan de compétences</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="/contact" class="nav-cta">
+        Séance découverte <span class="nav-cta-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO SOBRE
+  ============================================================ -->
+  <div class="legal-hero">
+    <div class="legal-hero-inner">
+      <span class="legal-eyebrow">Document légal</span>
+      <h1>Conditions Générales<br>de Vente</h1>
+      <p class="legal-hero-meta">
+        Applicables à toutes les prestations de coaching et bilan de compétences &mdash;
+        En vigueur au <span class="ph">[DATE — ex : 01.06.2026]</span>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       CONTENU
+  ============================================================ -->
+  <main>
+    <div class="legal-body">
+
+      <!-- Intro -->
+      <div class="legal-intro">
+        Les présentes Conditions Générales de Vente s'appliquent à l'ensemble des prestations de coaching et de bilan de compétences engagées par <strong>Fluo Coaching</strong> pour le compte d'un Client. Le fait de s'inscrire ou de passer commande implique l'adhésion entière et sans réserve du Client aux présentes Conditions Générales de Vente. Les présentes Conditions Générales de Vente prévalent sur tout autre document du Client, et en particulier sur toutes les conditions générales d'achat du Client.
+      </div>
+
+      <!-- Sommaire -->
+      <nav aria-label="Sommaire">
+        <div class="legal-toc">
+          <p class="legal-toc-heading">Sommaire</p>
+          <ol>
+            <li><a href="#designation">Désignation</a></li>
+            <li><a href="#objet">Objet</a></li>
+            <li><a href="#tarifs">Conditions financières et paiement</a></li>
+            <li><a href="#dedit">Dédit et remplacement d'un participant</a></li>
+            <li><a href="#annulation">Annulation, report, absence</a></li>
+            <li><a href="#devis">Devis et attestation</a></li>
+            <li><a href="#obligations">Obligations et force majeure</a></li>
+            <li><a href="#propriete">Propriété intellectuelle</a></li>
+            <li><a href="#programme">Descriptif et programme</a></li>
+            <li><a href="#confidentialite">Confidentialité</a></li>
+            <li><a href="#donnees">Protection des données personnelles</a></li>
+            <li><a href="#rgpd">RGPD</a></li>
+            <li><a href="#droit">Droit applicable et juridiction</a></li>
+          </ol>
+        </div>
+      </nav>
+
+
+      <!-- ====================================================
+           1 — Désignation
+      ==================================================== -->
+      <section class="legal-section" id="designation">
+        <h2><span class="sec-num">01</span> Désignation</h2>
+
+        <p><strong>Fluo Coaching</strong> est un cabinet de coaching professionnel et de bilan de compétences. Son activité est exercée par Floriane <span class="ph">Perrin de Brichambaut</span>, coach certifiée ICF et consultante en bilan de compétences, sous le statut de micro-entreprise (<span class="ph">[FORME JURIDIQUE]</span>), basée à <span class="ph">[VILLE]</span> — SIRET&nbsp;<span class="ph">[NUMÉRO SIRET]</span>. Les prestations sont dispensées exclusivement en visioconférence.</p>
+
+        <p>Dans les paragraphes qui suivent, il est convenu de désigner par :</p>
+        <ul>
+          <li><strong>Client</strong> : toute personne physique ou morale qui s'inscrit ou passe commande d'une prestation auprès de Fluo Coaching.</li>
+          <li><strong>Bénéficiaire</strong> : la personne physique qui participe à la prestation.</li>
+          <li><strong>Bilan de compétences</strong> : les actions permettant à des travailleurs « d'analyser leurs compétences professionnelles et personnelles ainsi que leurs aptitudes et leurs motivations, afin de définir un projet professionnel et, le cas échéant, un projet de formation » (art. L.6313-10 du Code du travail).</li>
+          <li><strong>Coaching en transition professionnelle</strong> : accompagnement individuel structuré visant à explorer et clarifier un projet de reconversion ou d'évolution de carrière.</li>
+          <li><strong>CGV</strong> : les présentes conditions générales de vente.</li>
+          <li><strong>OPCO</strong> : les Opérateurs de Compétences chargés de collecter et gérer l'effort de formation des entreprises.</li>
+        </ul>
+      </section>
+
+
+      <!-- ====================================================
+           2 — Objet
+      ==================================================== -->
+      <section class="legal-section" id="objet">
+        <h2><span class="sec-num">02</span> Objet</h2>
+
+        <p>Les présentes conditions générales de vente s'appliquent à l'ensemble des prestations de coaching et de bilan de compétences engagées par Fluo Coaching pour le compte d'un Client. Le fait de s'inscrire ou de passer commande implique l'adhésion entière et sans réserve du Client aux présentes Conditions Générales de Vente. Les présentes Conditions Générales de Vente prévalent sur tout autre document du Client, et en particulier sur toutes les conditions générales d'achat du Client.</p>
+      </section>
+
+
+      <!-- ====================================================
+           3 — Conditions financières et paiement
+      ==================================================== -->
+      <section class="legal-section" id="tarifs">
+        <h2><span class="sec-num">03</span> Conditions financières, règlements et modalités de paiement</h2>
+
+        <p>Tous les prix sont indiqués en euros. Fluo Coaching n'est pas assujettie à la TVA au titre de l'article 293&nbsp;B du CGI (micro-entreprise) — les prix affichés sont donc des prix nets, sans TVA.</p>
+
+        <p>Le règlement du prix de la prestation est à effectuer en échéances selon les modalités suivantes :</p>
+        <div class="table-scroll">
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th>Échéance</th>
+                <th>Montant</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Au début de la prestation</td>
+                <td><strong>25 %</strong> du prix total</td>
+              </tr>
+              <tr>
+                <td>En fin de prestation</td>
+                <td><strong>75 %</strong> du prix total (solde)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="margin-top:1rem;">Toute somme non payée à échéance entraîne de plein droit et sans mise en demeure préalable, l'application de pénalités d'un montant égal à une fois et demie le taux d'intérêt légal. Fluo Coaching aura la faculté d'obtenir le règlement par voie contentieuse aux frais du Client sans préjudice des autres dommages et intérêts qui pourraient être dus.</p>
+
+        <p>En cas de règlement par l'OPCO dont dépend le Client, il appartient au Client d'effectuer sa demande de prise en charge avant le début de la prestation. L'accord de financement doit être communiqué au moment de l'inscription. En cas de prise en charge partielle par l'OPCO, la différence sera directement facturée par Fluo Coaching au Client. Si l'accord de prise en charge ne parvient pas à Fluo Coaching au plus tard un jour ouvrable avant le démarrage de la prestation, Fluo Coaching se réserve la possibilité de refuser l'entrée en bilan du bénéficiaire ou de facturer la totalité des frais au Client.</p>
+
+        <div class="legal-note">
+          <strong>Moyens de paiement acceptés :</strong> <span class="ph">[virement bancaire / paiement en ligne — à compléter]</span>
+        </div>
+      </section>
+
+
+      <!-- ====================================================
+           4 — Dédit et remplacement
+      ==================================================== -->
+      <section class="legal-section" id="dedit">
+        <h2><span class="sec-num">04</span> Dédit et remplacement d'un participant</h2>
+
+        <p>En cas de dédit signifié par le Client à Fluo Coaching au moins 7 jours avant le démarrage de la prestation, Fluo Coaching offre au Client la possibilité :</p>
+        <ul>
+          <li>De repousser le démarrage de la prestation à une date ultérieure, dûment programmée et après accord éventuel de l'OPCO ;</li>
+          <li>De remplacer le bénéficiaire empêché par une autre personne présentant le même profil et les mêmes besoins, sous réserve de l'accord éventuel de l'OPCO.</li>
+        </ul>
+      </section>
+
+
+      <!-- ====================================================
+           5 — Annulation, report, absence ou interruption
+      ==================================================== -->
+      <section class="legal-section" id="annulation">
+        <h2><span class="sec-num">05</span> Annulation, report, absence ou interruption d'une prestation</h2>
+
+        <p>Toute prestation commencée est due dans son intégralité et fera l'objet d'une facturation au Client par Fluo Coaching. En cas d'absence, d'interruption ou d'annulation, la facturation de Fluo Coaching distinguera le prix correspondant aux séances effectivement suivies par le bénéficiaire et les sommes dues au titre des absences ou de l'interruption. Il est rappelé que les sommes dues par le Client à ce titre ne peuvent être imputées sur son obligation de participer à la formation professionnelle continue ni faire l'objet d'une demande de prise en charge par un OPCO. Le Client s'engage à régler les sommes qui resteraient à sa charge directement à Fluo Coaching.</p>
+
+        <p>En cas d'annulation de la prestation par le Client, Fluo Coaching se réserve le droit de facturer des frais d'annulation calculés comme suit :</p>
+        <div class="table-scroll">
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th>Délai d'annulation avant le démarrage</th>
+                <th>Frais d'annulation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Plus de 7 jours ouvrables avant</td>
+                <td>Aucun frais d'annulation</td>
+              </tr>
+              <tr>
+                <td>Moins de 7 jours ouvrables avant</td>
+                <td><strong>100 %</strong> du prix H.T. de la prestation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="margin-top:1rem;">Toute annulation ou report de la part du Client doit être signalée et confirmée par écrit à <span class="ph">[EMAIL CONTACT]</span>.</p>
+      </section>
+
+
+      <!-- ====================================================
+           6 — Devis et attestation
+      ==================================================== -->
+      <section class="legal-section" id="devis">
+        <h2><span class="sec-num">06</span> Devis et attestation</h2>
+
+        <p>Pour chaque prestation, un devis est adressé par Fluo Coaching au Client. Le devis dûment renseigné, daté, signé et revêtu de la mention <em>« Bon pour accord »</em> doit être retourné à Fluo Coaching par tout moyen à la convenance du Client (courrier postal, e-mail). Le cas échéant, une convention particulière peut être établie entre Fluo Coaching, l'OPCO et le Client.</p>
+        <p>À l'issue de la prestation, Fluo Coaching remet une attestation de suivi au bénéficiaire. Dans le cadre d'une prise en charge partielle ou totale par un OPCO, Fluo Coaching lui fait parvenir un exemplaire de cette attestation accompagnée de la facture. Une attestation de présence peut être fournie au Client sur demande.</p>
+      </section>
+
+
+      <!-- ====================================================
+           7 — Obligations et force majeure
+      ==================================================== -->
+      <section class="legal-section" id="obligations">
+        <h2><span class="sec-num">07</span> Obligations et force majeure</h2>
+
+        <p>Dans le cadre de ses prestations, Fluo Coaching est tenue à une <strong>obligation de moyen</strong> et non de résultat vis-à-vis de ses Clients ou de ses bénéficiaires. Fluo Coaching ne pourra être tenue responsable à l'égard de ses Clients ou de ses bénéficiaires en cas d'inexécution de ses obligations résultant d'un événement fortuit ou de force majeure.</p>
+        <p>Sont ici considérés comme cas fortuit ou de force majeure, outre ceux habituellement reconnus par la jurisprudence : la maladie ou l'accident de la prestataire, les grèves ou conflits sociaux externes à Fluo Coaching, les désastres naturels, les incendies, l'interruption des télécommunications, de l'approvisionnement en énergie, ou des transports de tout type, ou toute autre circonstance échappant au contrôle raisonnable de Fluo Coaching.</p>
+      </section>
+
+
+      <!-- ====================================================
+           8 — Propriété intellectuelle
+      ==================================================== -->
+      <section class="legal-section" id="propriete">
+        <h2><span class="sec-num">08</span> Propriété intellectuelle et copyright</h2>
+
+        <p>L'ensemble des fiches de présentation, contenus et supports pédagogiques quelle qu'en soit la forme (papier, électronique, numérique, orale…) utilisés par Fluo Coaching pour assurer les prestations ou remis aux bénéficiaires constituent des œuvres originales et à ce titre sont protégées par la propriété intellectuelle et le copyright. Le Client et le bénéficiaire s'interdisent d'utiliser, transmettre, reproduire, exploiter ou transformer tout ou partie de ces documents, sans un accord exprès de Fluo Coaching. Cette interdiction porte, en particulier, sur toute utilisation faite par le Client et le bénéficiaire en vue de l'organisation ou l'animation de prestations similaires.</p>
+      </section>
+
+
+      <!-- ====================================================
+           9 — Descriptif et programme
+      ==================================================== -->
+      <section class="legal-section" id="programme">
+        <h2><span class="sec-num">09</span> Descriptif et programme des prestations</h2>
+
+        <p>Les contenus des programmes, tels qu'ils figurent dans les fiches de présentation des prestations, sont fournis à titre indicatif. Fluo Coaching se réserve le droit de les modifier en fonction de l'actualité, du niveau du bénéficiaire ou de la dynamique de l'accompagnement.</p>
+      </section>
+
+
+      <!-- ====================================================
+           10 — Confidentialité
+      ==================================================== -->
+      <section class="legal-section" id="confidentialite">
+        <h2><span class="sec-num">10</span> Confidentialité et communication</h2>
+
+        <p>Fluo Coaching, le Client et le bénéficiaire s'engagent à garder confidentiels les documents et les informations auxquels ils pourraient avoir accès au cours de la prestation ou à l'occasion des échanges intervenus antérieurement à l'inscription, notamment l'ensemble des éléments figurant dans la proposition transmise par Fluo Coaching au Client.</p>
+        <p>Fluo Coaching s'engage à ne pas communiquer à des tiers les informations transmises par le Client, y compris les informations concernant les bénéficiaires. Cependant, le Client accepte d'être cité par Fluo Coaching comme client de ses prestations. À cet effet, le Client autorise Fluo Coaching à mentionner son nom ainsi qu'une description objective de la nature des prestations dans ses listes de références et propositions à l'attention de ses prospects et de sa clientèle, entretiens avec des tiers, rapports d'activité, ainsi qu'en cas de dispositions légales, réglementaires ou comptables l'exigeant.</p>
+      </section>
+
+
+      <!-- ====================================================
+           11 — Protection des données personnelles
+      ==================================================== -->
+      <section class="legal-section" id="donnees">
+        <h2><span class="sec-num">11</span> Protection et accès aux informations à caractère personnel</h2>
+
+        <p>Le Client s'engage à informer chaque bénéficiaire que des données à caractère personnel le concernant sont collectées et traitées aux fins de suivi et d'amélioration de l'offre de Fluo Coaching.</p>
+        <p>Conformément à la loi n°78-17 du 6 janvier 1978, le bénéficiaire dispose d'un droit d'accès, de modification et de rectification des données à caractère personnel le concernant. Fluo Coaching conservera les données liées au parcours du bénéficiaire pour une période n'excédant pas la durée nécessaire à l'appréciation de la prestation.</p>
+      </section>
+
+
+      <!-- ====================================================
+           12 — RGPD
+      ==================================================== -->
+      <section class="legal-section" id="rgpd">
+        <h2><span class="sec-num">12</span> RGPD</h2>
+
+        <p>Dans le cadre des prestations, Fluo Coaching pourra être amenée à entrer en possession d'informations professionnelles individuelles des bénéficiaires (parcours, formation, volonté d'évolution…). Ces données seront conservées dans un dossier sécurisé, sous la responsabilité exclusive de Floriane <span class="ph">Perrin de Brichambaut</span>, et ce uniquement aux fins de la gestion du processus d'accompagnement.</p>
+        <p>Ces données sont accessibles uniquement à Floriane <span class="ph">Perrin de Brichambaut</span> et sont détruites <strong>3 ans</strong> après le dernier contact. Elles peuvent être supprimées à tout moment sur demande du bénéficiaire, qui dispose par ailleurs d'un droit d'accès aux données le concernant sur simple demande à <span class="ph">[EMAIL CONTACT]</span>.</p>
+      </section>
+
+
+      <!-- ====================================================
+           13 — Droit applicable et juridiction
+      ==================================================== -->
+      <section class="legal-section" id="droit">
+        <h2><span class="sec-num">13</span> Droit applicable et juridiction compétente</h2>
+
+        <p>Les conditions générales détaillées dans le présent document sont régies par le droit français. En cas de litige survenant entre le Client et FLUO COACHING à l’occasion de l’interprétation des présentes ou de l’exécution du contrat, il sera recherché une solution à l’amiable.</p>
+        <p>Conformément à l'article L.612-1 du Code de la consommation, tout consommateur peut recourir gratuitement à un médiateur de la consommation. Fluo Coaching propose la médiation auprès de : <span class="ph">[NOM DU MÉDIATEUR — ex : SMP Société de Médiation Professionnelle]</span>.</p>
+        <p>À défaut de résolution amiable, le Tribunal de Paris sera seul compétent pour régler le litige.</p>
+
+        <div class="legal-note">
+          <strong>Pour les prestations financées par CPF :</strong> La médiation peut également s'effectuer via la plateforme européenne de résolution des litiges en ligne : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>
+        </div>
+      </section>
+
+    </div><!-- /legal-body -->
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="legal-footer">
+    <div class="legal-footer-inner">
+      <ul class="footer-links">
+        <li><a href="/mentions-legales">Mentions légales</a></li>
+        <li><a href="/cgu">CGU</a></li>
+        <li><a href="/cgv" aria-current="page">CGV</a></li>
+        <li><a href="/charte-ethique">Charte éthique</a></li>
+        <li><a href="/reglement-interieur">Règlement intérieur</a></li>
+        <li><a href="/politique-handicap">Politique handicap</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 Fluo Coaching — Floriane <span class="ph">Perrin de Brichambaut</span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

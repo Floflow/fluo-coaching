@@ -1,0 +1,281 @@
+import type { Metadata } from 'next'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+
+export const metadata: Metadata = {
+  title: "Conditions Générales d'Utilisation — Fluo Coaching",
+  robots: 'noindex, nofollow',
+}
+
+export default function CGU() {
+  return (
+    <>
+      <Header />
+      <main>
+        <div className="legal-hero">
+          <div className="legal-hero-inner">
+            <span className="legal-eyebrow">Document légal</span>
+            <h1>Conditions Générales<br />d'Utilisation</h1>
+            <p className="legal-hero-meta">
+              Les présentes conditions générales d'utilisation sont conclues entre{' '}
+              <strong>l'Éditeur</strong> — Floriane Perrin de Brichambaut, gérante de Fluo
+              Coaching — et <strong>l'Utilisateur</strong> : toute personne souhaitant
+              accéder au site et à ses services.
+            </p>
+          </div>
+        </div>
+
+        <div className="legal-body">
+          <div className="legal-intro">
+            Les présentes conditions générales d'utilisation sont conclues entre{' '}
+            <strong>l'Éditeur</strong> — Floriane Perrin de Brichambaut, gérante de Fluo
+            Coaching — et <strong>l'Utilisateur</strong> : toute personne souhaitant accéder
+            au site et à ses services. L'accès au site vaut acceptation sans réserve des
+            présentes conditions.
+          </div>
+
+          <nav aria-label="Sommaire">
+            <div className="legal-toc">
+              <p className="legal-toc-heading">Sommaire</p>
+              <ol>
+                <li><a href="#principes">Principes</a></li>
+                <li><a href="#evolution">Évolution et durée des CGU</a></li>
+                <li><a href="#acces">Accès au site</a></li>
+                <li><a href="#responsabilites">Responsabilités</a></li>
+                <li><a href="#propriete">Propriété intellectuelle</a></li>
+                <li><a href="#liens">Liens hypertextes</a></li>
+                <li><a href="#donnees">Protection des données personnelles</a></li>
+                <li><a href="#cookies">Cookies</a></li>
+                <li><a href="#droit">Loi applicable</a></li>
+              </ol>
+            </div>
+          </nav>
+
+          <section className="legal-section" id="principes">
+            <h2><span className="sec-num">01</span> Principes</h2>
+            <p>
+              Les présentes conditions générales d'utilisation ont pour objet l'encadrement
+              juridique de l'utilisation du site www.fluocoaching.com et
+              de ses services.
+            </p>
+            <p>
+              Le site internet www.fluocoaching.com est un service de{' '}
+              <strong>Fluo Coaching</strong>, micro-entreprise exercée par Floriane Perrin de
+              Brichambaut, basée à Paris.
+            </p>
+            <div className="legal-note">
+              <strong>Contact :</strong>{' '}
+              <a href="mailto:floriane@fluocoaching.com" style={{ color: 'var(--text-mid)' }}>floriane@fluocoaching.com</a> — 06 88 41 19 44
+            </div>
+            <p>
+              Les présentes conditions générales d'utilisation doivent être acceptées par tout
+              Utilisateur. Son accès au site vaut acceptation de ces conditions.
+            </p>
+          </section>
+
+          <section className="legal-section" id="evolution">
+            <h2><span className="sec-num">02</span> Évolution et durée des CGU</h2>
+            <p>
+              Les présentes conditions générales d'utilisation sont conclues pour une durée
+              indéterminée. Le contrat produit ses effets à l'égard de l'Utilisateur à compter
+              du début de l'utilisation du service.
+            </p>
+            <p>
+              Le site www.fluocoaching.com se réserve le droit de modifier
+              les clauses de ces conditions générales d'utilisation à tout moment et sans
+              justification.
+            </p>
+          </section>
+
+          <section className="legal-section" id="acces">
+            <h2><span className="sec-num">03</span> Accès au site</h2>
+            <p>
+              Tout utilisateur ayant accès à internet peut accéder gratuitement et depuis
+              n'importe où au site www.fluocoaching.com. Les frais
+              supportés par l'utilisateur pour y accéder (connexion internet, matériel
+              informatique, etc.) ne sont pas à la charge de l'Éditeur.
+            </p>
+            <p>
+              Le site et ses différents services peuvent être interrompus ou suspendus par
+              l'Éditeur, notamment à l'occasion d'une maintenance, sans obligation de préavis
+              ou de justification.
+            </p>
+          </section>
+
+          <section className="legal-section" id="responsabilites">
+            <h2><span className="sec-num">04</span> Responsabilités</h2>
+            <p>
+              La responsabilité de l'Éditeur ne peut être engagée en cas de défaillance,
+              panne, difficulté ou interruption du site ou de l'une de ses fonctionnalités.
+            </p>
+            <p>
+              Le matériel de connexion au site utilisé est sous l'entière responsabilité de
+              l'Utilisateur, qui doit prendre toutes les mesures appropriées pour protéger
+              son matériel et ses données, notamment contre les attaques virales via internet.
+              L'utilisateur est par ailleurs le seul responsable des sites et données qu'il
+              consulte.
+            </p>
+            <p>
+              L'Éditeur ne pourra être tenu responsable en cas de poursuites judiciaires à
+              l'encontre de l'Utilisateur du fait de l'usage du site ou de tout service
+              accessible via internet, ou du non-respect par l'Utilisateur des présentes
+              conditions générales.
+            </p>
+            <p>
+              L'Éditeur n'est pas responsable des dommages causés à l'Utilisateur, à des
+              tiers et/ou à l'équipement de l'Utilisateur du fait de sa connexion ou de son
+              utilisation du site. L'Utilisateur renonce à toute action contre l'Éditeur de
+              ce fait.
+            </p>
+            <p>
+              Si l'Éditeur venait à faire l'objet d'une procédure amiable ou judiciaire à
+              raison de l'utilisation du site par l'Utilisateur, il pourra se retourner contre
+              lui pour obtenir indemnisation de tous les préjudices, sommes, condamnations et
+              frais qui pourraient en découler.
+            </p>
+          </section>
+
+          <section className="legal-section" id="propriete">
+            <h2><span className="sec-num">05</span> Propriété intellectuelle</h2>
+            <p>
+              Tous les documents techniques, produits, photographies, textes, logos, dessins,
+              vidéos, etc., sont soumis à des droits d'auteur et sont protégés par le Code de
+              la propriété intellectuelle. Lorsqu'ils sont remis à nos clients, ils demeurent
+              la propriété exclusive de Fluo Coaching, seule titulaire des droits de propriété
+              intellectuelle sur ces documents, qui doivent lui être rendus à sa demande.
+            </p>
+            <p>
+              Nos clients s'engagent à ne faire aucun usage de ces documents susceptible de
+              porter atteinte aux droits de propriété industrielle ou intellectuelle de Fluo
+              Coaching, et s'engagent à ne les divulguer à aucun tiers en dehors d'une
+              autorisation expresse et préalable de l'Éditeur.
+            </p>
+          </section>
+
+          <section className="legal-section" id="liens">
+            <h2><span className="sec-num">06</span> Liens hypertextes</h2>
+            <p>
+              La mise en place par l'Utilisateur de tout lien hypertexte vers tout ou partie
+              du site est strictement interdite, sauf autorisation préalable et écrite de
+              l'Éditeur, sollicitée par e-mail à{' '}
+              <a href="mailto:floriane@fluocoaching.com" style={{ color: 'var(--text-mid)' }}>floriane@fluocoaching.com</a>.
+            </p>
+            <p>
+              L'Éditeur est libre de refuser cette autorisation sans avoir à justifier sa
+              décision. Dans le cas où l'Éditeur accorderait son autorisation, celle-ci n'est
+              que temporaire et pourra être retirée à tout moment, sans obligation de
+              justification. Tout lien devra être retiré sur simple demande de l'Éditeur.
+            </p>
+            <p>
+              Toute information accessible via un lien vers d'autres sites n'est pas sous le
+              contrôle de l'Éditeur, qui décline toute responsabilité quant à leur contenu.
+            </p>
+          </section>
+
+          <section className="legal-section" id="donnees">
+            <h2><span className="sec-num">07</span> Protection des données personnelles</h2>
+
+            <h3>Données collectées</h3>
+            <p>Les données à caractère personnel collectées sur ce site sont les suivantes :</p>
+            <ul>
+              <li><strong>Formulaire de contact</strong> : nom, prénom, adresse e-mail, numéro de téléphone et message</li>
+              <li><strong>Prise de rendez-vous</strong> : données nécessaires à la réservation d'une séance découverte via l'outil de réservation en ligne Calendly</li>
+              <li><strong>Navigation</strong> : données de connexion et d'utilisation du site à des fins statistiques</li>
+              <li><strong>Cookies</strong> : des cookies peuvent s'installer lors de la navigation sur le site (voir section 08)</li>
+            </ul>
+
+            <h3>Utilisation des données personnelles</h3>
+            <p>
+              Les données personnelles collectées ont pour objectif la mise à disposition des
+              services du site, leur amélioration et le maintien d'un environnement sécurisé.
+              Plus précisément :
+            </p>
+            <ul>
+              <li>Permettre l'accès et l'utilisation du site</li>
+              <li>Gérer le fonctionnement et l'optimisation du site</li>
+              <li>Répondre aux demandes de contact et de réservation</li>
+              <li>Vérifier, identifier et authentifier les données transmises par l'utilisateur</li>
+              <li>Prévenir et détecter les fraudes et incidents de sécurité</li>
+              <li>Gérer les éventuels litiges avec les utilisateurs</li>
+            </ul>
+            <p>
+              Fluo Coaching ne commercialise pas vos données personnelles, qui sont uniquement
+              utilisées par nécessité ou à des fins statistiques et d'analyses.
+            </p>
+
+            <h3>Partage des données personnelles avec des tiers</h3>
+            <p>Les données personnelles peuvent être partagées avec des sociétés tierces dans les cas suivants :</p>
+            <ul>
+              <li>Lorsque Fluo Coaching recourt aux services de prestataires pour fournir certains services (outil de réservation, envoi d'e-mails…). Ces prestataires disposent d'un accès limité aux données, dans le cadre de l'exécution de leurs prestations, et ont une obligation contractuelle de les utiliser en conformité avec la réglementation applicable</li>
+              <li>Si la loi l'exige, le site peut effectuer la transmission de données pour donner suite aux réclamations présentées contre Fluo Coaching et se conformer aux procédures administratives et judiciaires</li>
+            </ul>
+
+            <h3>Sécurité et confidentialité</h3>
+            <p>
+              Fluo Coaching met en œuvre des mesures organisationnelles et techniques pour
+              protéger les données personnelles contre les altérations, destructions et accès
+              non autorisés. Toutefois, internet n'étant pas un environnement complètement
+              sécurisé, Fluo Coaching ne peut garantir la sécurité absolue de la transmission
+              ou du stockage des données.
+            </p>
+
+            <h3>Exercice des droits des utilisateurs</h3>
+            <p>
+              En application de la réglementation applicable aux données à caractère personnel
+              (RGPD), les utilisateurs disposent des droits suivants, qu'ils peuvent exercer
+              en adressant leur demande à{' '}
+              <a href="mailto:floriane@fluocoaching.com" style={{ color: 'var(--text-mid)' }}>floriane@fluocoaching.com</a> :
+            </p>
+            <ul>
+              <li><strong>Droit d'accès</strong> : connaître les données personnelles les concernant</li>
+              <li><strong>Droit de rectification</strong> : demander la mise à jour d'informations inexactes</li>
+              <li><strong>Droit à la suppression</strong> : demander l'effacement des données personnelles</li>
+              <li><strong>Droit à la limitation du traitement</strong> : demander la limitation du traitement de leurs données</li>
+              <li><strong>Droit d'opposition</strong> : s'opposer au traitement de leurs données</li>
+              <li><strong>Droit à la portabilité</strong> : récupérer les données fournies pour les transmettre à un autre service</li>
+            </ul>
+
+            <h3>Évolution de la présente clause</h3>
+            <p>
+              Fluo Coaching se réserve le droit d'apporter toute modification à la présente
+              clause relative à la protection des données à caractère personnel à tout moment.
+              En cas de modification, la nouvelle version sera publiée sur le site et les
+              utilisateurs en seront informés par e-mail dans un délai minimum de 15 jours
+              avant la date d'effet.
+            </p>
+          </section>
+
+          <section className="legal-section" id="cookies">
+            <h2><span className="sec-num">08</span> Cookies</h2>
+            <p>
+              Le site www.fluocoaching.com peut collecter automatiquement
+              des informations standards via des cookies. Toutes les informations collectées
+              indirectement ne seront utilisées que pour suivre le volume, le type et la
+              configuration du trafic utilisant ce site, pour en développer la conception et
+              l'agencement, et plus généralement pour améliorer le service proposé aux
+              utilisateurs.
+            </p>
+            <p>
+              L'utilisateur peut désactiver les cookies à partir des paramètres de son
+              navigateur. Pour en savoir plus :{' '}
+              <a href="https://www.cnil.fr" target="_blank" rel="noopener" style={{ color: 'var(--text-mid)', textUnderlineOffset: '3px' }}>
+                www.cnil.fr
+              </a>.
+            </p>
+          </section>
+
+          <section className="legal-section" id="droit">
+            <h2><span className="sec-num">09</span> Loi applicable</h2>
+            <p>
+              Les présentes conditions générales d'utilisation sont soumises à l'application
+              du droit français. Si les parties n'arrivent pas à résoudre un litige à
+              l'amiable, le litige sera soumis à la compétence des tribunaux français, et plus
+              particulièrement du Tribunal de Paris.
+            </p>
+          </section>
+        </div>
+      </main>
+      <Footer />
+    </>
+  )
+}

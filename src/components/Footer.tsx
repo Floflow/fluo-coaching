@@ -36,12 +36,18 @@ export default function Footer() {
             </svg>
           </Link>
 
-          <nav style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
+          <nav style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
             <Link href="/mentions-legales" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.3)', transition: 'color 0.2s' }}>
               Mentions légales
             </Link>
-            <Link href="/confidentialite" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.3)', transition: 'color 0.2s' }}>
-              Politique de confidentialité
+            <Link href="/cgv" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.3)', transition: 'color 0.2s' }}>
+              CGV
+            </Link>
+            <Link href="/cgu" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.3)', transition: 'color 0.2s' }}>
+              CGU
+            </Link>
+            <Link href="/reglement-interieur" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.3)', transition: 'color 0.2s' }}>
+              Règlement intérieur
             </Link>
             <Link href="/#contact" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.3)', transition: 'color 0.2s' }}>
               Contact
@@ -49,7 +55,7 @@ export default function Footer() {
           </nav>
 
           <p style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.2)' }}>
-            © 2026 Fluo Coaching · Floriane M.
+            © 2026 Fluo Coaching · Floriane Perrin de Brichambaut
           </p>
 
         </div>
