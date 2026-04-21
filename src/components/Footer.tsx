@@ -49,7 +49,7 @@ export default function Footer() {
             <Link href="/reglement-interieur" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.3)', transition: 'color 0.2s' }}>
               Règlement intérieur
             </Link>
-            <Link href="/#contact" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.3)', transition: 'color 0.2s' }}>
+            <Link href="/contact" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.3)', transition: 'color 0.2s' }}>
               Contact
             </Link>
           </nav>
