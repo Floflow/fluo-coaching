@@ -69,9 +69,7 @@ export default function Hero() {
             marginBottom: '2.5rem',
             maxWidth: '480px',
           }}>
-            Ce qui semblait juste hier ne te ressemble plus tout à fait aujourd&rsquo;hui.
-            Ce bilan de compétences t&rsquo;aidera à y voir plus clair et décider
-            sereinement de la suite.
+            Ce qui semblait juste hier ne te ressemble plus tout à fait aujourd&rsquo;hui. Coach certifiée, je te propose ce bilan de compétences qui t&rsquo;aidera à y voir plus clair et décider sereinement de la suite.
           </p>
 
           <div className="hero-ctas fade-in fade-in-delay-3" style={{

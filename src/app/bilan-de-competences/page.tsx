@@ -271,9 +271,6 @@ export default function BilanDeCompetences() {
                 </h2>
                 <div className="fade-in fade-in-delay-2" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.5rem' }}>
                   <p style={{ fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8 }}>
-                    Aider les gens qui m&rsquo;entourent à mettre en lumière ce qui compte vraiment pour eux, c&rsquo;est quelque chose qui m&rsquo;a toujours animée. Alors quand l&rsquo;occasion s&rsquo;est présentée d&rsquo;en faire mon métier, ça s&rsquo;est imposé comme une évidence — et chaque accompagnement le confirme un peu plus.
-                  </p>
-                  <p style={{ fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8 }}>
                     Je travaille en partenariat avec e-Coaching Associates, organisme de formation certifié Qualiopi. J&rsquo;ai été formée à leur méthode par des coachs eux-mêmes consultants en bilan de compétences, avec une expérience solide du terrain. La méthode est rigoureuse et a fait ses preuves.
                   </p>
                   <p style={{ fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8 }}>

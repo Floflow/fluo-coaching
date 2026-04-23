@@ -44,9 +44,12 @@ export default function Floriane() {
               <p>
                 De mission à impact social au Cambodge à développeuse web à Londres,
                 puis coach professionnelle à Paris — mon parcours a de quoi surprendre.
-                Mais chaque étape faisait sens sur le moment. Et c&rsquo;est exactement
+                Mais chaque étape faisait sens sur le moment et m&rsquo;a menée où je suis aujourd&rsquo;hui. Et c&rsquo;est exactement
                 ce que je t&rsquo;aide à (re)trouver :{' '}
                 <strong>cette clarté intérieure qui permet de décider sereinement.</strong>
+              </p>
+              <p>
+                Aider les gens qui m&rsquo;entourent à mettre en lumière ce qui compte vraiment pour eux m&rsquo;a toujours animée — c&rsquo;est pourquoi j&rsquo;ai décidé d&rsquo;en faire mon métier — et chaque accompagnement vient confirmer cette évidence.
               </p>
               <p>
                 Je t&rsquo;accompagne avec écoute, bienveillance et non-jugement —

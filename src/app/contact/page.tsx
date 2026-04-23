@@ -30,8 +30,9 @@ export default function Contact() {
               fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)',
               lineHeight: 1.8, maxWidth: '520px', marginBottom: '2.5rem',
             }} className="fade-in fade-in-delay-2">
-              Choisis ce qui te convient le mieux — réserver un créneau ou m&rsquo;envoyer un message.
-              Dans les deux cas, je te réponds personnellement.
+              Tu peux réserver un créneau pour qu&rsquo;on s&rsquo;appelle, ou m&rsquo;envoyer un message si tu préfères commencer par là.
+              Dans tous les cas, c&rsquo;est l&rsquo;occasion de me parler de ta situation, de ce que tu cherches et de me poser toutes tes questions. Je te répondrai honnêtement et si nous déterminons que je peux t&rsquo;aider, nous pourrons décider de la suite.
+              Quoi qu&rsquo;il en soit, je serai ravie de faire ta connaissance. À très vite !
             </p>
           </div>
         </section>
