@@ -26,14 +26,15 @@ export default function Contact() {
             <h1 className="page-intro-title fade-in fade-in-delay-1" style={{ marginTop: '0.75rem', marginBottom: '0.75rem' }}>
               Parlons de <span className="hl">toi</span>
             </h1>
-            <p style={{
+            <div style={{
               fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)',
-              lineHeight: 1.8, maxWidth: '520px', marginBottom: '2.5rem',
+              lineHeight: 1.8, maxWidth: '640px', marginBottom: '2.5rem',
+              display: 'flex', flexDirection: 'column', gap: '1rem',
             }} className="fade-in fade-in-delay-2">
-              Tu peux réserver un créneau pour qu&rsquo;on s&rsquo;appelle, ou m&rsquo;envoyer un message si tu préfères commencer par là.
-              Dans tous les cas, c&rsquo;est l&rsquo;occasion de me parler de ta situation, de ce que tu cherches et de me poser toutes tes questions. Je te répondrai honnêtement et si nous déterminons que je peux t&rsquo;aider, nous pourrons décider de la suite.
-              Quoi qu&rsquo;il en soit, je serai ravie de faire ta connaissance. À très vite !
-            </p>
+              <p>Tu peux réserver un créneau pour qu&rsquo;on s&rsquo;appelle, ou m&rsquo;envoyer un message si tu préfères commencer par là.</p>
+              <p>Dans tous les cas, c&rsquo;est l&rsquo;occasion de me parler de ta situation, de ce que tu cherches et de me poser toutes tes questions. Je te répondrai honnêtement et si nous déterminons que je peux t&rsquo;aider, nous pourrons décider de la suite.</p>
+              <p>Quoi qu&rsquo;il en soit, je serai ravie de faire ta connaissance. À très vite !</p>
+            </div>
           </div>
         </section>
 
