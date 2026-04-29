@@ -32,8 +32,8 @@ export default function Contact() {
               display: 'flex', flexDirection: 'column', gap: '1rem',
             }} className="fade-in fade-in-delay-2">
               <p>Tu peux réserver un créneau pour qu&rsquo;on s&rsquo;appelle, ou m&rsquo;envoyer un message si tu préfères commencer par là.</p>
-              <p>Dans tous les cas, c&rsquo;est l&rsquo;occasion de me parler de ta situation, de ce que tu cherches et de me poser toutes tes questions. Je te répondrai honnêtement et si nous déterminons que je peux t&rsquo;aider alors nous pourrons décider de la suite.</p>
-              <p>Quoi qu&rsquo;il en soit, je serai ravie de faire ta connaissance. À très vite !</p>
+              <p>C&rsquo;est l&rsquo;occasion de me parler de ta situation, de ce que tu recherches et de me poser toutes tes questions.</p>
+              <p>À très vite !</p>
             </div>
           </div>
         </section>

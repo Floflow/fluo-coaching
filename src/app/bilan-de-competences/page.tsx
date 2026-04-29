@@ -21,7 +21,7 @@ const parcours = [
   {
     num: '1', active: false,
     titre: 'Entretien découverte gratuit',
-    desc: "On se rencontre, j'explique la démarche et on évalue ensemble si le bilan te correspond.",
+    desc: "On se rencontre, je réponds à toutes tes questions et on évalue ensemble si le bilan te correspond.",
     last: false,
   },
   {
@@ -33,13 +33,13 @@ const parcours = [
   {
     num: '3', active: true,
     titre: "Phase d'investigation",
-    desc: 'Exploration de tes compétences, motivations et valeurs. Construction de ton projet.',
+    desc: 'Introspection et exploration. Construction de ton projet.',
     last: false,
   },
   {
     num: '4', active: true,
     titre: 'Phase de conclusion',
-    desc: "Synthèse, plan d'action, document final. Tu repars avec de la clarté et une direction.",
+    desc: "Synthèse du travail effectué. Tu repars avec de la clarté et une direction.",
     last: true,
   },
 ]
@@ -48,9 +48,10 @@ const phases = [
   {
     num: '01', eyebrow: 'Phase préliminaire',
     titre: 'Analyser la demande',
-    desc: "On commence par clarifier ta situation, ta demande et tes besoins. C'est la base de tout accompagnement sur mesure.",
+    desc: "On commence par clarifier ta situation, ta demande et tes besoins.",
     items: [
       'Échange sur tes attentes et ton contexte',
+      'Définition de tes objectifs',
       'Définition du format adapté à ta situation',
       'Présentation de la charte déontologique',
     ],
@@ -58,53 +59,22 @@ const phases = [
   {
     num: '02', eyebrow: "Phase d'investigation",
     titre: 'Construire ton projet',
-    desc: "Le cœur du bilan. On explore tes compétences, tes motivations, tes valeurs — pour faire émerger un projet professionnel cohérent.",
+    desc: "On explore ton parcours, tes motivations profondes et tes besoins actuels pour faire émerger un projet professionnel cohérent.",
     items: [
+      "Identification des éléments clés de ton parcours",
       'Identification de tes compétences et aptitudes',
-      'Exploration de tes motivations et valeurs',
-      'Construction et vérification du projet',
-      "Élaboration d'alternatives si besoin",
+      'Analyse de tes motivations et intérêts',
+      "Déterminer tes possibilités d'évolution professionnelle",
     ],
   },
   {
     num: '03', eyebrow: 'Phase de conclusion',
     titre: 'Décider de la suite',
-    desc: "On fait la synthèse de tout le travail réalisé. Tu repars avec un plan d'action concret que tu as construit toi-même.",
-    items: [
-      'Synthèse des compétences et du projet',
-      "Plan d'action pour la mise en œuvre",
-      'Document de synthèse — ta seule propriété',
-    ],
+    desc: "On fait la synthèse de tout le travail réalisé : analyse des compétences, définition du projet professionnel, conditions et moyens favorisant la réalisation du ou des projets professionnels. Tu repars avec un document de synthèse et un plan d'action concret pour la mise en œuvre de ton projet.",
+    items: [],
   },
 ]
 
-const livrables = [
-  {
-    titre: 'Un document de synthèse complet',
-    desc: "Analyse de tes compétences, définition de ton projet, conditions de réalisation. Il t'appartient entièrement — confidentiel.",
-    svg: <path d="M13.5 2h-11A1.5 1.5 0 001 3.5v9A1.5 1.5 0 002.5 14h11a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0013.5 2zM4 5.5h8v1.5H4V5.5zm0 3h6V10H4V8.5z" fill="#1E3830"/>,
-  },
-  {
-    titre: "Un plan d'action concret",
-    desc: "Que tu as construit toi-même, grâce au questionnement. Pas un plan générique — le tien, ancré dans ta réalité.",
-    svg: <path d="M8 1a7 7 0 100 14A7 7 0 008 1zm.75 4.75V8.5H11v1.5H7.25V5.75h1.5z" fill="#1E3830"/>,
-  },
-  {
-    titre: 'La clarté pour décider sereinement',
-    desc: 'Pas de saut dans le vide. Un choix conscient, appuyé sur une vraie connaissance de toi-même.',
-    svg: <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zm3.03 4.97L7.5 10l-2.03-2.03 1.06-1.06L7.5 7.88l2.47-2.47 1.06 1.06z" fill="#1E3830"/>,
-  },
-  {
-    titre: 'Accès à la plateforme pendant 1 an',
-    desc: "Questionnaires, tests, outils et ressources disponibles tout au long de l'accompagnement et après.",
-    svg: <path d="M2 3.5A1.5 1.5 0 013.5 2h9A1.5 1.5 0 0114 3.5v2A1.5 1.5 0 0112.5 7h-9A1.5 1.5 0 012 5.5v-2zm0 7A1.5 1.5 0 013.5 9h9a1.5 1.5 0 011.5 1.5v2a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 12.5v-2z" fill="#1E3830"/>,
-  },
-  {
-    titre: 'Un rendez-vous de suivi à 6 mois',
-    desc: 'On se retrouve 6 mois après la fin du bilan pour faire le point — voir où tu en es, ce qui a avancé, ce qui reste à ajuster.',
-    svg: <path d="M5 1a1 1 0 00-1 1v1H3a2 2 0 00-2 2v9a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2h-1V2a1 1 0 10-2 0v1H6V2a1 1 0 00-1-1zM3 7h10v7H3V7zm2 2v2h2V9H5zm4 0v2h2V9H9z" fill="#1E3830"/>,
-  },
-]
 
 const infosBilan = [
   { label: 'Durée',            valeur: '13h ensemble', valeur2: '+ 11h de travail personnel', sub: 'Variable selon les besoins' },
@@ -136,8 +106,7 @@ export default function BilanDeCompetences() {
                 </h1>
                 <p className="page-intro-sub fade-in fade-in-delay-2">
                   Un accompagnement structuré pour comprendre où tu en es, explorer les possibles
-                  et décider sereinement de la suite — avec un plan d&rsquo;action que tu auras
-                  construit toi-même.
+                  et décider sereinement de la suite.
                 </p>
                 <p className="page-intro-sub fade-in fade-in-delay-2" style={{ marginBottom: 0 }}>
                   À l&rsquo;issue du bilan, tu seras capable de mettre en lumière :
@@ -226,39 +195,9 @@ export default function BilanDeCompetences() {
         </section>
 
         {/* ══════════════════════════════════════
-            3. CE QUE TU REPARS AVEC
-        ══════════════════════════════════════ */}
-        <section className="section" id="livrables" data-section="livrables">
-          <div className="container">
-            <p className="label fade-in">À la fin du bilan</p>
-            <h2 className="section-title fade-in fade-in-delay-1" style={{ marginTop: '0.5rem', marginBottom: '3rem' }}>
-              Tu repars avec des décisions<br />
-              qui <span className="hl">te ressemblent</span>
-            </h2>
-            <div style={{ marginTop: '3.5rem' }}>
-              <ul className="livrables-list">
-                {livrables.map((l, i) => (
-                  <li key={i} className={`livrable-item fade-in${i > 0 ? ` fade-in-delay-${Math.min(i, 5)}` : ''}`}>
-                    <div className="livrable-icon" aria-hidden="true">
-                      <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
-                        {l.svg}
-                      </svg>
-                    </div>
-                    <div className="livrable-text">
-                      <h4>{l.titre}</h4>
-                      <p>{l.desc}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* ══════════════════════════════════════
             4. FLORIANE / CONFIANCE
         ══════════════════════════════════════ */}
-        <section className="section section-alt" id="floriane" data-section="floriane-bilan">
+        <section className="section" id="floriane" data-section="floriane-bilan">
           <div className="container">
             <div className="floriane-trust-grid">
 
