@@ -6,7 +6,7 @@
 const profils = [
   {
     num: '01',
-    titre: 'Tu as tout "bien fait" — mais tu ne t\'y retrouves plus',
+    titre: 'Tu as tout "bien fait" mais tu ne t\'y retrouves plus',
     items: [
       'Tu ressens un décalage, un manque de sens',
       'Tu te dis "je devrais être reconnaissant·e… mais quelque chose cloche"',
@@ -23,7 +23,7 @@ const profils = [
   },
   {
     num: '03',
-    titre: 'Tu as trop d\'idées — et c\'est justement le problème',
+    titre: 'Tu as trop d\'idées et c\'est justement le problème',
     items: [
       'Beaucoup de compétences, beaucoup de possibles',
       'Tu es paralysé·e par le choix, incapable de trancher',

@@ -49,12 +49,7 @@ export default function Floriane() {
                 <strong>cette clarté intérieure qui permet de décider sereinement.</strong>
               </p>
               <p>
-                Aider les gens qui m&rsquo;entourent à mettre en lumière ce qui compte vraiment pour eux m&rsquo;a toujours animée — c&rsquo;est pourquoi j&rsquo;ai décidé d&rsquo;en faire mon métier — et chaque accompagnement vient confirmer cette évidence.
-              </p>
-              <p>
-                Je t&rsquo;accompagne avec écoute, bienveillance et non-jugement —
-                dans un espace où le rire a toute sa place, parce que se poser des
-                questions importantes ne doit pas toujours être pesant.
+                Aider les gens qui m&rsquo;entourent à mettre en lumière ce qui compte vraiment pour eux m&rsquo;a toujours animée. C&rsquo;est pourquoi j&rsquo;ai décidé d&rsquo;en faire mon métier et chaque accompagnement depuis me confirme que c&rsquo;était le bon choix. Ce qui me touche le plus&nbsp;? Voir le potentiel de chacun émerger au fil des séances. Les idées qui se dessinent et se transforment en un plan d&rsquo;action concret. Vous sentir gagner en confiance et en énergie.
               </p>
             </div>
 
