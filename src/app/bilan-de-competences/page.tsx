@@ -70,7 +70,8 @@ const phases = [
   {
     num: '03', eyebrow: 'Phase de conclusion',
     titre: 'Décider de la suite',
-    desc: "On fait la synthèse de tout le travail réalisé : analyse des compétences, définition du projet professionnel, conditions et moyens favorisant la réalisation du ou des projets professionnels. Tu repars avec un document de synthèse et un plan d'action concret pour la mise en œuvre de ton projet.",
+    desc: "On fait la synthèse de tout le travail réalisé : analyse des compétences, définition du projet professionnel, conditions et moyens favorisant la réalisation du ou des projets professionnels.",
+    desc2: "Tu repars avec un document de synthèse et un plan d'action concret pour la mise en œuvre de ton projet.",
     items: [],
   },
 ]
@@ -177,6 +178,7 @@ export default function BilanDeCompetences() {
                   <p className="phase-eyebrow">{phase.eyebrow}</p>
                   <h3 className="phase-title">{phase.titre}</h3>
                   <p className="phase-desc">{phase.desc}</p>
+                  {'desc2' in phase && <p className="phase-desc" style={{ marginTop: '1rem' }}>{(phase as typeof phase & { desc2: string }).desc2}</p>}
                   <ul style={{ listStyle: 'none', marginTop: '1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     {phase.items.map((item, j) => (
                       <li key={j} style={{
