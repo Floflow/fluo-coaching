@@ -64,7 +64,7 @@ const phases = [
       "Identification des éléments clés de ton parcours",
       'Identification de tes compétences et aptitudes',
       'Analyse de tes motivations et intérêts',
-      "Déterminer tes possibilités d'évolution professionnelle",
+      "Exploration de tes possibilités d'évolution professionnelle",
     ],
   },
   {
