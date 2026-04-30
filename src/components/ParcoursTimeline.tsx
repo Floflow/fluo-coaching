@@ -54,9 +54,7 @@ export default function ParcoursTimeline() {
             {!step.last && <div className="timeline-line" />}
           </div>
           <div className="timeline-content">
-            <h4 style={step.scrollToPhases ? { textDecoration: 'underline', textUnderlineOffset: '3px', textDecorationColor: 'var(--text-light)' } : undefined}>
-              {step.titre}
-            </h4>
+            <h4>{step.titre}</h4>
             <p>{step.desc}</p>
           </div>
         </div>
