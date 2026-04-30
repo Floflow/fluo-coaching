@@ -40,6 +40,12 @@ const parcours = [
     num: '4', active: true,
     titre: 'Phase de conclusion',
     desc: "Synthèse du travail effectué. Tu repars avec de la clarté et une direction.",
+    last: false,
+  },
+  {
+    num: '5', active: false,
+    titre: 'Rendez-vous de suivi à 6 mois',
+    desc: "On se retrouve 6 mois après la fin du bilan pour faire le point, voir où tu en es, ce qui a avancé, ce qui reste à ajuster.",
     last: true,
   },
 ]
