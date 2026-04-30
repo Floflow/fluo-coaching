@@ -66,8 +66,8 @@ export default function Header() {
 
               {/* Tagline — masquée < 1100px via CSS */}
               <div className="logo-tagline">
-                <span className="logo-tagline-top">Coaching &amp; Bilan de Compétences</span>
-                <span className="logo-tagline-sub">Mettre en lumière ce qui compte</span>
+                <span className="logo-tagline-top">Mettre en lumière ce qui compte</span>
+                <span className="logo-tagline-sub">Coach certifiée</span>
               </div>
 
             </div>

@@ -12,7 +12,7 @@ export default function Hero() {
       className="hero"
       data-section="hero"
       style={{
-        padding: '6rem 0 5rem',
+        padding: '3rem 0 5rem',
         overflow: 'hidden',
         position: 'relative',
         background: 'var(--bg)',
@@ -34,17 +34,6 @@ export default function Hero() {
 
       <div className="container">
         <div style={{ maxWidth: '720px', position: 'relative', zIndex: 1 }}>
-
-          <p className="hero-label fade-in" style={{
-            fontSize: '11px',
-            fontWeight: 500,
-            letterSpacing: '0.15em',
-            textTransform: 'uppercase',
-            color: 'var(--text-light)',
-            marginBottom: '1.5rem',
-          }}>
-            Coach certifiée · Bilan de compétences
-          </p>
 
           <h1 className="hero-title fade-in fade-in-delay-1" style={{
             fontFamily: 'var(--font-display)',
@@ -69,7 +58,7 @@ export default function Hero() {
             marginBottom: '2.5rem',
             maxWidth: '480px',
           }}>
-            Ce qui semblait juste hier ne te ressemble plus tout à fait aujourd&rsquo;hui. Coach certifiée, je te propose ce bilan de compétences qui t&rsquo;aidera à y voir plus clair et décider sereinement de la suite.
+            Ce qui semblait juste hier ne te ressemble plus tout à fait aujourd&rsquo;hui. Coach certifiée, je te propose ce bilan de compétences (éligible CPF) qui t&rsquo;aidera à y voir plus clair et décider sereinement de la suite.
           </p>
 
           <div className="hero-ctas fade-in fade-in-delay-3" style={{
