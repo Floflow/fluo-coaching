@@ -5,9 +5,9 @@
 
 const temoignages = [
   {
-    texte: "Je tournais en rond depuis deux ans. En quelques séances, j'ai enfin compris ce qui avait changé en moi — et j'ai pu décider sans avoir peur de me tromper.",
-    auteur: 'Marie L.',
-    role: 'Responsable marketing, 34 ans',
+    texte: "En pleine période d'incertitude, j'avais besoin d'une méthode et d'un regard extérieur pour m'aider à me recentrer, à écarter les doutes. Le travail que j'ai fait avec Floriane m'a aidée à aligner mon projet professionnel avec mes envies, mes besoins, mon ambition et à mettre en lumière mes forces, et j'en sors sereine et grandie. Tout le monde devrait faire un bilan de compétences !",
+    auteur: 'Bérengère S.',
+    role: 'Responsable communication, 35 ans',
   },
   {
     texte: "J'avais tellement d'idées que je n'arrivais plus à choisir. Le bilan m'a aidé à mettre de l'ordre — pas à trouver LA réponse, mais à comprendre ce qui comptait vraiment pour moi.",
