@@ -61,14 +61,6 @@ export default function Header() {
                       clipPath="url(#hUBot)">U</text>
               </svg>
 
-              {/* Séparateur vertical — masqué < 1100px via CSS */}
-              <div className="logo-sep" aria-hidden="true" />
-
-              {/* Tagline — masquée < 1100px via CSS */}
-              <div className="logo-tagline">
-                <span className="logo-tagline-top">Mettre en lumière ce qui compte</span>
-                <span className="logo-tagline-sub">Coach certifiée</span>
-              </div>
 
             </div>
           </a>
