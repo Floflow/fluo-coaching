@@ -44,7 +44,7 @@ const phases = [
   {
     num: '03', eyebrow: 'Phase de conclusion',
     titre: 'Décider de la suite',
-    desc: "On fait la synthèse de tout le travail réalisé : analyse des compétences, définition du projet professionnel, conditions et moyens favorisant la réalisation du ou des projets professionnels.",
+    desc: "On fait la synthèse de tout le travail réalisé : analyse des compétences, définition du projet professionnel, conditions et moyens favorisant la réalisation du ou des projets professionnels, alternatives si besoin.",
     desc2: "Tu repars avec un document de synthèse et un plan d'action concret pour la mise en œuvre de ton projet.",
     items: [],
   },
