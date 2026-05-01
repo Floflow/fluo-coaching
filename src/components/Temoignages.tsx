@@ -10,9 +10,9 @@ const temoignages = [
     role: 'Responsable communication, 35 ans',
   },
   {
-    texte: "J'avais tellement d'idées que je n'arrivais plus à choisir. Le bilan m'a aidé à mettre de l'ordre — pas à trouver LA réponse, mais à comprendre ce qui comptait vraiment pour moi.",
-    auteur: 'Thomas R.',
-    role: 'Ingénieur, 41 ans — reconversion vers le conseil',
+    texte: "Quand j'ai commencé à travailler avec Floriane, je traversais une période de transition où je ne savais plus quel chemin emprunter. Je me sentais à la fois perdue et submergée par les possibilités, sans parvenir à choisir. Floriane m'a aidée à y voir plus clair et à me lancer avec plus de clarté et de sérénité. Grâce à son énergie solaire et son écoute attentive, elle a su me mettre en confiance à chaque séance et réveiller mon potentiel. Un immense merci à toi, Floriane !",
+    auteur: 'Coline',
+    role: '28 ans',
   },
   {
     texte: "Après un environnement de travail vraiment difficile, j'avais perdu confiance. Floriane ne m'a pas dit quoi faire — elle m'a aidée à me réapproprier mes propres décisions.",
