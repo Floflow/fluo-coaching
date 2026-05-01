@@ -18,7 +18,7 @@ const infosBilan = [
   {
     label: 'Tarif',
     valeur: '1 750 € TTC',
-    detail: 'Éligible CPF via mon partenariat avec e-Coaching Associates',
+    detail: 'Éligible CPF via mon partenariat avec DB Consulting',
   },
 ]
 
