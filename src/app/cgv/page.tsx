@@ -28,7 +28,7 @@ export default function CGV() {
             <strong>coaching individuel</strong> engagées directement par{' '}
             <strong>Fluo Coaching</strong> pour le compte d'un Client. Elles ne couvrent pas
             les bilans de compétences financés via le CPF, qui sont réalisés dans le cadre
-            d'un partenariat de sous-traitance avec e-Coaching Associates et régis par leurs
+            d'un partenariat de sous-traitance avec DB Consulting et régis par leurs
             propres conditions. Le fait de s'inscrire ou de passer commande implique
             l'adhésion entière et sans réserve du Client aux présentes CGV.
           </div>
@@ -65,16 +65,16 @@ export default function CGV() {
             </p>
             <p>
               Pour les bilans de compétences financés via le CPF, Fluo Coaching intervient en
-              qualité de sous-traitante de <strong>e-Coaching Associates</strong>, organisme
+              qualité de sous-traitante de <strong>DB Consulting</strong>, organisme
               de formation certifié Qualiopi. Dans ce cadre, la relation contractuelle avec
-              le bénéficiaire est établie directement avec e-Coaching Associates.
+              le bénéficiaire est établie directement avec DB Consulting.
             </p>
             <p>Dans les paragraphes qui suivent, il est convenu de désigner par :</p>
             <ul>
               <li><strong>Client</strong> : toute personne physique qui s'inscrit ou passe commande d'une prestation de coaching directement auprès de Fluo Coaching.</li>
               <li><strong>Bénéficiaire</strong> : la personne physique qui participe à la prestation.</li>
               <li><strong>Coaching individuel</strong> : accompagnement structuré visant à explorer et clarifier un projet professionnel ou personnel (transition de carrière, prise de poste, développement de potentiel…).</li>
-              <li><strong>e-Coaching Associates</strong> : organisme de formation partenaire, certifié Qualiopi, dans le cadre duquel Fluo Coaching réalise les bilans de compétences financés par CPF.</li>
+              <li><strong>DB Consulting</strong> : organisme de formation partenaire, certifié Qualiopi, dans le cadre duquel Fluo Coaching réalise les bilans de compétences financés par CPF.</li>
               <li><strong>CGV</strong> : les présentes conditions générales de vente.</li>
             </ul>
           </section>
@@ -90,7 +90,7 @@ export default function CGV() {
             <p>
               Les bilans de compétences financés via le Compte Personnel de Formation (CPF)
               sont exclus du champ des présentes CGV. Ils relèvent du contrat conclu entre
-              le bénéficiaire et e-Coaching Associates, dont les conditions sont disponibles
+              le bénéficiaire et DB Consulting, dont les conditions sont disponibles
               directement auprès de cet organisme.
             </p>
           </section>
@@ -286,15 +286,15 @@ export default function CGV() {
             <p>
               Les bilans de compétences financés via le Compte Personnel de Formation (CPF)
               sont réalisés dans le cadre d'un <strong>partenariat de sous-traitance avec
-              e-Coaching Associates</strong>, organisme de formation certifié Qualiopi.
+              DB Consulting</strong>, organisme de formation certifié Qualiopi.
             </p>
             <p>Dans ce cadre :</p>
             <ul>
-              <li>Le contrat est conclu directement entre le bénéficiaire et <strong>e-Coaching Associates</strong>, qui est le seul interlocuteur contractuel du bénéficiaire ;</li>
-              <li>Les conditions générales et le règlement intérieur d'e-Coaching Associates s'appliquent à la relation avec le bénéficiaire ;</li>
-              <li>Fluo Coaching intervient en qualité de <strong>sous-traitante</strong> pour la délivrance de la prestation ; elle n'est pas partie au contrat conclu entre le bénéficiaire et e-Coaching Associates ;</li>
-              <li>La facturation CPF est gérée par e-Coaching Associates via la plateforme Mon Compte Formation ;</li>
-              <li>Tout litige relatif à un bilan CPF doit être adressé à e-Coaching Associates.</li>
+              <li>Le contrat est conclu directement entre le bénéficiaire et <strong>DB Consulting</strong>, qui est le seul interlocuteur contractuel du bénéficiaire ;</li>
+              <li>Les conditions générales et le règlement intérieur d'DB Consulting s'appliquent à la relation avec le bénéficiaire ;</li>
+              <li>Fluo Coaching intervient en qualité de <strong>sous-traitante</strong> pour la délivrance de la prestation ; elle n'est pas partie au contrat conclu entre le bénéficiaire et DB Consulting ;</li>
+              <li>La facturation CPF est gérée par DB Consulting via la plateforme Mon Compte Formation ;</li>
+              <li>Tout litige relatif à un bilan CPF doit être adressé à DB Consulting.</li>
             </ul>
             <div className="legal-note">
               Les présentes CGV ne s'appliquent donc <strong>pas</strong> aux bilans de

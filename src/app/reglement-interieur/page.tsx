@@ -29,7 +29,7 @@ export default function ReglementInterieur() {
             prestation de coaching ou de bilan de compétences proposée par{' '}
             <strong>Fluo Coaching</strong> (Floriane Perrin de Brichambaut). Pour les bilans
             de compétences financés via le CPF, la prestation est organisée en partenariat
-            avec <strong>e-Coaching Associates</strong>, organisme certifié Qualiopi. Un
+            avec <strong>DB Consulting</strong>, organisme certifié Qualiopi. Un
             exemplaire est remis à chaque bénéficiaire en amont du démarrage de la prestation.
           </div>
 

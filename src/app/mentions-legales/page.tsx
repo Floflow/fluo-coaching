@@ -94,7 +94,7 @@ export default function MentionsLegales() {
               </div>
               <div className="legal-info-row">
                 <div className="legal-info-key">Bilans de compétences (CPF)</div>
-                <div className="legal-info-val">Réalisés en sous-traitance de e-Coaching Associates — organisme certifié Qualiopi</div>
+                <div className="legal-info-val">Réalisés en sous-traitance de DB Consulting — organisme certifié Qualiopi</div>
               </div>
             </div>
 
