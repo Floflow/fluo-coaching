@@ -55,7 +55,7 @@ const infosBilan = [
   { label: 'Durée',            valeur: '13h ensemble', valeur2: '+ 11h de travail personnel', sub: 'Variable selon les besoins' },
   { label: 'Format',           valeur: 'À distance',   valeur2: '',                           sub: 'Accompagnement individuel, à ton rythme' },
   { label: 'Tarif',            valeur: '1 600 € TTC',  valeur2: '',                           sub: 'Éligible CPF via mon partenariat avec e-Coaching Associates' },
-  { label: 'Accès plateforme', valeur: '',              valeur2: '',                           sub: 'Questionnaires, tests, outils et ressources' },
+  { label: 'Accès plateforme', valeur: 'e-coaching Associates', valeur2: '',                  sub: 'Questionnaires, tests, outils et ressources' },
 ]
 
 // ─── Page ──────────────────────────────────
@@ -171,7 +171,7 @@ export default function BilanDeCompetences() {
                 </h2>
                 <div className="fade-in fade-in-delay-2" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.5rem' }}>
                   <p style={{ fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8 }}>
-                    Je travaille en partenariat avec e-Coaching Associates, organisme de formation certifié Qualiopi. J&rsquo;ai été formée à leur méthode par des coachs eux-mêmes consultants en bilan de compétences, avec une expérience solide du terrain. La méthode est rigoureuse et a fait ses preuves.
+                    Je travaille en partenariat avec DB Consulting, organisme de formation certifié Qualiopi. J&rsquo;ai été formée à leur méthode par des coachs eux-mêmes consultants en bilan de compétences, avec une expérience solide du terrain. La méthode est rigoureuse et a fait ses preuves.
                   </p>
                   <p style={{ fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8 }}>
                     Il n&rsquo;est pas forcément nécessaire de tout changer pour trouver ce qui te correspond. Il n&rsquo;existe pas de modèle universel de réussite, seulement le tien. Mon rôle est de t&rsquo;apporter un cadre, du recul et de la lucidité pour que tu puisses décider sereinement de la suite.
