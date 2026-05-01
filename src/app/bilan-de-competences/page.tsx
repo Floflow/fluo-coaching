@@ -80,8 +80,7 @@ export default function BilanDeCompetences() {
                   Bilan de compétences
                 </h1>
                 <p className="page-intro-sub fade-in fade-in-delay-2">
-                  Un accompagnement structuré pour comprendre où tu en es, explorer les possibles
-                  et décider sereinement de la suite.
+                  Ce qui semblait juste hier ne te ressemble plus tout à fait aujourd&rsquo;hui. Coach certifiée, je te propose ce bilan de compétences éligible au CPF qui t&rsquo;aidera à y voir plus clair et décider sereinement de la suite.
                 </p>
                 <p className="page-intro-sub fade-in fade-in-delay-2" style={{ marginBottom: 0 }}>
                   À l&rsquo;issue du bilan, tu seras capable de mettre en lumière :
