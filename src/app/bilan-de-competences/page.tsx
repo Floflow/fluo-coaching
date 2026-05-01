@@ -13,7 +13,7 @@ import ParcoursTimeline from '@/components/ParcoursTimeline'
 export const metadata: Metadata = {
   title: 'Bilan de compétences — Fluo Coaching',
   description:
-    "Un accompagnement structuré pour comprendre pourquoi tu n'avances plus — et décider sereinement de la suite. Éligible CPF. 1 600 € TTC.",
+    "Un accompagnement structuré pour comprendre pourquoi tu n'avances plus — et décider sereinement de la suite. Éligible CPF. 1 750 € TTC.",
 }
 
 // ─── Données ───────────────────────────────
@@ -54,7 +54,7 @@ const phases = [
 const infosBilan = [
   { label: 'Durée',            valeur: '13h ensemble', valeur2: '+ 11h de travail personnel', sub: 'Variable selon les besoins' },
   { label: 'Format',           valeur: 'À distance',   valeur2: '',                           sub: 'Accompagnement individuel, à ton rythme' },
-  { label: 'Tarif',            valeur: '1 600 € TTC',  valeur2: '',                           sub: 'Éligible CPF via mon partenariat avec e-Coaching Associates' },
+  { label: 'Tarif',            valeur: '1 750 € TTC',  valeur2: '',                           sub: 'Éligible CPF via mon partenariat avec e-Coaching Associates' },
   { label: 'Accès plateforme', valeur: 'e-coaching Associates', valeur2: '',                  sub: 'Questionnaires, tests, outils et ressources' },
 ]
 
