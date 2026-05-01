@@ -31,6 +31,17 @@ export const metadata: Metadata = {
   description:
     "Tu ne te reconnais plus dans ton travail ? Floriane t'accompagne pour comprendre, explorer et décider sereinement de la suite. Bilan de compétences éligible CPF.",
   metadataBase: new URL('https://fluo-coaching.fr'),
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    other: [
+      { rel: 'android-chrome', url: '/android-chrome-192x192.png', sizes: '192x192' },
+      { rel: 'android-chrome', url: '/android-chrome-512x512.png', sizes: '512x512' },
+    ],
+  },
   openGraph: {
     title: 'Fluo Coaching — Bilan de compétences & Coaching professionnel',
     description:
