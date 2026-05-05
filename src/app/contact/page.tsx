@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import CalendlyInline from '@/components/CalendlyInline'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact — Fluo Coaching',
@@ -65,36 +66,7 @@ export default function Contact() {
                   Je te réponds personnellement sous 48h.
                 </p>
 
-                <form className="form" name="contact" method="POST" action="#">
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label className="form-label form-label-light" htmlFor="firstname">Prénom *</label>
-                      <input className="form-input form-input-light" type="text" id="firstname" name="firstname" placeholder="Marie" required autoComplete="given-name" />
-                    </div>
-                    <div className="form-group">
-                      <label className="form-label form-label-light" htmlFor="lastname">Nom *</label>
-                      <input className="form-input form-input-light" type="text" id="lastname" name="lastname" placeholder="Dupont" required autoComplete="family-name" />
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label form-label-light" htmlFor="email">Email *</label>
-                    <input className="form-input form-input-light" type="email" id="email" name="email" placeholder="marie@exemple.fr" required autoComplete="email" />
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label form-label-light" htmlFor="message">Ta situation en quelques mots</label>
-                    <textarea className="form-input form-input-light form-textarea" id="message" name="message" placeholder="Je ne sais plus vraiment où j'en suis dans ma carrière…" />
-                  </div>
-                  <div className="form-check">
-                    <input type="checkbox" id="gdpr" name="gdpr" required />
-                    <label className="form-check-label form-check-label-light" htmlFor="gdpr">
-                      J&rsquo;accepte que mes données soient utilisées pour traiter ma demande.
-                      Elles ne seront jamais transmises à des tiers.
-                    </label>
-                  </div>
-                  <button type="submit" className="btn-primary" style={{ alignSelf: 'flex-start' }} data-track="contact-form-submit">
-                    Envoyer <span className="btn-arrow">→</span>
-                  </button>
-                </form>
+                <ContactForm />
               </div>
 
             </div>
