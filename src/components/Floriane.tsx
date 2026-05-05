@@ -74,14 +74,11 @@ export default function Floriane() {
               </div>
             </div>
 
-            {/* Citation */}
-            <div className="floriane-quote fade-in fade-in-delay-1">
-              <p>
-                « Nos motivations évoluent. Ce qui était juste hier ne l&rsquo;est plus
-                forcément aujourd&rsquo;hui. C&rsquo;est normal — et c&rsquo;est là
-                qu&rsquo;on commence à travailler ensemble. »
-              </p>
-            </div>
+            <p className="fade-in fade-in-delay-1" style={{ fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8 }}>
+              Nos motivations évoluent. Ce qui était juste hier ne l&rsquo;est plus
+              forcément aujourd&rsquo;hui. C&rsquo;est normal — et c&rsquo;est là
+              qu&rsquo;on commence à travailler ensemble.
+            </p>
 
             <a
               href="#contact"
