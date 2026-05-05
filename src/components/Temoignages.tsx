@@ -15,9 +15,9 @@ const temoignages = [
     role: 'Strategic project manager & Coach, 28 ans',
   },
   {
-    texte: "Après un environnement de travail vraiment difficile, j'avais perdu confiance. Floriane ne m'a pas dit quoi faire — elle m'a aidée à me réapproprier mes propres décisions.",
-    auteur: 'Sophie M.',
-    role: 'Chargée de projet, 38 ans',
+    texte: "Ce bilan m'a beaucoup apporté en termes de connaissance de moi-même : j'ai pu identifier mes valeurs, mieux comprendre mes cycles et mon besoin de nouveauté, et prendre conscience de mes croyances limitantes pour travailler dessus. Sur le plan professionnel, j'ai identifié des pistes qui correspondent à mes besoins. Et même si elles n'aboutissaient pas toutes, ce travail sur moi-même me sera utile tout au long de mon parcours. Je repars plus alignée et plus lucide.",
+    auteur: 'Clémence H.',
+    role: 'Category and Trade Marketing Manager, 33 ans',
   },
 ]
 
