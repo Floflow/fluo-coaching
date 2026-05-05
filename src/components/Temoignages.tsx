@@ -11,8 +11,8 @@ const temoignages = [
   },
   {
     texte: "Quand j'ai commencé à travailler avec Floriane, je traversais une période de transition où je ne savais plus quel chemin emprunter. Je me sentais à la fois perdue et submergée par les possibilités, sans parvenir à choisir. Floriane m'a aidée à y voir plus clair et à me lancer avec plus de clarté et de sérénité. Grâce à son énergie solaire et son écoute attentive, elle a su me mettre en confiance à chaque séance et réveiller mon potentiel. Un immense merci à toi, Floriane !",
-    auteur: 'Coline',
-    role: 'Strategic project manager & Coach, 28 ans',
+    auteur: 'Coline M.',
+    role: 'Strategic project manager, 28 ans',
   },
   {
     texte: "Ce bilan m'a beaucoup apporté en termes de connaissance de moi-même : j'ai pu identifier mes valeurs, mieux comprendre mes cycles et mon besoin de nouveauté, et prendre conscience de mes croyances limitantes pour travailler dessus. Sur le plan professionnel, j'ai identifié des pistes qui correspondent à mes besoins. Et même si elles n'aboutissaient pas toutes, ce travail sur moi-même me sera utile tout au long de mon parcours. Je repars plus alignée et plus lucide.",
