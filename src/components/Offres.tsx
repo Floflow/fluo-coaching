@@ -18,7 +18,8 @@ const infosBilan = [
   {
     label: 'Tarif',
     valeur: '1 750 € TTC',
-    detail: 'Éligible CPF via mon partenariat avec DB Consulting',
+    detail: 'Éligible CPF',
+    highlight: true,
   },
 ]
 
@@ -133,13 +134,29 @@ export default function Offres() {
                       </p>
                     )}
                     {info.detail && (
-                      <p style={{
-                        fontSize: '13px',
-                        fontWeight: 300,
-                        color: 'var(--text-mid)',
-                        marginTop: '0.4rem',
-                      }}>
-                        {info.detail}
+                      <p style={{ marginTop: '0.5rem' }}>
+                        {info.highlight ? (
+                          <span style={{
+                            display: 'inline-block',
+                            background: 'var(--fluo)',
+                            color: 'var(--text)',
+                            fontSize: '12px',
+                            fontWeight: 600,
+                            letterSpacing: '0.04em',
+                            padding: '2px 8px',
+                            borderRadius: '4px',
+                          }}>
+                            {info.detail}
+                          </span>
+                        ) : (
+                          <span style={{
+                            fontSize: '13px',
+                            fontWeight: 300,
+                            color: 'var(--text-mid)',
+                          }}>
+                            {info.detail}
+                          </span>
+                        )}
                       </p>
                     )}
                   </div>
