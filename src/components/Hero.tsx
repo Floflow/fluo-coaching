@@ -45,7 +45,7 @@ export default function Hero() {
             letterSpacing: '-0.02em',
           }}>
             Tu ne te reconnais<br />
-            plus dans ton travail.<br />
+            plus dans ton travail ?<br />
             Prenons le temps de comprendre{' '}
             <span className="hl">pourquoi.</span>
           </h1>
