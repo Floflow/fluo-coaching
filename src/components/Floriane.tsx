@@ -43,7 +43,7 @@ export default function Floriane() {
             <div className="floriane-bio fade-in">
               <p>
                 De mission à impact social au Cambodge à développeuse web à Londres,
-                puis coach professionnelle à Paris — mon parcours a de quoi surprendre.
+                puis coach professionnelle à Paris, mon parcours a de quoi surprendre.
                 Mais chaque étape faisait sens sur le moment et m&rsquo;a menée où je suis aujourd&rsquo;hui. Et c&rsquo;est exactement
                 ce que je t&rsquo;aide à (re)trouver :{' '}
                 <strong>cette clarté intérieure qui permet de décider sereinement.</strong>
