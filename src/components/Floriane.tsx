@@ -56,7 +56,7 @@ export default function Floriane() {
               </p>
               <p>
                 Chaque étape de mon parcours faisait sens sur le moment et m&rsquo;a menée où je suis aujourd&rsquo;hui.
-                Et c&rsquo;est exactement ce que je t&rsquo;aide à (re)trouver&nbsp;: cette clarté intérieure qui permet de décider sereinement.
+                Et c&rsquo;est exactement ce que je t&rsquo;aide à (re)trouver&nbsp;: <strong>cette clarté intérieure qui permet de décider sereinement.</strong>
               </p>
             </div>
 
