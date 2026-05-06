@@ -42,14 +42,21 @@ export default function Floriane() {
 
             <div className="floriane-bio fade-in">
               <p>
-                De mission à impact social au Cambodge à développeuse web à Londres,
-                puis coach professionnelle à Paris, mon parcours a de quoi surprendre.
-                Mais chaque étape faisait sens sur le moment et m&rsquo;a menée où je suis aujourd&rsquo;hui. Et c&rsquo;est exactement
-                ce que je t&rsquo;aide à (re)trouver :{' '}
-                <strong>cette clarté intérieure qui permet de décider sereinement.</strong>
+                J&rsquo;ai navigué différents milieux professionnels, avec des étapes parfois surprenantes.
+                Attirée par des missions à impact social, j&rsquo;ai commencé mon parcours au Cambodge dans une entreprise sociale,
+                en tant que business developer. Je me suis ensuite passionnée de tech et j&rsquo;ai travaillé à Londres au sein
+                d&rsquo;un grand groupe en tant que développeuse web. Enfin, en quête de sens, j&rsquo;ai réalisé que j&rsquo;avais
+                toujours été animée par le fait d&rsquo;aider les gens qui m&rsquo;entourent à mettre en lumière ce qui compte
+                vraiment pour eux. C&rsquo;est pourquoi j&rsquo;ai décidé d&rsquo;en faire mon métier et de devenir coach professionnelle.
               </p>
               <p>
-                Aider les gens qui m&rsquo;entourent à mettre en lumière ce qui compte vraiment pour eux m&rsquo;a toujours animée. C&rsquo;est pourquoi j&rsquo;ai décidé d&rsquo;en faire mon métier et chaque accompagnement depuis me confirme que c&rsquo;était le bon choix. Ce qui me touche le plus&nbsp;? Voir le potentiel de chacun émerger au fil des séances. Les idées qui se dessinent et se transforment en un plan d&rsquo;action concret. Vous sentir gagner en confiance et en énergie.
+                Chaque accompagnement depuis me confirme que c&rsquo;était le bon choix. Ce qui me touche le plus&nbsp;?
+                Voir le potentiel de chacun émerger au fil des séances. Les idées qui se dessinent et se transforment
+                en un plan d&rsquo;action concret. Te sentir gagner en confiance et en énergie.
+              </p>
+              <p>
+                Chaque étape de mon parcours faisait sens sur le moment et m&rsquo;a menée où je suis aujourd&rsquo;hui.
+                Et c&rsquo;est exactement ce que je t&rsquo;aide à (re)trouver&nbsp;: cette clarté intérieure qui permet de décider sereinement.
               </p>
             </div>
 
