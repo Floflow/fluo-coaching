@@ -144,7 +144,7 @@ export default function Offres() {
                             fontWeight: 600,
                             letterSpacing: '0.04em',
                             padding: '2px 8px',
-                            borderRadius: '4px',
+                            borderRadius: '999px',
                           }}>
                             {info.detail}
                           </span>
