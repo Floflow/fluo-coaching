@@ -616,7 +616,7 @@ a {
 
 .floriane-quote p {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: 1rem;
   color: var(--text);
   line-height: 1.7;

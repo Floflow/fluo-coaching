@@ -77,9 +77,9 @@ export default function Floriane() {
             {/* Citation */}
             <div className="floriane-quote fade-in fade-in-delay-1">
               <p>
-                « Nos motivations évoluent. Ce qui était juste hier ne l&rsquo;est plus
+                Nos motivations évoluent. Ce qui était juste hier ne l&rsquo;est plus
                 forcément aujourd&rsquo;hui. C&rsquo;est normal — et c&rsquo;est là
-                qu&rsquo;on commence à travailler ensemble. »
+                qu&rsquo;on commence à travailler ensemble.
               </p>
             </div>
 
