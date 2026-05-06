@@ -54,7 +54,7 @@ const phases = [
 const infosBilan = [
   { label: 'Durée',            valeur: '13h ensemble', valeur2: '+ 11h de travail personnel', sub: 'Variable selon les besoins' },
   { label: 'Format',           valeur: 'À distance',   valeur2: '',                           sub: 'Accompagnement individuel, à ton rythme' },
-  { label: 'Tarif',            valeur: '1 750 € TTC',  valeur2: '',                           sub: 'Éligible CPF via mon partenariat avec DB Consulting' },
+  { label: 'Tarif',            valeur: '1 750 € TTC',  valeur2: '',                           sub: 'Éligible CPF', highlight: true },
   { label: 'Accès plateforme', valeur: 'e-coaching Associates', valeur2: '',                  sub: 'Questionnaires, tests, outils et ressources' },
 ]
 
@@ -187,7 +187,23 @@ export default function BilanDeCompetences() {
                         <p className="info-cell-label">{cell.label}</p>
                         {cell.valeur && <p className="info-cell-value">{cell.valeur}</p>}
                         {cell.valeur2 && <p className="info-cell-sub" style={{ marginTop: '2px', color: 'var(--text-mid)' }}>{cell.valeur2}</p>}
-                        <p className="info-cell-sub">{cell.sub}</p>
+                        {cell.highlight ? (
+                          <span style={{
+                            display: 'inline-block',
+                            background: 'var(--fluo)',
+                            color: 'var(--text)',
+                            fontSize: '12px',
+                            fontWeight: 600,
+                            letterSpacing: '0.04em',
+                            padding: '2px 8px',
+                            borderRadius: '999px',
+                            marginTop: '0.5rem',
+                          }}>
+                            {cell.sub}
+                          </span>
+                        ) : (
+                          <p className="info-cell-sub">{cell.sub}</p>
+                        )}
                       </div>
                     ))}
                   </div>
