@@ -52,7 +52,7 @@ export default function Floriane() {
               <p>
                 Chaque accompagnement depuis me confirme que c&rsquo;était le bon choix. Ce qui me touche le plus&nbsp;?
                 Voir le potentiel de chacun émerger au fil des séances. Les idées qui se dessinent et se transforment
-                en un plan d&rsquo;action concret. Te sentir gagner en confiance et en énergie.
+                en un plan d&rsquo;action concret. Vous sentir gagner en confiance et en énergie.
               </p>
               <p>
                 Chaque étape de mon parcours faisait sens sur le moment et m&rsquo;a menée où je suis aujourd&rsquo;hui.
