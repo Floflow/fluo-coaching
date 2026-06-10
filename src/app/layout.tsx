@@ -29,8 +29,8 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: 'Fluo Coaching — Bilan de compétences & Coaching professionnel',
   description:
-    "Tu ne te reconnais plus dans ton travail ? Floriane t'accompagne pour comprendre, explorer et décider sereinement de la suite. Bilan de compétences éligible CPF.",
-  metadataBase: new URL('https://fluo-coaching.fr'),
+    'Un accompagnement structuré pour comprendre où tu en es, explorer les possibles et décider sereinement de la suite.',
+  metadataBase: new URL('https://fluocoaching.com'),
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -45,7 +45,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Fluo Coaching — Bilan de compétences & Coaching professionnel',
     description:
-      "Un accompagnement structuré pour comprendre pourquoi tu n'avances plus — et décider sereinement de la suite.",
+      'Un accompagnement structuré pour comprendre où tu en es, explorer les possibles et décider sereinement de la suite.',
+    siteName: 'Fluo Coaching',
     locale: 'fr_FR',
     type: 'website',
   },
