@@ -58,6 +58,21 @@ const infosBilan = [
   { label: 'Accès plateforme', valeur: 'e-coaching Associates', valeur2: '',                  sub: 'Questionnaires, tests, outils et ressources' },
 ]
 
+const optionsFinancement = [
+  {
+    titre: 'Ton employeur',
+    desc: 'Ton entreprise peut prendre le bilan en charge, via le plan de développement des compétences ou un congé de reclassement.',
+  },
+  {
+    titre: 'France Travail',
+    desc: "Si tu es en recherche d'emploi, France Travail peut parfois financer tout ou partie du bilan. Cependant, les demandes aboutissent rarement et les délais peuvent se compter en mois. Si tu veux tenter, prends rendez-vous directement avec un conseiller.",
+  },
+  {
+    titre: 'Tes fonds propres',
+    desc: "Tu peux aussi financer ton bilan toi-même. Le paiement se fait alors en plusieurs fois, et une réduction s'applique en fonction de ta situation. On voit les modalités ensemble lors de l'appel découverte.",
+  },
+]
+
 // ─── Page ──────────────────────────────────
 
 export default function BilanDeCompetences() {
@@ -218,6 +233,140 @@ export default function BilanDeCompetences() {
               </div>
 
             </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════════
+            5. FINANCEMENT
+        ══════════════════════════════════════ */}
+        <section className="section section-alt" id="financement" data-section="financement">
+          <div className="container">
+
+            <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center', marginBottom: '4rem' }}>
+              <p className="label fade-in">Financement</p>
+              <h2 className="section-title fade-in" style={{ marginTop: '0.5rem' }}>
+                Comment <span className="hl">financer</span><br />
+                ton bilan de compétences
+              </h2>
+              <p className="fade-in fade-in-delay-1" style={{
+                fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8, marginTop: '1rem',
+              }}>
+                Bonne nouvelle : plusieurs solutions existent, selon ta situation.
+              </p>
+            </div>
+
+            {/* Deux cadres côte à côte — CPF / alternatives */}
+            <div className="financement-grid" style={{
+              display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.75rem',
+              margin: '0 auto 3rem', alignItems: 'stretch',
+            }}>
+
+              {/* Cadre 1 — Avec ton CPF */}
+              <div className="fade-in" style={{
+                position: 'relative', background: 'var(--bg)', border: '1px solid var(--border)',
+                borderRadius: 'var(--radius-lg)', padding: '2.25rem', overflow: 'hidden',
+              }}>
+                <div aria-hidden="true" style={{
+                  position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'var(--fluo)',
+                }} />
+                <h3 style={{
+                  fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 700,
+                  color: 'var(--text)', marginBottom: '1rem',
+                }}>
+                  Avec ton CPF
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.75 }}>
+                    Tu cotises chaque année sur ton Compte Personnel de Formation, et tu peux l&rsquo;utiliser
+                    pour financer ton bilan directement depuis{' '}
+                    <a
+                      href="https://www.moncompteformation.gouv.fr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: 'var(--text)', textDecoration: 'underline', textUnderlineOffset: '3px' }}
+                    >
+                      moncompteformation.gouv.fr
+                    </a>
+                    . Si tu es dans le privé ou en recherche d&rsquo;emploi, tu n&rsquo;as l&rsquo;accord de
+                    personne à demander. Dans le secteur public, l&rsquo;accord de ta hiérarchie peut être
+                    nécessaire.
+                  </p>
+                  <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.75 }}>
+                    Si tes crédits ne couvrent pas la totalité, tu complètes le reste par carte bleue au
+                    moment de la réservation sur la plateforme.
+                  </p>
+                </div>
+                <div className="floriane-quote" style={{ marginTop: '1.5rem', background: '#fff' }}>
+                  <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.75 }}>
+                    Une chose à savoir : depuis mars 2026, mobiliser son CPF suppose un reste à charge de{' '}
+                    <strong style={{ color: 'var(--text)', fontWeight: 600 }}>150 €</strong>. Ce montant reste
+                    à ta charge même si tes crédits suffisent, donc compte 150 € dans tous les cas. Seuls les
+                    demandeurs d&rsquo;emploi en sont exonérés.
+                  </p>
+                </div>
+              </div>
+
+              {/* Cadre 2 — Sans passer par ton CPF */}
+              <div className="fade-in fade-in-delay-1" style={{
+                position: 'relative', background: 'var(--bg)', border: '1px solid var(--border)',
+                borderRadius: 'var(--radius-lg)', padding: '2.25rem', overflow: 'hidden',
+              }}>
+                <div aria-hidden="true" style={{
+                  position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'var(--fluo)',
+                }} />
+                <h3 style={{
+                  fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 700,
+                  color: 'var(--text)', marginBottom: '0.75rem',
+                }}>
+                  Sans passer par ton CPF
+                </h3>
+                <p style={{
+                  fontSize: '15px', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.75, marginBottom: '1.25rem',
+                }}>
+                  Tu ne peux pas utiliser ton CPF ou tu préfères une autre voie ?
+                  Voici les possibilités.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                  {optionsFinancement.map((opt, i) => (
+                    <div key={opt.titre} style={{
+                      paddingTop: i > 0 ? '1rem' : 0,
+                      marginTop: i > 0 ? '1rem' : 0,
+                      borderTop: i > 0 ? '1px solid var(--border)' : 'none',
+                    }}>
+                      <h4 style={{
+                        fontSize: '15px', fontWeight: 600, color: 'var(--text)', marginBottom: '0.4rem',
+                      }}>
+                        {opt.titre}
+                      </h4>
+                      <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.7 }}>
+                        {opt.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+
+            {/* Note — CEP */}
+            <div className="fade-in fade-in-delay-2" style={{
+              maxWidth: 'var(--max-text)', margin: '0 auto', textAlign: 'center',
+              paddingTop: '2.5rem', borderTop: '1px solid var(--border)',
+            }}>
+              <p style={{
+                fontFamily: 'var(--font-display)', fontSize: '1.3rem', fontWeight: 700,
+                color: 'var(--text)', marginBottom: '0.75rem',
+              }}>
+                Pas sûr d&rsquo;avoir besoin d&rsquo;un bilan complet ?
+              </p>
+              <p style={{ fontSize: '1rem', fontWeight: 300, color: 'var(--text-mid)', lineHeight: 1.8 }}>
+                Tu as droit à un conseil en évolution professionnelle (CEP), gratuit, assuré par
+                l&rsquo;APEC pour les cadres ou par France Travail si tu es en recherche d&rsquo;emploi.
+                C&rsquo;est un premier pas plus léger pour faire le point. Et si tu veux aller plus loin
+                ensuite, tu pourras te lancer dans un bilan de compétences.
+              </p>
+            </div>
+
           </div>
         </section>
 

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charte Éthique et Déontologique — Fluo Coaching</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       TOKENS — Charte Fluo Coaching v1.2
+    ============================================================ */
+    :root {
+      --bg:          #F8F5EF;
+      --bg-alt:      #EDEAE0;
+      --bg-dark:     #1E3830;
+      --text:        #1E3830;
+      --text-mid:    #4A7060;
+      --text-light:  #8AAE9E;
+      --border:      #C8D9D2;
+      --fluo:        #FFFF33;
+      --fluo-dark:   #E6E600;
+      --font-display:'Playfair Display', Georgia, serif;
+      --font-body:   'DM Sans', system-ui, sans-serif;
+      --r-sm: 4px;
+      --r-md: 10px;
+      --content-w: 760px;
+      --site-w:    1200px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    img, svg { display: block; }
+
+    /* ============================================================
+       NAVBAR
+    ============================================================ */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .navbar-inner {
+      max-width: var(--site-w);
+      margin: 0 auto;
+      padding: 0 2.5rem;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .nav-logo-wordmark {
+      font-family: var(--font-display);
+      font-size: 2.1rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      display: flex;
+      align-items: baseline;
+    }
+    .nav-logo-o {
+      color: var(--text);
+      position: relative;
+      display: inline-block;
+    }
+    .nav-logo-o::before {
+      content: '';
+      position: absolute;
+      inset: 0 -2px;
+      background: var(--fluo);
+      border-radius: 2px;
+      z-index: -1;
+      transform: skewX(-8deg);
+    }
+    .nav-divider { width: 1px; height: 34px; background: var(--border); flex-shrink: 0; }
+    .nav-tagline { flex-shrink: 0; }
+    .nav-tagline-title { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.3; }
+    .nav-tagline-sub   { font-size: 11.5px; font-weight: 300; color: var(--text-mid); line-height: 1.3; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      list-style: none;
+      margin-left: auto;
+    }
+    .nav-links a {
+      display: block;
+      padding: 0.45rem 0.9rem;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text);
+      text-decoration: none;
+      border-radius: var(--r-sm);
+      transition: background 0.15s;
+    }
+    .nav-links a:hover { background: var(--bg-alt); }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.6rem 1.3rem;
+      background: var(--fluo);
+      color: var(--text) !important;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: var(--r-sm);
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .nav-cta:hover { background: var(--fluo-dark); transform: translateY(-1px); }
+    .nav-cta-arrow { transition: transform 0.15s; }
+    .nav-cta:hover .nav-cta-arrow { transform: translateX(3px); }
+    @media (max-width: 768px) {
+      .nav-links, .nav-divider, .nav-tagline { display: none; }
+      .nav-cta { margin-left: auto; }
+    }
+
+    /* ============================================================
+       HERO SOBRE
+    ============================================================ */
+    .legal-hero {
+      padding: 4rem 2.5rem 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .legal-hero-inner { max-width: var(--content-w); margin: 0 auto; }
+    .legal-eyebrow {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.9rem;
+    }
+    .legal-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .legal-hero-meta {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.65;
+    }
+
+    /* ============================================================
+       WRAPPER
+    ============================================================ */
+    .legal-body {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 0 2rem 7rem;
+    }
+
+    /* ============================================================
+       INTRO
+    ============================================================ */
+    .legal-intro {
+      margin: 3rem 0 2.75rem;
+      padding: 1.6rem 2rem;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--text-light);
+      border-radius: 0 var(--r-md) var(--r-md) 0;
+      font-size: 0.92rem;
+      color: var(--text-mid);
+      line-height: 1.8;
+    }
+    .legal-intro strong { color: var(--text); font-weight: 500; }
+
+    /* ============================================================
+       LISTE DES ENGAGEMENTS
+    ============================================================ */
+    .engagements {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .engagement-item {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1.6rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+    .engagement-item:last-child { border-bottom: none; }
+
+    /* Numéro */
+    .engagement-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--fluo);
+      border-radius: var(--r-sm);
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+      letter-spacing: 0.02em;
+    }
+
+    /* Texte */
+    .engagement-text {
+      font-size: 0.925rem;
+      color: var(--text-mid);
+      line-height: 1.85;
+      flex: 1;
+    }
+    .engagement-text strong { color: var(--text); font-weight: 500; }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .legal-footer {
+      background: var(--bg-dark);
+      padding: 2.75rem 2.5rem;
+    }
+    .legal-footer-inner {
+      max-width: var(--site-w);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 0;
+      list-style: none;
+    }
+    .footer-links li:not(:last-child)::after {
+      content: '·';
+      color: rgba(255,255,255,0.15);
+      margin: 0 0.75rem;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.38);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.8); }
+    .footer-links a[aria-current="page"] { color: var(--fluo); font-weight: 500; }
+    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.22); }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 640px) {
+      .legal-hero { padding: 2.5rem 1.5rem 2rem; }
+      .legal-body { padding: 0 1.5rem 5rem; }
+      .legal-intro { padding: 1.25rem; }
+      .engagement-item { gap: 1rem; }
+      .engagement-num { width: 30px; height: 30px; font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="/" class="nav-logo" aria-label="Fluo Coaching — Accueil">
+        <span class="nav-logo-wordmark" aria-hidden="true">
+          <span>FL</span><span>U</span><span class="nav-logo-o">O</span>
+        </span>
+      </a>
+      <div class="nav-divider" aria-hidden="true"></div>
+      <div class="nav-tagline">
+        <div class="nav-tagline-title">Coaching &amp; Bilan de Compétences</div>
+        <div class="nav-tagline-sub">Mettre en lumière ce qui compte</div>
+      </div>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/bilan-de-competences">Bilan de compétences</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="/contact" class="nav-cta">
+        Séance découverte <span class="nav-cta-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <div class="legal-hero">
+    <div class="legal-hero-inner">
+      <span class="legal-eyebrow">Document légal</span>
+      <h1>Charte Éthique et Déontologique</h1>
+      <p class="legal-hero-meta">
+        Les engagements de Fluo Coaching envers chaque bénéficiaire
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       CONTENU
+  ============================================================ -->
+  <main>
+    <div class="legal-body">
+
+      <div class="legal-intro">
+        <strong>Fluo Coaching</strong>, dans le cadre de son bilan de compétences et de ses prestations de coaching, s'engage à respecter les principes éthiques et déontologiques suivants envers chaque bénéficiaire.
+      </div>
+
+      <ol class="engagements" aria-label="Engagements de Fluo Coaching">
+
+        <li class="engagement-item">
+          <span class="engagement-num">1</span>
+          <p class="engagement-text">Délivrer toutes les informations utiles au bénéficiaire avant le démarrage du bilan de compétences ou de la prestation de coaching.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">2</span>
+          <p class="engagement-text">Engager avec le bénéficiaire une relation qui le responsabilise et le conduit à être acteur de son bilan ou de son accompagnement.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">3</span>
+          <p class="engagement-text">Créer les conditions matérielles assurant la discrétion des échanges.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">4</span>
+          <p class="engagement-text">Respecter la confidentialité des échanges entre l'intervenante et le bénéficiaire.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">5</span>
+          <p class="engagement-text">Ne délivrer la synthèse du bilan de compétences qu'au bénéficiaire et lui en rappeler la confidentialité. En aucun cas, elle ne sera transmise à quiconque, sauf accord écrit du bénéficiaire.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">6</span>
+          <p class="engagement-text">Fonder la démarche d'accompagnement sur la qualité de la relation instaurée, l'écoute et l'utilisation d'outils tels que les questionnaires d'évaluation et tests.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">7</span>
+          <p class="engagement-text">Formaliser dans un contrat ou une convention les modalités de réalisation du bilan ou de la prestation — sauf cas de contractualisation par la plateforme Mon Compte Formation. Le document contractuel est signé par le bénéficiaire, l'intervenante et, s'il y a lieu, le commanditaire.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">8</span>
+          <p class="engagement-text">Accompagner le bénéficiaire tout au long des phases du bilan ou de la prestation au cours d'entretiens individuels.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">9</span>
+          <p class="engagement-text">Adopter une posture neutre sans jugement lors de l'accompagnement du bénéficiaire.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">10</span>
+          <p class="engagement-text">Garantir au bénéficiaire un accompagnement par un même consultant tout au long de son bilan ou de sa prestation.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">11</span>
+          <p class="engagement-text">Rendre accessible au bénéficiaire une synthèse écrite reprenant les éléments essentiels du bilan ou de la prestation.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">12</span>
+          <p class="engagement-text">Évaluer avec le bénéficiaire la qualité de la prestation.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">13</span>
+          <p class="engagement-text">Assurer la professionnalisation de l'intervenante par la mise en place d'actions de formation continue adaptées.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">14</span>
+          <p class="engagement-text">La synthèse de l'intervention est conservée durant 12 mois après la fin du bilan ou de la prestation, comme l'autorise la loi.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">15</span>
+          <p class="engagement-text">Proposer au bénéficiaire du bilan de compétences un suivi à 6 mois pour faire le point sur la concrétisation de son projet professionnel et mettre en place des actions correctives en fonction de l'état d'avancement du projet.</p>
+        </li>
+
+        <li class="engagement-item">
+          <span class="engagement-num">16</span>
+          <p class="engagement-text">Garantir le consentement, la clause de conscience et le secret professionnel. <strong>Clause de conscience</strong> : l'intervenante est libre d'accepter ou de refuser l'accompagnement. <strong>Secret professionnel</strong> : l'intervenante est tenue au secret professionnel, régit par le Code Pénal, pour tout ce qui concerne le bénéficiaire du bilan.</p>
+        </li>
+
+      </ol>
+
+    </div>
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="legal-footer">
+    <div class="legal-footer-inner">
+      <ul class="footer-links">
+        <li><a href="/mentions-legales">Mentions légales</a></li>
+        <li><a href="/cgu">CGU</a></li>
+        <li><a href="/cgv">CGV</a></li>
+        <li><a href="/charte-ethique" aria-current="page">Charte éthique</a></li>
+        <li><a href="/reglement-interieur">Règlement intérieur</a></li>
+        <li><a href="/politique-handicap">Politique handicap</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 Fluo Coaching — Floriane Perrin</p>
+    </div>
+  </footer>
+
+</body>
+</html>

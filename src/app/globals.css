@@ -1234,6 +1234,7 @@ a {
   .floriane-trust-card-wrap { position: static; }
   .page-intro-text { position: static; }
   .phases-grid { grid-template-columns: 1fr !important; }
+  .financement-grid { grid-template-columns: 1fr !important; }
   .cta-inner { padding: 3rem 1.5rem; }
 }
 
@@ -1509,6 +1510,43 @@ table.legal-table {
   flex-direction: column;
   gap: 0.4rem;
 }
+.engagements {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2.75rem;
+}
+.engagement-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
+.engagement-item:last-child { border-bottom: none; }
+.engagement-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--fluo);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  letter-spacing: 0.02em;
+}
+.engagement-text {
+  font-size: 0.925rem;
+  color: var(--text-mid);
+  line-height: 1.85;
+  flex: 1;
+}
+.engagement-text strong { color: var(--text); font-weight: 500; }
 @media (max-width: 640px) {
   .legal-hero { padding: 2.5rem 1.5rem 2rem; }
   .legal-body { padding: 0 1.5rem 5rem; }
@@ -1516,6 +1554,8 @@ table.legal-table {
   .legal-toc { padding: 1.25rem; }
   .legal-toc ol { grid-template-columns: 1fr; }
   .legal-info-table { grid-template-columns: 1fr; }
+  .engagement-item { gap: 1rem; }
+  .engagement-num { width: 30px; height: 30px; font-size: 11px; }
   .legal-info-key { border-right: none; border-bottom: none; padding-bottom: 0.25rem; }
   .legal-info-val { padding-top: 0.25rem; }
 }
