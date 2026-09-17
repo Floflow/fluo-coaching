@@ -28,7 +28,7 @@ export default function CGV() {
             <strong>coaching individuel</strong> engagées directement par{' '}
             <strong>Fluo Coaching</strong> pour le compte d'un Client. Elles ne couvrent pas
             les bilans de compétences financés via le CPF, qui sont réalisés dans le cadre
-            d'un partenariat de sous-traitance avec DB Consulting et régis par leurs
+            d'un partenariat de sous-traitance avec Dillière Brooks Consulting et régis par leurs
             propres conditions. Le fait de s'inscrire ou de passer commande implique
             l'adhésion entière et sans réserve du Client aux présentes CGV.
           </div>
@@ -58,24 +58,52 @@ export default function CGV() {
           <section className="legal-section" id="designation">
             <h2><span className="sec-num">01</span> Désignation</h2>
             <p>
-              <strong>Fluo Coaching</strong> est une activité de coaching professionnel
-              individuel exercée par Floriane Perrin de Brichambaut, coach certifiée ICF,
-              sous le statut de micro-entreprise, basée à Paris — SIRET&nbsp;999&nbsp;460&nbsp;637&nbsp;00013.
-              Les prestations de coaching sont dispensées exclusivement en visioconférence.
+              <strong>Fluo Coaching</strong> est une activité de bilan de compétences et
+              de coaching professionnel individuel exercée par Floriane Perrin de
+              Brichambaut, coach certifiée ICF et consultante en bilan de compétences,
+              sous le statut de micro-entreprise, basée à Paris —
+              SIRET&nbsp;999&nbsp;460&nbsp;637&nbsp;00013. Les prestations sont dispensées
+              exclusivement en visioconférence.
             </p>
             <p>
-              Pour les bilans de compétences financés via le CPF, Fluo Coaching intervient en
-              qualité de sous-traitante de <strong>DB Consulting</strong>, organisme
-              de formation certifié Qualiopi. Dans ce cadre, la relation contractuelle avec
-              le bénéficiaire est établie directement avec DB Consulting.
+              Pour les bilans de compétences financés via le CPF, Fluo Coaching intervient
+              en qualité de sous-traitante de{' '}
+              <strong>Dillière Brooks Consulting</strong>, organisme de formation certifié
+              Qualiopi. Dans ce cadre, la relation contractuelle avec le bénéficiaire est
+              établie directement avec Dillière Brooks Consulting.
             </p>
             <p>Dans les paragraphes qui suivent, il est convenu de désigner par :</p>
             <ul>
-              <li><strong>Client</strong> : toute personne physique qui s'inscrit ou passe commande d'une prestation de coaching directement auprès de Fluo Coaching.</li>
-              <li><strong>Bénéficiaire</strong> : la personne physique qui participe à la prestation.</li>
-              <li><strong>Coaching individuel</strong> : accompagnement structuré visant à explorer et clarifier un projet professionnel ou personnel (transition de carrière, prise de poste, développement de potentiel…).</li>
-              <li><strong>DB Consulting</strong> : organisme de formation partenaire, certifié Qualiopi, dans le cadre duquel Fluo Coaching réalise les bilans de compétences financés par CPF.</li>
-              <li><strong>CGV</strong> : les présentes conditions générales de vente.</li>
+              <li>
+                <strong>Client</strong> : toute personne physique qui s'inscrit ou passe
+                commande d'une prestation auprès de Fluo Coaching.
+              </li>
+              <li>
+                <strong>Bénéficiaire</strong> : la personne physique qui participe à la
+                prestation (peut être identique au Client).
+              </li>
+              <li>
+                <strong>Bilan de compétences</strong> : action permettant à un travailleur
+                d'analyser ses compétences professionnelles et personnelles ainsi que ses
+                aptitudes et motivations, afin de définir un projet professionnel
+                (art.&nbsp;L.6313-10 du Code du travail).
+              </li>
+              <li>
+                <strong>Coaching individuel</strong> : accompagnement structuré visant à
+                explorer et clarifier un projet professionnel ou personnel.
+              </li>
+              <li>
+                <strong>Dillière Brooks Consulting</strong> : organisme de formation
+                partenaire, certifié Qualiopi, dans le cadre duquel Fluo Coaching réalise
+                les bilans de compétences financés par CPF.
+              </li>
+              <li>
+                <strong>OPCO</strong> : les Opérateurs de Compétences chargés de collecter
+                et gérer l'effort de formation des entreprises.
+              </li>
+              <li>
+                <strong>CGV</strong> : les présentes conditions générales de vente.
+              </li>
             </ul>
           </section>
 
@@ -90,7 +118,7 @@ export default function CGV() {
             <p>
               Les bilans de compétences financés via le Compte Personnel de Formation (CPF)
               sont exclus du champ des présentes CGV. Ils relèvent du contrat conclu entre
-              le bénéficiaire et DB Consulting, dont les conditions sont disponibles
+              le bénéficiaire et Dillière Brooks Consulting, dont les conditions sont disponibles
               directement auprès de cet organisme.
             </p>
           </section>
@@ -100,36 +128,31 @@ export default function CGV() {
             <p>
               Tous les prix sont indiqués en euros. Fluo Coaching n'est pas assujettie à la
               TVA au titre de l'article 293&nbsp;B du CGI (micro-entreprise) — les prix
-              affichés sont donc des prix nets, sans TVA.
+              affichés sont donc des prix nets, sans TVA. Les prix des prestations sont
+              fermes et définitifs à la date de signature du devis ou de la convention.
             </p>
+
+            <h3>Bilan de compétences — financement direct</h3>
             <p>
-              Le règlement du prix de la prestation est à effectuer en échéances selon les
-              modalités suivantes :
+              Le tarif du bilan de compétences en financement direct est communiqué sur
+              devis, en fonction de la situation du Client. Le paiement s'effectue en
+              plusieurs fois selon les échéances précisées sur la facture correspondante.
+              Une réduction peut s'appliquer selon la situation du bénéficiaire ; les
+              modalités sont définies lors de l'appel découverte.
             </p>
-            <div className="table-scroll">
-              <table className="legal-table">
-                <thead>
-                  <tr>
-                    <th>Échéance</th>
-                    <th>Montant</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Au début de la prestation</td>
-                    <td><strong>25 %</strong> du prix total</td>
-                  </tr>
-                  <tr>
-                    <td>En fin de prestation</td>
-                    <td><strong>75 %</strong> du prix total (solde)</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p style={{ marginTop: '1rem' }}>
+
+            <h3>Coaching individuel</h3>
+            <p>
+              Le tarif de l'accompagnement en coaching individuel est communiqué sur devis.
+              Les échéances de paiement sont précisées sur la facture correspondante.
+            </p>
+
+            <p>
               Toute somme non payée à échéance entraîne de plein droit et sans mise en demeure
               préalable l'application de pénalités d'un montant égal à une fois et demie le
-              taux d'intérêt légal.
+              taux d'intérêt légal. Fluo Coaching se réserve le droit d'obtenir le règlement
+              par voie contentieuse aux frais du Client, sans préjudice des autres dommages et
+              intérêts qui pourraient lui être dus.
             </p>
             <div className="legal-note">
               <strong>Moyen de paiement accepté :</strong> Virement bancaire.
@@ -154,10 +177,15 @@ export default function CGV() {
               Toute prestation commencée est due dans son intégralité et fera l'objet d'une
               facturation au Client. En cas d'absence, d'interruption ou d'annulation en cours
               de prestation, la facturation distinguera le prix correspondant aux séances
-              effectivement suivies et les sommes dues au titre des séances non honorées.
+              effectivement suivies et les sommes dues au titre des séances non honorées. Il
+              est rappelé que les sommes dues par le Client à ce titre ne peuvent être
+              imputées sur son obligation de participer à la formation professionnelle
+              continue ni faire l'objet d'une demande de prise en charge par un OPCO ; le
+              Client s'engage à les régler directement à Fluo Coaching.
             </p>
             <p>
-              En cas d'annulation avant le démarrage, des frais sont calculés comme suit :
+              En cas d'annulation de la prestation par le Client en dehors du délai légal de
+              rétractation, les conditions suivantes s'appliquent :
             </p>
             <div className="table-scroll">
               <table className="legal-table">
@@ -173,14 +201,18 @@ export default function CGV() {
                     <td>Aucun frais</td>
                   </tr>
                   <tr>
-                    <td>Moins de 7 jours ouvrables avant</td>
-                    <td><strong>100 %</strong> du prix de la prestation</td>
+                    <td>Moins de 7 jours ouvrables avant le démarrage</td>
+                    <td><strong>50 %</strong> du montant total</td>
+                  </tr>
+                  <tr>
+                    <td>À compter du jour de démarrage ou en cours de prestation</td>
+                    <td><strong>100 %</strong> du montant total</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p style={{ marginTop: '1rem' }}>
-              Toute annulation ou report doit être signalée par écrit à{' '}
+              Toute annulation ou report doit être signalée et confirmée par écrit à{' '}
               <a href="mailto:floriane@fluocoaching.com" style={{ color: 'var(--text-mid)' }}>
                 floriane@fluocoaching.com
               </a>.
@@ -285,23 +317,61 @@ export default function CGV() {
             <h2><span className="sec-num">13</span> Bilan de compétences via CPF</h2>
             <p>
               Les bilans de compétences financés via le Compte Personnel de Formation (CPF)
-              sont réalisés dans le cadre d'un <strong>partenariat de sous-traitance avec
-              DB Consulting</strong>, organisme de formation certifié Qualiopi.
+              sont réalisés dans le cadre d'un{' '}
+              <strong>partenariat de sous-traitance avec Dillière Brooks Consulting</strong>,
+              organisme de formation certifié Qualiopi.
             </p>
             <p>Dans ce cadre :</p>
             <ul>
-              <li>Le contrat est conclu directement entre le bénéficiaire et <strong>DB Consulting</strong>, qui est le seul interlocuteur contractuel du bénéficiaire ;</li>
-              <li>Les conditions générales et le règlement intérieur d'DB Consulting s'appliquent à la relation avec le bénéficiaire ;</li>
-              <li>Fluo Coaching intervient en qualité de <strong>sous-traitante</strong> pour la délivrance de la prestation ; elle n'est pas partie au contrat conclu entre le bénéficiaire et DB Consulting ;</li>
-              <li>La facturation CPF est gérée par DB Consulting via la plateforme Mon Compte Formation ;</li>
-              <li>Tout litige relatif à un bilan CPF doit être adressé à DB Consulting.</li>
+              <li>
+                Le contrat est conclu directement entre le bénéficiaire et{' '}
+                <strong>Dillière Brooks Consulting</strong>, qui est le seul interlocuteur
+                contractuel du bénéficiaire.
+              </li>
+              <li>
+                Il appartient au bénéficiaire d'effectuer sa demande de prise en charge via
+                la plateforme{' '}
+                <a
+                  href="https://www.moncompteformation.gouv.fr"
+                  target="_blank"
+                  rel="noopener"
+                  style={{ color: 'var(--text-mid)' }}
+                >
+                  Mon Compte Formation
+                </a>{' '}
+                avant le début de la prestation. L'accord de financement doit être
+                communiqué au plus tard un jour ouvrable avant le démarrage ; à défaut,
+                Dillière Brooks Consulting se réserve la possibilité de reporter le
+                démarrage ou de facturer la totalité des frais au bénéficiaire.
+              </li>
+              <li>
+                En cas de prise en charge partielle, la différence sera directement
+                facturée au bénéficiaire.
+              </li>
+              <li>
+                Les conditions générales et le règlement intérieur de Dillière Brooks
+                Consulting s'appliquent à la relation avec le bénéficiaire.
+              </li>
+              <li>
+                Fluo Coaching intervient en qualité de <strong>sous-traitante</strong> pour
+                la délivrance de la prestation ; elle n'est pas partie au contrat conclu
+                entre le bénéficiaire et Dillière Brooks Consulting.
+              </li>
+              <li>
+                La facturation CPF est gérée par Dillière Brooks Consulting via la
+                plateforme Mon Compte Formation.
+              </li>
+              <li>
+                Tout litige relatif à un bilan CPF doit être adressé à Dillière Brooks
+                Consulting.
+              </li>
             </ul>
             <div className="legal-note">
               Les présentes CGV ne s'appliquent donc <strong>pas</strong> aux bilans de
-              compétences réalisés dans ce cadre. Pour toute information, contacter{' '}
+              compétences réalisés dans ce cadre. Pour toute question :{' '}
               <a href="mailto:floriane@fluocoaching.com" style={{ color: 'var(--text-mid)' }}>
                 floriane@fluocoaching.com
-              </a>.
+              </a>
             </div>
           </section>
 
