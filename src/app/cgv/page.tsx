@@ -17,7 +17,7 @@ export default function CGV() {
             <span className="legal-eyebrow">Document légal</span>
             <h1>Conditions Générales<br />de Vente</h1>
             <p className="legal-hero-meta">
-              Applicables aux prestations de coaching individuel — En vigueur au 21.04.2026
+              Applicables aux prestations de bilan de compétences — En vigueur au 21.04.2026
             </p>
           </div>
         </div>
@@ -25,7 +25,7 @@ export default function CGV() {
         <div className="legal-body">
           <div className="legal-intro">
             Les présentes Conditions Générales de Vente s'appliquent aux prestations de{' '}
-            <strong>coaching individuel</strong> engagées directement par{' '}
+            <strong>bilan de compétences à financement direct</strong> engagées directement par{' '}
             <strong>Fluo Coaching</strong> pour le compte d'un Client. Elles ne couvrent pas
             les bilans de compétences financés via le CPF, qui sont réalisés dans le cadre
             d'un partenariat de sous-traitance avec Dillière Brooks Consulting et régis par leurs
@@ -89,10 +89,6 @@ export default function CGV() {
                 (art.&nbsp;L.6313-10 du Code du travail).
               </li>
               <li>
-                <strong>Coaching individuel</strong> : accompagnement structuré visant à
-                explorer et clarifier un projet professionnel ou personnel.
-              </li>
-              <li>
                 <strong>Dillière Brooks Consulting</strong> : organisme de formation
                 partenaire, certifié Qualiopi, dans le cadre duquel Fluo Coaching réalise
                 les bilans de compétences financés par CPF.
@@ -111,7 +107,7 @@ export default function CGV() {
             <h2><span className="sec-num">02</span> Objet et champ d'application</h2>
             <p>
               Les présentes CGV régissent exclusivement les prestations de{' '}
-              <strong>coaching individuel à financement direct</strong> (paiement personnel,
+              <strong>bilan de compétences à financement direct</strong> (paiement personnel,
               prise en charge employeur hors CPF). Elles s'appliquent dès lors qu'un Client
               accepte un devis ou s'inscrit à une prestation auprès de Fluo Coaching.
             </p>
@@ -139,12 +135,6 @@ export default function CGV() {
               plusieurs fois selon les échéances précisées sur la facture correspondante.
               Une réduction peut s'appliquer selon la situation du bénéficiaire ; les
               modalités sont définies lors de l'appel découverte.
-            </p>
-
-            <h3>Coaching individuel</h3>
-            <p>
-              Le tarif de l'accompagnement en coaching individuel est communiqué sur devis.
-              Les échéances de paiement sont précisées sur la facture correspondante.
             </p>
 
             <p>
