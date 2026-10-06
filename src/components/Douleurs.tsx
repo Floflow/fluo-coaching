@@ -72,7 +72,7 @@ export default function Douleurs() {
                 fontFamily: 'var(--font-display)',
                 fontSize: '3rem',
                 fontWeight: 700,
-                color: '#F9F002',
+                color: 'var(--fluo-num)',
                 lineHeight: 1,
                 marginBottom: '1rem',
               }}>

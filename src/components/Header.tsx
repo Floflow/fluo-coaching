@@ -79,13 +79,13 @@ export default function Header() {
             alignItems: 'center',
             gap: '2rem',
           }} className="header-nav">
-            <a href="/" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
+            <a href="/" style={{ fontSize: '13px', fontWeight: 400, color: 'var(--anthracite)', transition: 'color 0.2s' }}>
               Accueil
             </a>
-            <a href="/bilan-de-competences" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
+            <a href="/bilan-de-competences" style={{ fontSize: '13px', fontWeight: 400, color: 'var(--anthracite)', transition: 'color 0.2s' }}>
               Bilan de compétences
             </a>
-            <a href="/contact" style={{ fontSize: '13px', fontWeight: 400, color: '#1A1A17', transition: 'color 0.2s' }}>
+            <a href="/contact" style={{ fontSize: '13px', fontWeight: 400, color: 'var(--anthracite)', transition: 'color 0.2s' }}>
               Contact
             </a>
           </nav>

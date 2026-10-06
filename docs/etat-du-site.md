@@ -61,6 +61,5 @@ Composant non utilisé : `Methode.tsx` (les 4 étapes), conservé au cas où.
 ## Points ouverts
 
 - Mentions légales : `[ADRESSE]` et `[CODE POSTAL]` encore en placeholders (classe `.ph`), visibles en ligne.
-- Couleurs écrites en dur à aligner un jour sur les variables : `#1A1A17` dans les liens du Header (ancien anthracite), `#F9F002` pour les numéros dans `Douleurs.tsx`.
 - Le bouton « Réserver une séance découverte » de `Offres.tsx` fait défiler vers `#contact` alors que les autres boutons ouvrent la pop-up Calendly.
 - Idées à venir : page « À propos » longue, brochure PDF du bilan, nouvelles photos.

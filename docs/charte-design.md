@@ -22,6 +22,8 @@ Ambiance : pro et chaleureuse. Ni corporate froid, ni « développement personne
 | `--fluo` | `#FFFF33` | surlignage, bouton principal, logo |
 | `--fluo-soft` | jaune à 25 % | surlignage doux |
 | `--fluo-dark` | `#CCCC00` | survol |
+| `--fluo-num` | `#F9F002` | numéros 01/02/03 (`Douleurs.tsx`, `.method-step-num`, `.phase-num`, `.testimonial-quote-mark`) — jaune légèrement différent de `--fluo`, voulu tel quel |
+| `--anthracite` | `#1A1A17` | liens du menu et `.logo-tagline-top` dans `Header.tsx` — distinct de `--text`, voulu tel quel |
 
 Rayons : `--radius-sm` 4px, `--radius-md` 10px, `--radius-lg` 20px. Largeur max `--max-width` 1400px, texte `--max-text` 640px, espacement de section `--space-section` 7rem.
 
