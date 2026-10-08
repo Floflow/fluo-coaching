@@ -44,7 +44,7 @@ Footer : les 5 pages légales + Contact, « © 2026 Fluo Coaching · Floriane Pe
 
 | Section | Contenu | Fond |
 |---|---|---|
-| Intro (`data-section="intro-bilan"`) | Texte + bouton Calendly + lien « Voir les solutions de financement » à gauche, carte « L'essentiel » à droite (durée, format, plateforme, tarif) | crème |
+| Intro (`data-section="intro-bilan"`) | Texte + bouton Calendly + lien « Voir les solutions de financement » à gauche, carte « L'essentiel » à droite (durée, format, outils, tarif) | crème |
 | Parcours (`#phases`) | Bandeau « Avant » (entretien découverte), 3 cartes de phases, bandeau « 6 mois après » (rendez-vous de suivi) | sable |
 | Confiance (`#floriane`) | Texte + 3 pastilles (coach certifiée, consultante, partenaire Qualiopi) à gauche, extrait du témoignage de Bérengère S. à droite | crème |
 | Financement (`#financement`) | Cadres « Avec ton CPF » et « Sans passer par ton CPF », puis question « Pas sûr d'avoir besoin d'un bilan complet ? » (CEP) | sable |

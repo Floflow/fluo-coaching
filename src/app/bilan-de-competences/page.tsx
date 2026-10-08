@@ -66,7 +66,7 @@ const phases: Phase[] = [
 const essentiel = [
   { label: 'Durée',      valeur: '13\u00a0h ensemble',        sub: '+ 11\u00a0h de travail personnel, variable selon tes besoins' },
   { label: 'Format',     valeur: 'À distance',                sub: 'Individuel, à ton rythme' },
-  { label: 'Plateforme', valeur: 'e-coaching Associates',     sub: 'Questionnaires, tests, outils et ressources' },
+  { label: 'Outils',     valeur: 'Plateforme en ligne',       sub: 'Questionnaires, tests et ressources' },
 ]
 
 const garanties = [
