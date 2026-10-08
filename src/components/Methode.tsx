@@ -55,7 +55,7 @@ export default function Methode() {
               className="method-step"
               style={e.dark ? { background: 'var(--bg-dark)' } : undefined}
             >
-              <p className="method-step-num" style={e.dark ? { color: 'var(--fluo)' } : undefined}>
+              <p className={e.dark ? 'method-step-num' : 'num-mark'} style={e.dark ? undefined : { marginBottom: '1rem' }}>
                 {e.num}
               </p>
               <h3 className="method-step-title" style={e.dark ? { color: '#fff' } : undefined}>

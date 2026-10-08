@@ -107,7 +107,7 @@ export default function Offres() {
                       fontWeight: 500,
                       letterSpacing: '0.1em',
                       textTransform: 'uppercase',
-                      color: 'var(--text-light)',
+                      color: 'var(--text-mid)',
                       marginBottom: '0.75rem',
                     }}>
                       {info.label}

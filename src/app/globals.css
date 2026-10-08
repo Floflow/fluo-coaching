@@ -19,6 +19,7 @@
   --fluo-dark:      #CCCC00;
   --fluo-num:       #F9F002;
   --anthracite:     #1A1A17;
+  --bg-card:        #FFFFFF;
 
   --font-display:   var(--font-playfair), Georgia, serif;
   --font-body:      var(--font-dm-sans), system-ui, sans-serif;
@@ -53,6 +54,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  font-variant-numeric: lining-nums;
   overflow-x: hidden;
 }
 
@@ -102,7 +104,7 @@ a {
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--text-light);
+  color: var(--text-mid);
 }
 
 .label-dark {
@@ -113,6 +115,39 @@ a {
   color: rgba(255, 255, 255, 0.45);
 }
 
+/* Numéro « 01 » souligné de jaune */
+.num-mark {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+  padding-bottom: 4px;
+  border-bottom: 6px solid var(--fluo);
+}
+
+/* Liste à puces carrées */
+.list-square { list-style: none; }
+
+.list-square li {
+  position: relative;
+  padding-left: 1.1rem;
+  line-height: 1.5;
+}
+
+.list-square li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: calc(0.75em - 3px);
+  width: 6px;
+  height: 6px;
+  background: var(--text-mid);
+}
+
+.hero-title { isolation: isolate; }
+
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
@@ -120,6 +155,7 @@ a {
   line-height: 1.1;
   color: var(--text);
   letter-spacing: -0.02em;
+  isolation: isolate;
 }
 
 .section-title-dark {
@@ -129,6 +165,7 @@ a {
   line-height: 1.1;
   color: #fff;
   letter-spacing: -0.02em;
+  isolation: isolate;
 }
 
 /* =============================================
@@ -442,15 +479,6 @@ a {
   }
 }
 
-.profil-card {
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.profil-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(26,26,23,0.08);
-}
-
 @media (max-width: 600px) {
   .offre-info-grid {
     grid-template-columns: 1fr !important;
@@ -480,7 +508,7 @@ a {
   font-family: var(--font-display);
   font-size: 3.5rem;
   font-weight: 700;
-  color: var(--fluo-num);
+  color: var(--fluo);
   line-height: 1;
   margin-bottom: 0.75rem;
 }
@@ -552,7 +580,7 @@ a {
 .floriane-photo-label {
   font-size: 12px;
   font-weight: 300;
-  color: var(--text-light);
+  color: var(--text-mid);
   line-height: 1.5;
 }
 
@@ -676,9 +704,9 @@ a {
 }
 
 .testimonial-role {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
-  color: var(--text-light);
+  color: var(--text-mid);
   margin-top: 2px;
 }
 
@@ -758,7 +786,7 @@ a {
 .form-label {
   font-size: 12px;
   font-weight: 500;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.85);
   letter-spacing: 0.03em;
 }
 
@@ -768,7 +796,7 @@ a {
   font-weight: 300;
   color: #fff;
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
   border-radius: var(--radius-sm);
   padding: 0.75rem 1rem;
   outline: none;
@@ -781,7 +809,7 @@ a {
   background: rgba(255,255,255,0.09);
 }
 
-.form-input::placeholder { color: rgba(255,255,255,0.25); }
+.form-input::placeholder { color: rgba(255,255,255,0.45); }
 
 .form-textarea {
   resize: vertical;
@@ -805,7 +833,7 @@ a {
 .form-check-label {
   font-size: 12px;
   font-weight: 300;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.6);
   line-height: 1.55;
 }
 
@@ -818,15 +846,15 @@ a {
    PAGE BILAN — intro 2 colonnes
 ============================================= */
 .page-intro {
-  padding: 4rem 0;
+  padding: 6rem 0;
   border-bottom: 1px solid var(--border);
 }
 
 .page-intro-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.15fr 1fr;
   gap: 5rem;
-  align-items: start;
+  align-items: center;
 }
 
 .page-intro-title {
@@ -839,11 +867,6 @@ a {
   isolation: isolate;
 }
 
-.page-intro-text {
-  position: sticky;
-  top: 100px;
-}
-
 .page-intro-sub {
   font-size: 1rem;
   font-weight: 300;
@@ -853,9 +876,15 @@ a {
   margin-bottom: 1rem;
 }
 
+.page-intro-lead {
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
 .page-intro-list {
   list-style: none;
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.75rem;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -871,18 +900,38 @@ a {
 }
 
 .page-intro-list li::before {
-  content: '—';
+  content: '';
   position: absolute;
   left: 0;
-  color: var(--text-light);
-  font-size: 12px;
+  top: calc(0.75em - 3px);
+  width: 6px;
+  height: 6px;
+  background: var(--text);
 }
 
+.page-intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.75rem;
+}
+
+.text-link {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.18s;
+}
+
+.text-link:hover { color: var(--text-mid); }
+
 .page-intro-card {
-  background: #fff;
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 2.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -891,8 +940,67 @@ a {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 3px;
+  height: 4px;
   background: var(--fluo);
+}
+
+/* ── Carte « L'essentiel » ── */
+.essentiel-list { margin-top: 0.75rem; }
+
+.essentiel-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.essentiel-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  align-items: center;
+}
+
+.essentiel-row dt {
+  font-size: 14px;
+  color: var(--text-mid);
+  flex-shrink: 0;
+}
+
+.essentiel-row dd { text-align: right; }
+
+.essentiel-value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.25;
+}
+
+.essentiel-sub {
+  display: block;
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+
+.essentiel-tarif {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem 1rem;
+}
+
+.essentiel-prix {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.1;
 }
 
 /* ── Timeline ── */
@@ -979,7 +1087,7 @@ a {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text-light);
+  color: var(--text-mid);
   margin-bottom: 0.4rem;
 }
 
@@ -992,9 +1100,9 @@ a {
 }
 
 .info-cell-sub {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 300;
-  color: var(--text-light);
+  color: var(--text-mid);
   margin-top: 0.25rem;
 }
 
@@ -1003,6 +1111,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  align-items: stretch;
 }
 
 .phase-card {
@@ -1010,46 +1119,98 @@ a {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 2rem;
-  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
-.phase-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(26,26,23,0.08);
-}
-
-.phase-num {
-  font-family: var(--font-display);
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--fluo-num);
-  line-height: 1;
-  margin-bottom: 1rem;
+.phase-head {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .phase-eyebrow {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-light);
-  margin-bottom: 0.5rem;
+  color: var(--text-mid);
 }
+
+.phase-head .phase-eyebrow { padding-bottom: 10px; }
 
 .phase-title {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 24px;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 1rem;
-  line-height: 1.3;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
 }
 
 .phase-desc {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   color: var(--text-mid);
-  line-height: 1.75;
+  line-height: 1.7;
+}
+
+.phase-sep {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0 1.25rem;
+}
+
+.phase-list-title { margin-bottom: 0.9rem; }
+
+.phase-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.phase-list li {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-mid);
+}
+
+/* Bandeaux « Avant » / « 6 mois après » */
+.phase-band {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 1.1rem 1.75rem;
+  border: 1px dashed var(--text-light);
+  border-radius: var(--radius-md);
+}
+
+.phase-band-before { margin-bottom: 1.5rem; }
+.phase-band-after { margin-top: 1.5rem; }
+
+.phase-band-label {
+  width: 120px;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+}
+
+.phase-band-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.phase-band-text {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-mid);
+  line-height: 1.6;
 }
 
 /* ── Livrables ── */
@@ -1096,31 +1257,189 @@ a {
 /* ── Floriane confiance ── */
 .floriane-trust-grid {
   display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 5rem;
-  align-items: start;
+  grid-template-columns: minmax(0, 640px) minmax(0, 520px);
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
 }
 
-.floriane-trust-card-wrap {
-  position: sticky;
-  top: 100px;
+.floriane-trust-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
-.floriane-trust-card {
-  background: #fff;
+.floriane-trust-body p {
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--text-mid);
+  line-height: 1.75;
+}
+
+.trust-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 2rem;
+}
+
+.trust-pill {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.trust-quote {
+  background: var(--bg-alt);
+  border-radius: var(--radius-lg);
+  padding: 48px 44px;
+}
+
+.trust-quote-mark {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 0.8;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.trust-quote blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.trust-quote figcaption {
+  margin-top: 1.75rem;
+  font-size: 14px;
+  color: var(--text-mid);
+}
+
+.trust-quote figcaption strong {
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* ── Financement ── */
+.financement-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+  align-items: stretch;
+  margin-bottom: 3.5rem;
+}
+
+.financement-card {
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 2rem;
-  position: relative;
-  overflow: hidden;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
-.floriane-trust-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: var(--fluo);
+.financement-card-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.financement-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.financement-card-text p,
+.financement-card-intro {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-mid);
+  line-height: 1.75;
+}
+
+.financement-card-text a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.financement-card-intro { margin-bottom: 1.5rem; }
+
+.financement-note {
+  margin-top: auto;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+
+.financement-card-text { margin-bottom: 1.75rem; }
+
+.financement-note strong {
+  font-weight: 500;
+  color: var(--text);
+}
+
+.financement-option + .financement-option {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.financement-option h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.financement-option p {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+
+.cep-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 3rem;
+  align-items: start;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.cep-question {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.cep-text {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-mid);
+  line-height: 1.8;
+  max-width: 760px;
 }
 
 /* ── CTA final ── */
@@ -1233,10 +1552,22 @@ a {
     grid-template-columns: 1fr !important;
     gap: 2.5rem !important;
   }
-  .floriane-trust-card-wrap { position: static; }
-  .page-intro-text { position: static; }
   .phases-grid { grid-template-columns: 1fr !important; }
   .financement-grid { grid-template-columns: 1fr !important; }
+  .phase-band {
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.25rem 1.5rem;
+  }
+  .phase-band-label { width: auto; }
+  .phase-band-title { white-space: normal; }
+  .cep-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .page-intro-card,
+  .financement-card { padding: 1.75rem; }
+  .trust-quote { padding: 2rem 1.75rem; }
   .cta-inner { padding: 3rem 1.5rem; }
 }
 

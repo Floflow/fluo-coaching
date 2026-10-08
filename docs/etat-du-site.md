@@ -1,4 +1,4 @@
-# État du site (mis à jour le 6 octobre 2026)
+# État du site (mis à jour le 8 octobre 2026)
 
 Photo de ce qui est réellement en ligne. À mettre à jour à chaque changement visible.
 
@@ -18,7 +18,7 @@ Photo de ce qui est réellement en ligne. À mettre à jour à chaque changement
 | URL | Fichier | Contenu |
 |---|---|---|
 | `/` | `src/app/page.tsx` | Accueil (voir sections ci-dessous) |
-| `/bilan-de-competences` | `src/app/bilan-de-competences/page.tsx` | Intro + parcours pas à pas, méthode en 3 phases, « Pourquoi me faire confiance », financement, contact |
+| `/bilan-de-competences` | `src/app/bilan-de-competences/page.tsx` | Voir sections ci-dessous |
 | `/contact` | `src/app/contact/page.tsx` | Calendly intégré à gauche, formulaire à droite |
 | `/mentions-legales` | `src/app/mentions-legales/page.tsx` | Légal, noindex |
 | `/cgv` | `src/app/cgv/page.tsx` | Légal, noindex |
@@ -40,8 +40,18 @@ Footer : les 5 pages légales + Contact, « © 2026 Fluo Coaching · Floriane Pe
 | Avis clients (3 témoignages) | `Temoignages.tsx` | crème |
 | Appel découverte + formulaire | `Contact.tsx` | vert forêt |
 
+## Page bilan de compétences, dans l'ordre
+
+| Section | Contenu | Fond |
+|---|---|---|
+| Intro (`data-section="intro-bilan"`) | Texte + bouton Calendly + lien « Voir les solutions de financement » à gauche, carte « L'essentiel » à droite (durée, format, plateforme, tarif) | crème |
+| Parcours (`#phases`) | Bandeau « Avant » (entretien découverte), 3 cartes de phases, bandeau « 6 mois après » (rendez-vous de suivi) | sable |
+| Confiance (`#floriane`) | Texte + 3 pastilles (coach certifiée, consultante, partenaire Qualiopi) à gauche, extrait du témoignage de Bérengère S. à droite | crème |
+| Financement (`#financement`) | Cadres « Avec ton CPF » et « Sans passer par ton CPF », puis question « Pas sûr d'avoir besoin d'un bilan complet ? » (CEP) | sable |
+| Contact | `Contact.tsx` | vert forêt |
+
 Composants globaux (dans `layout.tsx`) : `FloatCanvas.tsx` (carrés flottants qui s'alignent au scroll) et `ScrollObserver.tsx` (animations `fade-in`).
-Composant non utilisé : `Methode.tsx` (les 4 étapes), conservé au cas où.
+Composants non utilisés, conservés au cas où : `Methode.tsx` (les 4 étapes), `ParcoursTimeline.tsx` (ancienne carte timeline de l'intro du bilan).
 
 ## Contenus clés (à garder cohérents partout)
 

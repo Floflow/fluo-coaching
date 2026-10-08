@@ -64,7 +64,7 @@ export default function Floriane() {
             <div className="fade-in fade-in-delay-1" style={{ margin: '1.5rem 0 2rem' }}>
               <p style={{
                 fontSize: '11px', fontWeight: 500, letterSpacing: '0.12em',
-                textTransform: 'uppercase', color: 'var(--text-light)', marginBottom: '0.75rem',
+                textTransform: 'uppercase', color: 'var(--text-mid)', marginBottom: '0.75rem',
               }}>
                 Mes valeurs fondamentales
               </p>
@@ -85,7 +85,7 @@ export default function Floriane() {
             <div className="floriane-quote fade-in fade-in-delay-1">
               <p>
                 Nos motivations évoluent. Ce qui était juste hier ne l&rsquo;est plus
-                forcément aujourd&rsquo;hui. C&rsquo;est normal — et c&rsquo;est là
+                forcément aujourd&rsquo;hui. C&rsquo;est normal, et c&rsquo;est là
                 qu&rsquo;on commence à travailler ensemble.
               </p>
             </div>

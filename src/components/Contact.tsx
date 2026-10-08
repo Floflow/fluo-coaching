@@ -126,7 +126,7 @@ export default function Contact() {
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label" htmlFor="message">Votre situation en quelques mots</label>
+                  <label className="form-label" htmlFor="message">Ta situation en quelques mots</label>
                   <textarea
                     className="form-input form-textarea"
                     id="message"

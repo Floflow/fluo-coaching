@@ -68,14 +68,7 @@ export default function Douleurs() {
                 padding: '2rem',
               }}
             >
-              <p style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: '3rem',
-                fontWeight: 700,
-                color: 'var(--fluo-num)',
-                lineHeight: 1,
-                marginBottom: '1rem',
-              }}>
+              <p className="num-mark" style={{ marginBottom: '1.25rem' }}>
                 {p.num}
               </p>
               <h3 style={{
@@ -88,23 +81,14 @@ export default function Douleurs() {
               }}>
                 {p.titre}
               </h3>
-              <ul style={{ listStyle: 'none' }}>
+              <ul className="list-square">
                 {p.items.map((item, j) => (
                   <li key={j} style={{
                     fontSize: '14px',
                     fontWeight: 300,
                     color: 'var(--text-mid)',
-                    paddingLeft: '1rem',
-                    position: 'relative',
-                    lineHeight: 1.5,
                     marginBottom: j < p.items.length - 1 ? '0.5rem' : 0,
                   }}>
-                    <span style={{
-                      position: 'absolute',
-                      left: 0,
-                      color: 'var(--text-light)',
-                      fontSize: '12px',
-                    }}>—</span>
                     {item}
                   </li>
                 ))}
