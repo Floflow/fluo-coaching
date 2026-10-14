@@ -118,7 +118,7 @@ export default function BilanDeCompetences() {
                 <p className="page-intro-sub page-intro-lead fade-in fade-in-delay-2">
                   À l&rsquo;issue du bilan, tu seras capable de mettre en lumière :
                 </p>
-                <ul className="page-intro-list fade-in fade-in-delay-3">
+                <ul className="list-square page-intro-list fade-in fade-in-delay-3">
                   <li>Tes besoins et tes motivations essentielles</li>
                   <li>Ce qui te freine aujourd&rsquo;hui et les ressources sur lesquelles tu peux t&rsquo;appuyer</li>
                   <li>Un plan d&rsquo;action concret pour avancer sereinement</li>
