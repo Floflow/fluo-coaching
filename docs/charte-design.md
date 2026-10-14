@@ -57,7 +57,7 @@ Rayons : `--radius-sm` 4px, `--radius-md` 10px, `--radius-lg` 20px. Largeur max 
 - Badges : `.badge` + `.badge-fluo` / `.badge-outline` / `.badge-outline-light`
 - Animations : `.fade-in` + `.fade-in-delay-1` à `-5` (déclenchées par `ScrollObserver`)
 - Formulaires : `.form`, `.form-row`, `.form-group`, `.form-label`, `.form-input`, `.form-textarea`, `.form-check` (variantes `-light`)
-- Page bilan : `.page-intro*`, `.essentiel-*` (carte « L'essentiel »), `.text-link`, `.phases-grid`, `.phase-card`, `.phase-head`, `.phase-list`, `.phase-band*` (bandeaux pointillés), `.floriane-trust-grid`, `.trust-pills`, `.trust-pill`, `.trust-quote`, `.financement-*`, `.cep-*`, `.info-grid`, `.info-cell*`, `.cta-section`
+- Page bilan : `.page-intro*`, `.essentiel-*` (carte « L'essentiel »), `.text-link`, `.phases-grid`, `.phase-card`, `.phase-head`, `.phase-list`, `.phase-band*` (bandeau « 6 mois après »), `.floriane-trust-grid`, `.trust-pills`, `.trust-pill`, `.trust-quote`, `.financement-*`, `.cep-*`, `.info-grid`, `.info-cell*`, `.cta-section`
 - Pages légales : `.legal-hero`, `.legal-hero-inner`, `.legal-eyebrow`, `.legal-hero-meta`, `.legal-body`, `.legal-intro`, `.legal-toc`, `.legal-section`, `.sec-num`, `.legal-info-table`, `.legal-note`, `.legal-table`, `.ph` (placeholder à remplir)
 
 ## Recettes

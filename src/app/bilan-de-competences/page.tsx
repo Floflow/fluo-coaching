@@ -179,14 +179,6 @@ export default function BilanDeCompetences() {
               </p>
             </div>
 
-            <div className="phase-band phase-band-before fade-in">
-              <p className="phase-band-label">Avant</p>
-              <p className="phase-band-title">Entretien découverte gratuit</p>
-              <p className="phase-band-text">
-                On se rencontre, je réponds à toutes tes questions et on évalue ensemble si le bilan te correspond.
-              </p>
-            </div>
-
             <div className="phases-grid">
               {phases.map((phase, i) => (
                 <div key={phase.num} className={`phase-card fade-in${i > 0 ? ` fade-in-delay-${i}` : ''}`}>

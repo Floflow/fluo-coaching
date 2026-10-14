@@ -1163,17 +1163,17 @@ a {
   color: var(--text-mid);
 }
 
-/* Bandeaux « Avant » / « 6 mois après » */
+/* Bandeau « 6 mois après » */
 .phase-band {
   display: flex;
   align-items: baseline;
   gap: 1.5rem;
-  padding: 1.1rem 1.75rem;
-  border: 1px dashed var(--text-light);
+  padding: 22px 32px;
+  background: var(--bg);
+  border: 1px solid var(--border);
   border-radius: var(--radius-md);
 }
 
-.phase-band-before { margin-bottom: 1.5rem; }
 .phase-band-after { margin-top: 1.5rem; }
 
 .phase-band-label {
